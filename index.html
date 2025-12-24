@@ -137,14 +137,14 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
   <body class="min-h-screen flex flex-col">
     <!-- NAV -->
     <nav class="fixed top-0 w-full z-50 px-4 sm:px-6 py-3 sm:py-4 glass-nav transition-all duration-300">
-      <div class="max-w-7xl mx-auto flex justify-between items-center gap-2">
+      <div class="max-w-7xl mx-auto flex justify-between items-center relative">
         <!-- Logo -->
-        <button class="flex items-center gap-2 cursor-pointer group" onclick="showPage('home')" aria-label="VYBZ Home">
+        <button class="flex items-center gap-2 cursor-pointer group z-10" onclick="showPage('home')" aria-label="VYBZ Home">
           <img src="./images/logos/LogoTypeWithMarkWhite.svg" alt="VYBZ" class="h-6 sm:h-7 w-auto" width="120" height="28">
         </button>
 
-        <!-- Center Pills -->
-        <div class="hidden md:flex items-center gap-1 bg-white/5 backdrop-blur-md p-1 rounded-full border border-white/5">
+        <!-- Center Pills - Absolutely centered -->
+        <div class="hidden md:flex items-center gap-1 bg-white/5 backdrop-blur-md p-1 rounded-full border border-white/5 absolute left-1/2 -translate-x-1/2">
           <a href="#" onclick="showPage('home')" class="px-5 py-1.5 text-xs font-medium text-white bg-white/10 rounded-full transition-all hover:bg-white/15">
             Home
           </a>
@@ -154,7 +154,7 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
         </div>
 
         <!-- Right CTA -->
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-4 z-10">
           <a href="https://apps.apple.com/gb/app/vybz-meet-people-nearby/id1661684666" target="_blank" class="hidden md:flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 hover:border-white/20 bg-white/5 hover:bg-white/10 transition-all group">
             <span class="text-xs font-semibold text-white">
               Download on App Store
