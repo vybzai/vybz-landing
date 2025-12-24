@@ -58,10 +58,10 @@
 <!-- TAILWIND -->
 <script src="https://cdn.tailwindcss.com"></script>
 <!-- ICONS -->
-<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
 <!-- GSAP -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
 <!-- FONTS -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -106,7 +106,8 @@ float: {
 </script>
 <style>
 :root { --main-black: #050505; }
-body { background-color: var(--main-black); color: white; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+html, body { overflow-x: hidden; }
+body { background-color: var(--main-black); color: white; font-family: 'Inter', sans-serif; }
 .text-gradient {
 background: linear-gradient(90deg, #9F94FF 0%, #EFB521 50%, #5B95FF 100%);
 -webkit-background-clip: text;
@@ -135,15 +136,15 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
 
   <body class="min-h-screen flex flex-col">
     <!-- NAV -->
-    <nav class="fixed top-0 w-full z-50 px-6 py-4 glass-nav transition-all duration-300">
-      <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <nav class="fixed top-0 w-full z-50 px-4 sm:px-6 py-3 sm:py-4 glass-nav transition-all duration-300">
+      <div class="max-w-7xl mx-auto flex justify-between items-center gap-2">
         <!-- Logo -->
-        <div class="flex items-center gap-2 cursor-pointer group" onclick="showPage('home')">
+        <button class="flex items-center gap-2 cursor-pointer group" onclick="showPage('home')" aria-label="VYBZ Home">
           <div class="w-8 h-8 rounded-full bg-gradient-to-br from-main-purple to-electric-blue flex items-center justify-center shadow-[0_0_15px_rgba(125,110,252,0.2)]">
-            <iconify-icon icon="lucide:zap" class="text-white text-sm"></iconify-icon>
+            <iconify-icon icon="lucide:zap" class="text-white text-sm" aria-hidden="true"></iconify-icon>
           </div>
-          <span class="font-bold text-xl text-white tracking-tight">VYBZ</span>
-        </div>
+          <span class="font-bold text-lg sm:text-xl text-white tracking-tight">VYBZ</span>
+        </button>
 
         <!-- Center Pills -->
         <div class="hidden md:flex items-center gap-1 bg-white/5 backdrop-blur-md p-1 rounded-full border border-white/5">
@@ -174,7 +175,7 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
         <section class="relative isolate min-h-[90vh] w-full flex flex-col justify-center items-center overflow-hidden px-4 pt-20">
           <!-- 3D SPLINE BACKGROUND -->
           <div class="absolute inset-0 z-0 pointer-events-none opacity-80 mix-blend-screen">
-            <iframe src="https://my.spline.design/liquidring-PGc8zQXZyDUpVFvWNgohNZnv" frameborder="0" width="100%" height="100%" class="w-full h-full scale-125 md:scale-110 origin-center translate-x-[1.5%]" title="VYBZ Liquid Ring"></iframe>
+            <iframe src="https://my.spline.design/liquidring-PGc8zQXZyDUpVFvWNgohNZnv" frameborder="0" width="100%" height="100%" class="w-full h-full scale-100 sm:scale-110 md:scale-110 origin-center translate-x-0 sm:translate-x-[1.5%]" title="VYBZ Liquid Ring" loading="lazy"></iframe>
           </div>
 
           <!-- Readability overlays -->
@@ -195,10 +196,10 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
 
             <!-- Headlines -->
             <h1 class="font-bold leading-[0.95] tracking-tight mb-6 drop-shadow-2xl">
-              <span class="block text-[13vw] md:text-[8.5vw] text-white animate-[fadeIn_1s_ease-out]">
+              <span class="block text-[11vw] sm:text-[10vw] md:text-[8.5vw] text-white animate-[fadeIn_1s_ease-out]">
                 FIND YOUR
               </span>
-              <span class="block text-[13vw] md:text-[8.5vw] text-gradient pb-4 animate-[fadeIn_1s_ease-out_0.2s_both]">
+              <span class="block text-[11vw] sm:text-[10vw] md:text-[8.5vw] text-gradient pb-3 sm:pb-4 animate-[fadeIn_1s_ease-out_0.2s_both]">
                 PEOPLE.
               </span>
             </h1>
@@ -217,8 +218,8 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
               <!-- CTA Cluster -->
               <div class="flex flex-col items-center gap-4 mt-10">
                 <!-- Primary CTA -->
-                <a href="https://apps.apple.com/gb/app/vybz-meet-people-nearby/id1661684666" class="hover:opacity-90 transition-opacity transform hover:scale-[1.02] duration-200">
-                  <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" class="h-14 w-auto">
+                <a href="https://apps.apple.com/gb/app/vybz-meet-people-nearby/id1661684666" target="_blank" rel="noopener noreferrer" class="hover:opacity-90 transition-opacity transform hover:scale-[1.02] duration-200">
+                  <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" class="h-12 sm:h-14 w-auto" loading="lazy" width="250" height="83">
                 </a>
 
                 <!-- Secondary CTA -->
@@ -231,34 +232,34 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
         </section>
 
         <!-- SECTION 2: TRENDING VIBES -->
-        <section class="py-24 relative overflow-hidden bg-main-black border-t border-white/5">
-          <div class="max-w-7xl mx-auto px-6 mb-12 flex items-end justify-between">
+        <section class="py-16 sm:py-20 md:py-24 relative overflow-hidden bg-main-black border-t border-white/5">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 mb-8 sm:mb-10 md:mb-12 flex items-end justify-between gap-4">
             <div>
-              <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight mb-2">
+              <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight mb-2">
                 Trending Vibes
               </h2>
-              <p class="text-zinc-400 font-medium text-sm">
+              <p class="text-zinc-400 font-medium text-xs sm:text-sm">
                 See what's happening right now.
               </p>
             </div>
             <!-- Navigation Arrows -->
             <div class="hidden md:flex gap-2">
-              <button class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5 text-white/50 hover:text-white transition-colors">
-                <iconify-icon icon="lucide:arrow-left"></iconify-icon>
+              <button class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5 text-white/50 hover:text-white transition-colors" aria-label="Previous vibes">
+                <iconify-icon icon="lucide:arrow-left" aria-hidden="true"></iconify-icon>
               </button>
-              <button class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5 text-white/50 hover:text-white transition-colors">
-                <iconify-icon icon="lucide:arrow-right"></iconify-icon>
+              <button class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5 text-white/50 hover:text-white transition-colors" aria-label="Next vibes">
+                <iconify-icon icon="lucide:arrow-right" aria-hidden="true"></iconify-icon>
               </button>
             </div>
           </div>
 
           <!-- Carousel -->
-          <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-6 pb-16 no-scrollbar">
+          <div class="flex overflow-x-auto snap-x snap-mandatory gap-4 sm:gap-5 md:gap-6 px-4 sm:px-6 pb-12 sm:pb-14 md:pb-16 no-scrollbar">
             <!-- Card 1: Coffee -->
             <div class="min-w-[280px] md:min-w-[320px] snap-center">
               <div class="bg-polaroid-white p-3 pb-6 rounded-2xl shadow-[0_0_30px_rgba(255,255,255,0.03)] transform -rotate-1 hover:rotate-0 transition-all duration-500 group cursor-pointer h-full">
                 <div class="aspect-[4/5] bg-zinc-200 overflow-hidden rounded-lg relative mb-4">
-                  <img src="/images/cards/coffee.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter saturate-[0.85] group-hover:saturate-100" alt="Coffee">
+                  <img src="/images/cards/coffee.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter saturate-[0.85] group-hover:saturate-100" alt="Coffee" loading="lazy" width="320" height="400">
                   <div class="absolute bottom-3 left-3">
                     <div class="px-3 py-1.5 bg-black/70 backdrop-blur-md rounded-full border border-white/10 flex items-center gap-1.5 shadow-lg">
                       <span class="text-xs">☕</span>
@@ -283,7 +284,7 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
             <div class="min-w-[280px] md:min-w-[320px] snap-center pt-8">
               <div class="bg-polaroid-white p-3 pb-6 rounded-2xl shadow-[0_0_30px_rgba(255,255,255,0.03)] transform rotate-1 hover:rotate-0 transition-all duration-500 group cursor-pointer h-full">
                 <div class="aspect-[4/5] bg-zinc-200 overflow-hidden rounded-lg relative mb-4">
-                  <img src="/images/cards/desert.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter saturate-[0.85] group-hover:saturate-100" alt="Desert">
+                  <img src="/images/cards/desert.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter saturate-[0.85] group-hover:saturate-100" alt="Desert" loading="lazy" width="320" height="400">
                   <div class="absolute bottom-3 left-3">
                     <div class="px-3 py-1.5 bg-black/70 backdrop-blur-md rounded-full border border-white/10 flex items-center gap-1.5 shadow-lg">
                       <span class="text-xs">⛺</span>
@@ -308,7 +309,7 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
             <div class="min-w-[280px] md:min-w-[320px] snap-center">
               <div class="bg-polaroid-white p-3 pb-6 rounded-2xl shadow-[0_0_30px_rgba(255,255,255,0.03)] transform -rotate-2 hover:rotate-0 transition-all duration-500 group cursor-pointer h-full">
                 <div class="aspect-[4/5] bg-zinc-200 overflow-hidden rounded-lg relative mb-4">
-                  <img src="/images/cards/gaming.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter saturate-[0.85] group-hover:saturate-100" alt="Gaming">
+                  <img src="/images/cards/gaming.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter saturate-[0.85] group-hover:saturate-100" alt="Gaming" loading="lazy" width="320" height="400">
                   <div class="absolute bottom-3 left-3">
                     <div class="px-3 py-1.5 bg-black/70 backdrop-blur-md rounded-full border border-white/10 flex items-center gap-1.5 shadow-lg">
                       <span class="text-xs">🎮</span>
@@ -333,7 +334,7 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
             <div class="min-w-[280px] md:min-w-[320px] snap-center pt-6">
               <div class="bg-polaroid-white p-3 pb-6 rounded-2xl shadow-[0_0_30px_rgba(255,255,255,0.03)] transform rotate-2 hover:rotate-0 transition-all duration-500 group cursor-pointer h-full">
                 <div class="aspect-[4/5] bg-zinc-200 overflow-hidden rounded-lg relative mb-4">
-                  <img src="/images/cards/study.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter saturate-[0.85] group-hover:saturate-100" alt="Study">
+                  <img src="/images/cards/study.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter saturate-[0.85] group-hover:saturate-100" alt="Study" loading="lazy" width="320" height="400">
                   <div class="absolute bottom-3 left-3">
                     <div class="px-3 py-1.5 bg-black/70 backdrop-blur-md rounded-full border border-white/10 flex items-center gap-1.5 shadow-lg">
                       <span class="text-xs">📚</span>
@@ -357,8 +358,8 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
         </section>
 
         <!-- SECTION 3: HOW IT WORKS -->
-        <section id="how" class="py-24 bg-white/[0.02] border-y border-white/5 relative">
-          <div class="max-w-7xl mx-auto px-6">
+        <section id="how" class="py-16 sm:py-20 md:py-24 bg-white/[0.02] border-y border-white/5 relative">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
               <!-- Step 1 -->
               <div class="glass-panel p-8 rounded-3xl hover:border-main-purple/30 transition-all duration-300 group">
@@ -404,32 +405,32 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
         </section>
 
         <!-- SECTION 4: LIVE NEARBY PREVIEW (Riyadh/Local Map) -->
-        <section class="py-24 px-6 relative overflow-hidden bg-main-black">
-          <div class="max-w-4xl mx-auto text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">
+        <section class="py-16 sm:py-20 md:py-24 px-4 sm:px-6 relative overflow-hidden bg-main-black">
+          <div class="max-w-4xl mx-auto text-center mb-8 sm:mb-10 md:mb-12">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-2">
               People nearby now
             </h2>
-            <p class="text-zinc-400 font-medium">
+            <p class="text-zinc-400 font-medium text-sm sm:text-base">
               See what's happening around Riyadh.
             </p>
           </div>
 
           <!-- RIYADH MAP MOCKUP -->
-          <div class="max-w-5xl mx-auto relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl h-[550px] md:h-[650px] group bg-[#111]">
+          <div class="max-w-5xl mx-auto relative rounded-2xl sm:rounded-3xl overflow-hidden border border-white/10 shadow-2xl h-[400px] sm:h-[500px] md:h-[550px] lg:h-[650px] group bg-[#111]">
             <!-- Dark City Grid Background (Riyadh Coded) -->
             <div class="absolute inset-0 opacity-80 mix-blend-luminosity hover:mix-blend-normal transition-all duration-1000">
               <!-- Riyadh Night Aerial -->
-              <img src="/images/map/riyadh-aerial.jpg" class="w-full h-full object-cover scale-110 brightness-[0.4] contrast-[1.2]" alt="Riyadh Map">
+              <img src="/images/map/riyadh-aerial.jpg" class="w-full h-full object-cover scale-110 brightness-[0.4] contrast-[1.2]" alt="Riyadh Map" width="1920" height="1280">
             </div>
 
             <!-- Gradient overlay for text readability -->
             <div class="absolute inset-0 bg-gradient-to-t from-main-black/90 via-transparent to-main-black/10 pointer-events-none"></div>
 
             <!-- Location Chip (Top Left) -->
-            <div class="absolute top-8 left-8 z-40">
-              <div class="px-3 py-1.5 bg-black/80 backdrop-blur-md rounded-lg border border-white/10 flex items-center gap-2 shadow-lg">
-                <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
-                <span class="text-xs font-bold text-white tracking-wide">
+            <div class="absolute top-4 sm:top-6 md:top-8 left-4 sm:left-6 md:left-8 z-40">
+              <div class="px-2.5 sm:px-3 py-1 sm:py-1.5 bg-black/80 backdrop-blur-md rounded-lg border border-white/10 flex items-center gap-1.5 sm:gap-2 shadow-lg">
+                <div class="w-1.5 sm:w-2 h-1.5 sm:h-2 rounded-full bg-green-500 animate-pulse"></div>
+                <span class="text-[10px] sm:text-xs font-bold text-white tracking-wide">
                   RIYADH, SA
                 </span>
               </div>
@@ -444,7 +445,7 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
                 <!-- Popup Card -->
                 <div class="bg-white p-2 rounded-2xl shadow-[0_20px_40px_rgba(0,0,0,0.4)] w-[160px] transform scale-100 group-hover:scale-105 transition-transform origin-bottom duration-300">
                   <div class="h-20 w-full rounded-xl bg-zinc-200 overflow-hidden mb-2 relative">
-                    <img src="/images/map/coffee-shop.jpg" class="w-full h-full object-cover" alt="Coffee Shop">
+                    <img src="/images/map/coffee-shop.jpg" class="w-full h-full object-cover" alt="Coffee Shop" loading="lazy" width="160" height="80">
                   </div>
                   <div class="flex items-center justify-between px-1">
                     <span class="text-xs font-bold text-black">Brew Crew</span>
@@ -458,7 +459,7 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
                 <div class="relative w-14 h-14 cursor-pointer">
                   <div class="absolute inset-0 bg-white/20 rounded-full animate-ping"></div>
                   <div class="relative w-14 h-14 rounded-full border-[3px] border-white bg-zinc-900 overflow-hidden shadow-lg">
-                    <img src="/images/avatars/user-1.jpg" class="w-full h-full object-cover" alt="User">
+                    <img src="/images/avatars/user-1.jpg" class="w-full h-full object-cover" alt="User" loading="lazy" width="56" height="56">
                   </div>
                 </div>
               </div>
@@ -469,7 +470,7 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
               <div class="flex items-center gap-3 hover:z-50 group/pin">
                 <div class="relative w-12 h-12">
                   <div class="w-12 h-12 rounded-full border-[3px] border-[#2C71F6] bg-zinc-900 overflow-hidden shadow-lg relative z-10">
-                    <img src="/images/avatars/user-2.jpg" class="w-full h-full object-cover" alt="Gamer">
+                    <img src="/images/avatars/user-2.jpg" class="w-full h-full object-cover" alt="Gamer" loading="lazy" width="48" height="48">
                   </div>
                   <div class="absolute bottom-0 right-0 w-4 h-4 bg-sunset-orange rounded-full border-2 border-[#111] z-20"></div>
                 </div>
@@ -485,22 +486,22 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
             <!-- Pin 3: Background User (Bottom Left) - Kept low but far left -->
             <div class="absolute bottom-[25%] left-[15%] z-20 opacity-80">
               <div class="w-10 h-10 rounded-full border-2 border-white/50 bg-zinc-800 overflow-hidden shadow-lg">
-                <img src="/images/avatars/user-3.jpg" class="w-full h-full object-cover grayscale" alt="User">
+                <img src="/images/avatars/user-3.jpg" class="w-full h-full object-cover grayscale" alt="User" loading="lazy" width="40" height="40">
               </div>
             </div>
 
             <!-- Pin 4: Background User (Top Left) -->
             <div class="absolute top-[25%] left-[25%] z-20 opacity-80">
               <div class="w-10 h-10 rounded-full border-2 border-white/50 bg-zinc-800 overflow-hidden shadow-lg">
-                <img src="/images/avatars/user-4.jpg" class="w-full h-full object-cover grayscale" alt="User">
+                <img src="/images/avatars/user-4.jpg" class="w-full h-full object-cover grayscale" alt="User" loading="lazy" width="40" height="40">
               </div>
             </div>
 
             <!-- BUTTON: Anchored to Bottom Center to avoid overlap -->
-            <div class="absolute bottom-12 left-0 right-0 flex justify-center items-center z-50 pointer-events-none">
-              <a href="https://apps.apple.com/gb/app/vybz-meet-people-nearby/id1661684666" target="_blank" class="pointer-events-auto bg-white text-black px-8 py-3.5 rounded-full font-bold text-sm hover:scale-105 transition-all duration-300 shadow-[0_0_40px_rgba(255,255,255,0.3)] flex items-center gap-2">
-                View Live Map
-                <iconify-icon icon="lucide:arrow-right" class="text-black stroke-[2.5]"></iconify-icon>
+            <div class="absolute bottom-8 sm:bottom-10 md:bottom-12 left-0 right-0 flex justify-center items-center z-50 pointer-events-none">
+              <a href="https://apps.apple.com/gb/app/vybz-meet-people-nearby/id1661684666" target="_blank" rel="noopener noreferrer" class="pointer-events-auto bg-white text-black px-6 sm:px-7 md:px-8 py-3 sm:py-3.5 rounded-full font-bold text-xs sm:text-sm hover:scale-105 transition-all duration-300 shadow-[0_0_40px_rgba(255,255,255,0.3)] flex items-center gap-2">
+                Download App
+                <iconify-icon icon="lucide:arrow-right" class="text-black stroke-[2.5]" aria-hidden="true"></iconify-icon>
               </a>
             </div>
           </div>
@@ -511,15 +512,15 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
           <!-- BG Glow -->
           <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-main-purple/20 to-electric-blue/10 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
 
-          <h2 class="text-[11vw] md:text-[7vw] font-black text-white leading-[0.9] tracking-tight mb-8">
+          <h2 class="text-[9vw] sm:text-[8vw] md:text-[7vw] font-black text-white leading-[0.9] tracking-tight mb-6 sm:mb-8">
             DON'T JUST SCROLL.
             <br>
             <span class="text-gradient">START VIBING.</span>
           </h2>
 
           <div class="flex flex-col items-center gap-6">
-            <a href="https://apps.apple.com/gb/app/vybz-meet-people-nearby/id1661684666" class="hover:opacity-90 transition-opacity">
-              <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" class="h-16 w-auto">
+            <a href="https://apps.apple.com/gb/app/vybz-meet-people-nearby/id1661684666" target="_blank" rel="noopener noreferrer" class="hover:opacity-90 transition-opacity">
+              <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" class="h-14 sm:h-16 w-auto" loading="lazy" width="250" height="83">
             </a>
             <p class="text-zinc-500 text-xs font-medium">
               Available on iOS. Android coming soon.
@@ -540,8 +541,8 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-[#020202] border-t border-white/5 pt-16 pb-12 px-6 text-sm">
-      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+    <footer class="bg-[#020202] border-t border-white/5 pt-12 sm:pt-14 md:pt-16 pb-10 sm:pb-12 px-4 sm:px-6 text-sm">
+      <div class="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 md:gap-12 mb-12 sm:mb-14 md:mb-16">
         <!-- Branding & Contact -->
         <div class="col-span-1 md:col-span-1">
           <div class="flex items-center gap-2 mb-6">
@@ -615,8 +616,8 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
         <!-- Download -->
         <div class="col-span-1">
           <div class="flex flex-col items-start gap-4">
-            <a href="https://apps.apple.com/gb/app/vybz-meet-people-nearby/id1661684666">
-              <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" class="w-[140px] opacity-80 hover:opacity-100 transition-opacity">
+            <a href="https://apps.apple.com/gb/app/vybz-meet-people-nearby/id1661684666" target="_blank" rel="noopener noreferrer">
+              <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" class="w-[120px] sm:w-[140px] opacity-80 hover:opacity-100 transition-opacity" loading="lazy" width="250" height="83">
             </a>
             <p class="text-[10px] text-zinc-600">
               © 2025 VYBZ Inc.
@@ -681,7 +682,7 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
           });
           const target = document.getElementById(pageId === 'home' ? 'home' : 'legal-content');
           target.style.display = 'block';
-          setTimeout(() => { target.classList.add('active'); if(pageId === 'home') ScrollTrigger.refresh(); }, 50);
+          setTimeout(() => { target.classList.add('active'); if(typeof ScrollTrigger !== 'undefined' && pageId === 'home') ScrollTrigger.refresh(); }, 50);
       }
 
       function showLegal(title) {
@@ -690,15 +691,37 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
           showPage('legal');
       }
 
-      // ANIMATIONS
-      gsap.registerPlugin(ScrollTrigger);
-      gsap.to("h1", { scrollTrigger: { trigger: "header", start: "top top", end: "bottom top", scrub: 1 }, y: 50, opacity: 0.8 });
+      // ANIMATIONS - Initialize after GSAP loads (deferred)
+      document.addEventListener('DOMContentLoaded', function() {
+        if (typeof gsap === 'undefined') return;
 
-      // Cards Stagger
-      const cards = document.querySelectorAll('.snap-center');
-      gsap.from(cards, {
-          scrollTrigger: { trigger: ".snap-x", start: "top 80%" },
-          y: 80, opacity: 0, duration: 1, stagger: 0.15, ease: "power3.out"
+        // Check for reduced motion preference and mobile
+        const isMobile = window.innerWidth < 768;
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        if (prefersReducedMotion) return;
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Simplified animations for mobile
+        if (isMobile) {
+          gsap.to("h1", {
+            scrollTrigger: { trigger: "header", start: "top center", toggleActions: "play none none reverse" },
+            y: 25, opacity: 0.8, duration: 0.5
+          });
+        } else {
+          gsap.to("h1", {
+            scrollTrigger: { trigger: "header", start: "top top", end: "bottom top", scrub: 1 },
+            y: 50, opacity: 0.8
+          });
+        }
+
+        // Cards Stagger - faster on mobile
+        const cards = document.querySelectorAll('.snap-center');
+        gsap.from(cards, {
+            scrollTrigger: { trigger: ".snap-x", start: "top 80%" },
+            y: 80, opacity: 0, duration: 1, stagger: isMobile ? 0.08 : 0.15, ease: "power3.out"
+        });
       });
     </script>
   
