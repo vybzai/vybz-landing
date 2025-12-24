@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#050505] scroll-smooth antialiased selection:bg-[#7D6EFC] selection:text-white"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VYBZ | Real Vibes Only</title>
+
+<!-- SEO Meta -->
+<meta name="description" content="VYBZ - A real-time social app for what's happening around you. Find your people in Riyadh, Dubai & Kuwait. No dating, just hanging out.">
+<meta name="keywords" content="VYBZ, social app, meet people, Riyadh, Dubai, Kuwait, real-time, hangout">
+<meta name="author" content="VYBZ Inc.">
+
+<!-- Open Graph (Facebook, LinkedIn) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vybzapp.com/">
+<meta property="og:title" content="VYBZ | Real Vibes Only">
+<meta property="og:description" content="A real-time social app for what's happening around you. Find your people nearby.">
+<meta property="og:image" content="https://vybzapp.com/images/og-image.jpg">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="VYBZ | Real Vibes Only">
+<meta name="twitter:description" content="A real-time social app for what's happening around you.">
+<meta name="twitter:image" content="https://vybzapp.com/images/og-image.jpg">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://vybzapp.com/">
+
+<!-- ANALYTICS (uncomment when ready) -->
+<!-- Google Analytics 4 -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+-->
+
+<!-- Facebook Pixel -->
+<!--
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 'XXXXXXXXXXXXXXXXX');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.net/tr?id=XXXXXXXXXXXXXXXXX&ev=PageView&noscript=1"
+/></noscript>
+-->
+
+<!-- TAILWIND -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- ICONS -->
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<!-- FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+'main-black': '#050505',
+'off-black': '#0f0f11',
+'glass-border': 'rgba(255, 255, 255, 0.08)',
+'main-purple': '#7D6EFC',
+'sunset-orange': '#EFB521',
+'electric-blue': '#2C71F6',
+'polaroid-white': '#F2F0F5',
+},
+fontFamily: {
+'sans': ['"Inter"', 'sans-serif'],
+},
+backgroundImage: {
+'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+},
+animation: {
+'float': 'float 6s ease-in-out infinite',
+'float-delayed': 'float 6s ease-in-out 3s infinite',
+'pulse-glow': 'pulse-glow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+},
+keyframes: {
+float: {
+'0%, 100%': { transform: 'translateY(0)' },
+'50%': { transform: 'translateY(-10px)' },
+},
+'pulse-glow': {
+'0%, 100%': { opacity: '0.4' },
+'50%': { opacity: '0.2' },
+}
+}
+}
+}
+}
+</script>
+<style>
+:root { --main-black: #050505; }
+body { background-color: var(--main-black); color: white; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+.text-gradient {
+background: linear-gradient(90deg, #9F94FF 0%, #EFB521 50%, #5B95FF 100%);
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+}
+/* PREMIUM GLASS */
+.glass-nav {
+background: rgba(5, 5, 5, 0.7);
+backdrop-filter: blur(20px);
+border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.glass-panel {
+background: rgba(20, 20, 22, 0.6);
+backdrop-filter: blur(12px);
+border: 1px solid rgba(255, 255, 255, 0.08);
+box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
+}
+/* SCROLL */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+/* PAGE TRANSITIONS */
+.page-content { display: none; opacity: 0; transition: opacity 0.4s ease; }
+.page-content.active { display: block; opacity: 1; }
+</style></head>
+
+  <body class="min-h-screen flex flex-col">
+    <!-- NAV -->
+    <nav class="fixed top-0 w-full z-50 px-6 py-4 glass-nav transition-all duration-300">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center gap-2 cursor-pointer group" onclick="showPage('home')">
+          <div class="w-8 h-8 rounded-full bg-gradient-to-br from-main-purple to-electric-blue flex items-center justify-center shadow-[0_0_15px_rgba(125,110,252,0.2)]">
+            <iconify-icon icon="lucide:zap" class="text-white text-sm"></iconify-icon>
+          </div>
+          <span class="font-bold text-xl text-white tracking-tight">VYBZ</span>
+        </div>
+
+        <!-- Center Pills -->
+        <div class="hidden md:flex items-center gap-1 bg-white/5 backdrop-blur-md p-1 rounded-full border border-white/5">
+          <a href="#" onclick="showPage('home')" class="px-5 py-1.5 text-xs font-medium text-white bg-white/10 rounded-full transition-all hover:bg-white/15">
+            Home
+          </a>
+          <a href="#how" class="px-5 py-1.5 text-xs font-medium text-zinc-400 hover:text-white transition-all">
+            How it works
+          </a>
+        </div>
+
+        <!-- Right CTA -->
+        <div class="flex items-center gap-4">
+          <a href="https://apps.apple.com/gb/app/vybz-meet-people-nearby/id1661684666" target="_blank" class="hidden md:flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 hover:border-white/20 bg-white/5 hover:bg-white/10 transition-all group">
+            <span class="text-xs font-semibold text-white">
+              Download on App Store
+            </span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONTENT CONTAINER -->
+    <main id="main-container" class="pt-0 flex-grow">
+      <!-- HOME PAGE -->
+      <div id="home" class="page-content active">
+        <!-- HERO SECTION -->
+        <section class="relative isolate min-h-[90vh] w-full flex flex-col justify-center items-center overflow-hidden px-4 pt-20">
+          <!-- 3D SPLINE BACKGROUND -->
+          <div class="absolute inset-0 z-0 pointer-events-none opacity-80 mix-blend-screen">
+            <iframe src="https://my.spline.design/liquidring-PGc8zQXZyDUpVFvWNgohNZnv" frameborder="0" width="100%" height="100%" class="w-full h-full scale-125 md:scale-110 origin-center translate-x-[1.5%]" title="VYBZ Liquid Ring"></iframe>
+          </div>
+
+          <!-- Readability overlays -->
+          <div class="absolute inset-0 z-0 pointer-events-none bg-gradient-to-b from-black/50 via-black/30 to-main-black"></div>
+          <div class="absolute inset-0 z-0 pointer-events-none bg-[radial-gradient(circle_at_center,rgba(0,0,0,0)_0%,rgba(0,0,0,0.25)_55%,rgba(0,0,0,0.85)_100%)]"></div>
+
+          <div class="relative z-10 flex flex-col items-center text-center max-w-4xl mx-auto mt-0">
+            <!-- Locations Badge -->
+            <div class="mb-8 px-4 py-1.5 rounded-full border border-white/5 bg-white/5 backdrop-blur-sm animate-[fadeIn_1s_ease-out]">
+              <p class="text-[10px] md:text-xs font-medium text-zinc-400 uppercase tracking-widest">
+                Live in Riyadh
+                <span class="text-white/20 mx-1">•</span>
+                Dubai
+                <span class="text-white/20 mx-1">•</span>
+                Kuwait
+              </p>
+            </div>
+
+            <!-- Headlines -->
+            <h1 class="font-bold leading-[0.95] tracking-tight mb-6 drop-shadow-2xl">
+              <span class="block text-[13vw] md:text-[8.5vw] text-white animate-[fadeIn_1s_ease-out]">
+                FIND YOUR
+              </span>
+              <span class="block text-[13vw] md:text-[8.5vw] text-gradient pb-4 animate-[fadeIn_1s_ease-out_0.2s_both]">
+                PEOPLE.
+              </span>
+            </h1>
+
+            <div class="space-y-8 max-w-xl mx-auto px-4 animate-[fadeIn_1s_ease-out_0.5s_both]">
+              <h2 class="text-xl md:text-2xl font-semibold text-white/90 tracking-tight">
+                REAL VIBES ONLY.
+              </h2>
+
+              <p class="text-sm md:text-base text-zinc-400 font-medium leading-relaxed">
+                A real-time social app for what’s happening around you.
+                <br>
+                <span class="text-zinc-200">No dating. Just hanging out.</span>
+              </p>
+
+              <!-- CTA Cluster -->
+              <div class="flex flex-col items-center gap-4 mt-10">
+                <!-- Primary CTA -->
+                <a href="https://apps.apple.com/gb/app/vybz-meet-people-nearby/id1661684666" class="hover:opacity-90 transition-opacity transform hover:scale-[1.02] duration-200">
+                  <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" class="h-14 w-auto">
+                </a>
+
+                <!-- Secondary CTA -->
+                <button class="text-sm font-medium text-zinc-500 hover:text-white transition-colors border-b border-transparent hover:border-white/20 pb-0.5">
+                  Join the Android Waitlist
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 2: TRENDING VIBES -->
+        <section class="py-24 relative overflow-hidden bg-main-black border-t border-white/5">
+          <div class="max-w-7xl mx-auto px-6 mb-12 flex items-end justify-between">
+            <div>
+              <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight mb-2">
+                Trending Vibes
+              </h2>
+              <p class="text-zinc-400 font-medium text-sm">
+                See what's happening right now.
+              </p>
+            </div>
+            <!-- Navigation Arrows -->
+            <div class="hidden md:flex gap-2">
+              <button class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5 text-white/50 hover:text-white transition-colors">
+                <iconify-icon icon="lucide:arrow-left"></iconify-icon>
+              </button>
+              <button class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5 text-white/50 hover:text-white transition-colors">
+                <iconify-icon icon="lucide:arrow-right"></iconify-icon>
+              </button>
+            </div>
+          </div>
+
+          <!-- Carousel -->
+          <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-6 pb-16 no-scrollbar">
+            <!-- Card 1: Coffee -->
+            <div class="min-w-[280px] md:min-w-[320px] snap-center">
+              <div class="bg-polaroid-white p-3 pb-6 rounded-2xl shadow-[0_0_30px_rgba(255,255,255,0.03)] transform -rotate-1 hover:rotate-0 transition-all duration-500 group cursor-pointer h-full">
+                <div class="aspect-[4/5] bg-zinc-200 overflow-hidden rounded-lg relative mb-4">
+                  <img src="/images/cards/coffee.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter saturate-[0.85] group-hover:saturate-100" alt="Coffee">
+                  <div class="absolute bottom-3 left-3">
+                    <div class="px-3 py-1.5 bg-black/70 backdrop-blur-md rounded-full border border-white/10 flex items-center gap-1.5 shadow-lg">
+                      <span class="text-xs">☕</span>
+                      <span class="text-[10px] font-bold text-white uppercase tracking-wide">
+                        Specialty Coffee
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="px-2">
+                  <h3 class="font-bold text-black text-lg leading-none mb-1.5">
+                    Elixir Bunn
+                  </h3>
+                  <p class="text-zinc-500 text-xs font-medium">
+                    Riyadh • 0.8km away
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Desert -->
+            <div class="min-w-[280px] md:min-w-[320px] snap-center pt-8">
+              <div class="bg-polaroid-white p-3 pb-6 rounded-2xl shadow-[0_0_30px_rgba(255,255,255,0.03)] transform rotate-1 hover:rotate-0 transition-all duration-500 group cursor-pointer h-full">
+                <div class="aspect-[4/5] bg-zinc-200 overflow-hidden rounded-lg relative mb-4">
+                  <img src="/images/cards/desert.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter saturate-[0.85] group-hover:saturate-100" alt="Desert">
+                  <div class="absolute bottom-3 left-3">
+                    <div class="px-3 py-1.5 bg-black/70 backdrop-blur-md rounded-full border border-white/10 flex items-center gap-1.5 shadow-lg">
+                      <span class="text-xs">⛺</span>
+                      <span class="text-[10px] font-bold text-white uppercase tracking-wide">
+                        Winter Camping
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="px-2">
+                  <h3 class="font-bold text-black text-lg leading-none mb-1.5">
+                    Thumama Dunes
+                  </h3>
+                  <p class="text-zinc-500 text-xs font-medium">
+                    Riyadh • 32km away
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Gaming -->
+            <div class="min-w-[280px] md:min-w-[320px] snap-center">
+              <div class="bg-polaroid-white p-3 pb-6 rounded-2xl shadow-[0_0_30px_rgba(255,255,255,0.03)] transform -rotate-2 hover:rotate-0 transition-all duration-500 group cursor-pointer h-full">
+                <div class="aspect-[4/5] bg-zinc-200 overflow-hidden rounded-lg relative mb-4">
+                  <img src="/images/cards/gaming.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter saturate-[0.85] group-hover:saturate-100" alt="Gaming">
+                  <div class="absolute bottom-3 left-3">
+                    <div class="px-3 py-1.5 bg-black/70 backdrop-blur-md rounded-full border border-white/10 flex items-center gap-1.5 shadow-lg">
+                      <span class="text-xs">🎮</span>
+                      <span class="text-[10px] font-bold text-white uppercase tracking-wide">
+                        Ranked Match
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="px-2">
+                  <h3 class="font-bold text-black text-lg leading-none mb-1.5">
+                    Glitch Arena
+                  </h3>
+                  <p class="text-zinc-500 text-xs font-medium">
+                    Dubai • 2.1km away
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Study -->
+            <div class="min-w-[280px] md:min-w-[320px] snap-center pt-6">
+              <div class="bg-polaroid-white p-3 pb-6 rounded-2xl shadow-[0_0_30px_rgba(255,255,255,0.03)] transform rotate-2 hover:rotate-0 transition-all duration-500 group cursor-pointer h-full">
+                <div class="aspect-[4/5] bg-zinc-200 overflow-hidden rounded-lg relative mb-4">
+                  <img src="/images/cards/study.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter saturate-[0.85] group-hover:saturate-100" alt="Study">
+                  <div class="absolute bottom-3 left-3">
+                    <div class="px-3 py-1.5 bg-black/70 backdrop-blur-md rounded-full border border-white/10 flex items-center gap-1.5 shadow-lg">
+                      <span class="text-xs">📚</span>
+                      <span class="text-[10px] font-bold text-white uppercase tracking-wide">
+                        Focus Mode
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="px-2">
+                  <h3 class="font-bold text-black text-lg leading-none mb-1.5">
+                    National Library
+                  </h3>
+                  <p class="text-zinc-500 text-xs font-medium">
+                    Kuwait City • 5km away
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 3: HOW IT WORKS -->
+        <section id="how" class="py-24 bg-white/[0.02] border-y border-white/5 relative">
+          <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+              <!-- Step 1 -->
+              <div class="glass-panel p-8 rounded-3xl hover:border-main-purple/30 transition-all duration-300 group">
+                <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6 border border-white/10 group-hover:scale-110 transition-transform">
+                  <iconify-icon icon="lucide:wand-2" class="text-2xl text-main-purple"></iconify-icon>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">
+                  1. Set your vibe
+                </h3>
+                <p class="text-zinc-400 text-sm leading-relaxed">
+                  Pick a mood — chill, chatty, or out exploring. Let the map
+                  know you're ready to hang.
+                </p>
+              </div>
+              <!-- Step 2 -->
+              <div class="glass-panel p-8 rounded-3xl hover:border-sunset-orange/30 transition-all duration-300 group">
+                <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6 border border-white/10 group-hover:scale-110 transition-transform">
+                  <iconify-icon icon="lucide:radar" class="text-2xl text-sunset-orange"></iconify-icon>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">
+                  2. Find your crew
+                </h3>
+                <p class="text-zinc-400 text-sm leading-relaxed">
+                  See who’s nearby on the same wavelength. No swiping, just
+                  real-time availability.
+                </p>
+              </div>
+              <!-- Step 3 -->
+              <div class="glass-panel p-8 rounded-3xl hover:border-electric-blue/30 transition-all duration-300 group">
+                <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6 border border-white/10 group-hover:scale-110 transition-transform">
+                  <iconify-icon icon="lucide:message-circle" class="text-2xl text-electric-blue"></iconify-icon>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">
+                  3. Plan the hang
+                </h3>
+                <p class="text-zinc-400 text-sm leading-relaxed">
+                  Low pressure chats. Meet in real life. Connect with people,
+                  not profiles.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 4: LIVE NEARBY PREVIEW (Riyadh/Local Map) -->
+        <section class="py-24 px-6 relative overflow-hidden bg-main-black">
+          <div class="max-w-4xl mx-auto text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">
+              People nearby now
+            </h2>
+            <p class="text-zinc-400 font-medium">
+              See what's happening around Riyadh.
+            </p>
+          </div>
+
+          <!-- RIYADH MAP MOCKUP -->
+          <div class="max-w-5xl mx-auto relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl h-[550px] md:h-[650px] group bg-[#111]">
+            <!-- Dark City Grid Background (Riyadh Coded) -->
+            <div class="absolute inset-0 opacity-80 mix-blend-luminosity hover:mix-blend-normal transition-all duration-1000">
+              <!-- Riyadh Night Aerial -->
+              <img src="/images/map/riyadh-aerial.jpg" class="w-full h-full object-cover scale-110 brightness-[0.4] contrast-[1.2]" alt="Riyadh Map">
+            </div>
+
+            <!-- Gradient overlay for text readability -->
+            <div class="absolute inset-0 bg-gradient-to-t from-main-black/90 via-transparent to-main-black/10 pointer-events-none"></div>
+
+            <!-- Location Chip (Top Left) -->
+            <div class="absolute top-8 left-8 z-40">
+              <div class="px-3 py-1.5 bg-black/80 backdrop-blur-md rounded-lg border border-white/10 flex items-center gap-2 shadow-lg">
+                <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+                <span class="text-xs font-bold text-white tracking-wide">
+                  RIYADH, SA
+                </span>
+              </div>
+            </div>
+
+            <!-- UI: Local Cluster Pins -->
+            <!-- We lift these pins higher to avoid the bottom button area -->
+
+            <!-- Pin 1: Center Focus (Brew Crew) - Lifted to top-35% -->
+            <div class="absolute top-[35%] left-1/2 -translate-x-1/2 animate-float z-40">
+              <div class="flex flex-col items-center gap-3">
+                <!-- Popup Card -->
+                <div class="bg-white p-2 rounded-2xl shadow-[0_20px_40px_rgba(0,0,0,0.4)] w-[160px] transform scale-100 group-hover:scale-105 transition-transform origin-bottom duration-300">
+                  <div class="h-20 w-full rounded-xl bg-zinc-200 overflow-hidden mb-2 relative">
+                    <img src="/images/map/coffee-shop.jpg" class="w-full h-full object-cover" alt="Coffee Shop">
+                  </div>
+                  <div class="flex items-center justify-between px-1">
+                    <span class="text-xs font-bold text-black">Brew Crew</span>
+                    <span class="text-[9px] font-medium text-zinc-400">
+                      200m
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Pin User Head -->
+                <div class="relative w-14 h-14 cursor-pointer">
+                  <div class="absolute inset-0 bg-white/20 rounded-full animate-ping"></div>
+                  <div class="relative w-14 h-14 rounded-full border-[3px] border-white bg-zinc-900 overflow-hidden shadow-lg">
+                    <img src="/images/avatars/user-1.jpg" class="w-full h-full object-cover" alt="User">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pin 2: Squad (Right Side) - Lifted to top-45% -->
+            <div class="absolute top-[45%] right-[18%] animate-float-delayed z-30">
+              <div class="flex items-center gap-3 hover:z-50 group/pin">
+                <div class="relative w-12 h-12">
+                  <div class="w-12 h-12 rounded-full border-[3px] border-[#2C71F6] bg-zinc-900 overflow-hidden shadow-lg relative z-10">
+                    <img src="/images/avatars/user-2.jpg" class="w-full h-full object-cover" alt="Gamer">
+                  </div>
+                  <div class="absolute bottom-0 right-0 w-4 h-4 bg-sunset-orange rounded-full border-2 border-[#111] z-20"></div>
+                </div>
+                <!-- Tooltip Bubble -->
+                <div class="bg-black/90 backdrop-blur px-4 py-2 rounded-full border border-white/10 shadow-xl whitespace-nowrap transform transition-all duration-300">
+                  <span class="text-xs font-medium text-white">
+                    Looking for squad 🎮
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pin 3: Background User (Bottom Left) - Kept low but far left -->
+            <div class="absolute bottom-[25%] left-[15%] z-20 opacity-80">
+              <div class="w-10 h-10 rounded-full border-2 border-white/50 bg-zinc-800 overflow-hidden shadow-lg">
+                <img src="/images/avatars/user-3.jpg" class="w-full h-full object-cover grayscale" alt="User">
+              </div>
+            </div>
+
+            <!-- Pin 4: Background User (Top Left) -->
+            <div class="absolute top-[25%] left-[25%] z-20 opacity-80">
+              <div class="w-10 h-10 rounded-full border-2 border-white/50 bg-zinc-800 overflow-hidden shadow-lg">
+                <img src="/images/avatars/user-4.jpg" class="w-full h-full object-cover grayscale" alt="User">
+              </div>
+            </div>
+
+            <!-- BUTTON: Anchored to Bottom Center to avoid overlap -->
+            <div class="absolute bottom-12 left-0 right-0 flex justify-center items-center z-50 pointer-events-none">
+              <a href="https://apps.apple.com/gb/app/vybz-meet-people-nearby/id1661684666" target="_blank" class="pointer-events-auto bg-white text-black px-8 py-3.5 rounded-full font-bold text-sm hover:scale-105 transition-all duration-300 shadow-[0_0_40px_rgba(255,255,255,0.3)] flex items-center gap-2">
+                View Live Map
+                <iconify-icon icon="lucide:arrow-right" class="text-black stroke-[2.5]"></iconify-icon>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 5: FINAL CTA -->
+        <section class="py-32 relative flex flex-col items-center justify-center text-center px-6">
+          <!-- BG Glow -->
+          <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-main-purple/20 to-electric-blue/10 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
+
+          <h2 class="text-[11vw] md:text-[7vw] font-black text-white leading-[0.9] tracking-tight mb-8">
+            DON'T JUST SCROLL.
+            <br>
+            <span class="text-gradient">START VIBING.</span>
+          </h2>
+
+          <div class="flex flex-col items-center gap-6">
+            <a href="https://apps.apple.com/gb/app/vybz-meet-people-nearby/id1661684666" class="hover:opacity-90 transition-opacity">
+              <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" class="h-16 w-auto">
+            </a>
+            <p class="text-zinc-500 text-xs font-medium">
+              Available on iOS. Android coming soon.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <!-- LEGAL PAGES CONTAINER -->
+      <div id="legal-content" class="page-content max-w-3xl mx-auto px-6 py-24 min-h-[60vh]">
+        <button onclick="showPage('home')" class="mb-8 flex items-center gap-2 text-zinc-400 hover:text-white transition-colors text-sm font-semibold uppercase tracking-wider">
+          <iconify-icon icon="lucide:arrow-left"></iconify-icon>
+          Back to Home
+        </button>
+        <h1 id="legal-title" class="text-3xl md:text-4xl font-bold text-white mb-8"></h1>
+        <div id="legal-body" class="prose prose-invert prose-p:text-zinc-400 prose-headings:text-white max-w-none"></div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#020202] border-t border-white/5 pt-16 pb-12 px-6 text-sm">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+        <!-- Branding & Contact -->
+        <div class="col-span-1 md:col-span-1">
+          <div class="flex items-center gap-2 mb-6">
+            <div class="w-6 h-6 rounded-full bg-gradient-to-br from-main-purple to-electric-blue flex items-center justify-center">
+              <iconify-icon icon="lucide:zap" class="text-white text-[10px]"></iconify-icon>
+            </div>
+            <span class="font-bold text-lg text-white tracking-tight">
+              VYBZ
+            </span>
+          </div>
+          <div class="text-zinc-500 space-y-4 text-xs md:text-sm">
+            <p>
+              Need help?
+              <a href="mailto:support@vybzapp.com" class="text-zinc-300 hover:text-white transition-colors">
+                support@vybzapp.com
+              </a>
+            </p>
+            <div class="flex gap-4 pt-2">
+              <a href="#" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 hover:text-white transition-all text-zinc-400">
+                <iconify-icon icon="lucide:instagram"></iconify-icon>
+              </a>
+              <a href="#" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 hover:text-white transition-all text-zinc-400">
+                <iconify-icon icon="lucide:twitter"></iconify-icon>
+              </a>
+              <a href="#" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 hover:text-white transition-all text-zinc-400">
+                <iconify-icon icon="lucide:music-2"></iconify-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Legal Links -->
+        <div class="col-span-1">
+          <h4 class="text-white font-semibold mb-4">Legal</h4>
+          <ul class="space-y-3 text-zinc-500 text-xs md:text-sm">
+            <li>
+              <a href="#" onclick="showLegal('Terms of Use')" class="hover:text-main-purple transition-colors">
+                Terms of Use
+              </a>
+            </li>
+            <li>
+              <a href="#" onclick="showLegal('Privacy Policy')" class="hover:text-main-purple transition-colors">
+                Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="#" onclick="showLegal('EULA')" class="hover:text-main-purple transition-colors">
+                EULA
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Company Links -->
+        <div class="col-span-1">
+          <h4 class="text-white font-semibold mb-4">Company</h4>
+          <ul class="space-y-3 text-zinc-500 text-xs md:text-sm">
+            <li>
+              <a href="#" onclick="showLegal('About Us')" class="hover:text-main-purple transition-colors">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a href="#" onclick="showLegal('Community Guidelines')" class="hover:text-main-purple transition-colors">
+                Community Guidelines
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Download -->
+        <div class="col-span-1">
+          <div class="flex flex-col items-start gap-4">
+            <a href="https://apps.apple.com/gb/app/vybz-meet-people-nearby/id1661684666">
+              <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" class="w-[140px] opacity-80 hover:opacity-100 transition-opacity">
+            </a>
+            <p class="text-[10px] text-zinc-600">
+              © 2025 VYBZ Inc.
+              <br>
+              24 Dering St. London, UK
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trademark Block -->
+      <div class="max-w-7xl mx-auto border-t border-white/5 pt-8">
+        <details class="group cursor-pointer">
+          <summary class="list-none text-[11px] text-zinc-500 font-medium hover:text-zinc-300 transition-colors flex items-center gap-2">
+            Trademark Notice
+            <iconify-icon icon="lucide:chevron-down" class="group-open:rotate-180 transition-transform"></iconify-icon>
+          </summary>
+          <p class="text-[11px] text-zinc-600 leading-relaxed font-medium mt-3 pl-2 border-l-2 border-white/10">
+            VYBZ® is registered trademark owned by VYBZ Inc. in the following
+            jurisdictions: United States with registration No: 6342707 •
+            European Union with registration No: 018146753 • United Kingdom with
+            registration No: UK00003441428. Any unauthorised use is expressly
+            prohibited.
+          </p>
+        </details>
+      </div>
+    </footer>
+
+    <script>
+      // DATA FOR LEGAL/CONTENT PAGES
+      const pageContent = {
+          'About Us': `
+              <p class="text-lg leading-relaxed text-zinc-300 mb-6">VYBZ is the social layer for the real world. We built this because scrolling isn't living.</p>
+              <h3 class="text-xl font-bold text-white mt-8 mb-4">Our Mission</h3>
+              <p>Connect to each other, not to your phones. We use technology to get you off technology.</p>
+              <h3 class="text-xl font-bold text-white mt-8 mb-4">Not a Dating App</h3>
+              <p>We are strictly platonic. There are enough places to swipe for dates. VYBZ is for finding your crowd, your gaming squad, your coffee crew.</p>
+          `,
+          'Community Guidelines': `
+              <div class="grid gap-6">
+                  <div class="p-6 bg-white/5 rounded-2xl border border-white/5">
+                      <h3 class="text-white font-bold mb-2">1. Be Decent</h3>
+                      <p>Treat everyone with respect. Zero tolerance for harassment.</p>
+                  </div>
+                  <div class="p-6 bg-white/5 rounded-2xl border border-white/5">
+                      <h3 class="text-white font-bold mb-2">2. Respect Local Culture</h3>
+                      <p>We operate in the Middle East. Be mindful of local customs and values.</p>
+                  </div>
+              </div>
+          `,
+          'Terms of Use': `<p>Standard terms apply. By using VYBZ, you agree to be a real human being and not a bot.</p>`,
+          'Privacy Policy': `<p>We take privacy seriously. Your location is only used to show you relevant vibes nearby.</p>`,
+          'EULA': `<p>Standard Apple EULA applies regarding user-generated content.</p>`,
+      };
+
+      // NAVIGATION LOGIC
+      function showPage(pageId) {
+          window.scrollTo(0,0);
+          document.querySelectorAll('.page-content').forEach(el => {
+              el.classList.remove('active');
+              setTimeout(() => { if(!el.classList.contains('active')) el.style.display = 'none'; }, 400);
+          });
+          const target = document.getElementById(pageId === 'home' ? 'home' : 'legal-content');
+          target.style.display = 'block';
+          setTimeout(() => { target.classList.add('active'); if(pageId === 'home') ScrollTrigger.refresh(); }, 50);
+      }
+
+      function showLegal(title) {
+          document.getElementById('legal-title').innerText = title;
+          document.getElementById('legal-body').innerHTML = pageContent[title] || "<p>Content loading...</p>";
+          showPage('legal');
+      }
+
+      // ANIMATIONS
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.to("h1", { scrollTrigger: { trigger: "header", start: "top top", end: "bottom top", scrub: 1 }, y: 50, opacity: 0.8 });
+
+      // Cards Stagger
+      const cards = document.querySelectorAll('.snap-center');
+      gsap.from(cards, {
+          scrollTrigger: { trigger: ".snap-x", start: "top 80%" },
+          y: 80, opacity: 0, duration: 1, stagger: 0.15, ease: "power3.out"
+      });
+    </script>
+  
+</body></html>
