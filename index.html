@@ -2767,10 +2767,68 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
                   </div>
               </div>
           `,
+          'Broken Link': `
+              <div class="space-y-8">
+                  <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-sunset-orange/20 via-main-purple/10 to-electric-blue/20 border border-white/10 p-8 md:p-16 text-center">
+                      <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50"></div>
+                      <div class="relative z-10">
+                          <div class="text-8xl mb-6">🧸</div>
+                          <h1 class="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
+                              Oops! Broken Link
+                          </h1>
+                          <p class="text-lg text-zinc-300 max-w-lg mx-auto mb-2">
+                              The link you requested is either broken or no longer exists.
+                          </p>
+                          <p class="text-zinc-400 max-w-lg mx-auto mb-8">
+                              Please bear with us while we fix this.
+                          </p>
+                          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                              <a href="/" class="inline-flex items-center justify-center gap-2 bg-main-purple text-white px-8 py-4 rounded-full font-semibold hover:opacity-90 transition-opacity">
+                                  <iconify-icon icon="lucide:home"></iconify-icon>
+                                  Back to Home
+                              </a>
+                              <a href="mailto:support@vybzapp.com?subject=Broken%20Link%20Report%20%5Bvybzapp.com%5D&body=Hi%20VYBZ%20Team%2C%0A%0AI%20found%20a%20broken%20link%20on%20your%20website.%0A%0ABroken%20URL%3A%20%0AExpected%20page%3A%20%0A%0AThank%20you!" class="inline-flex items-center justify-center gap-2 bg-white/10 text-white px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition-colors">
+                                  <iconify-icon icon="lucide:mail"></iconify-icon>
+                                  Report This Issue
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="glass-panel p-6 md:p-8 rounded-2xl text-center">
+                      <p class="text-zinc-400 text-sm">
+                          If you feel generous today, please let us know about this broken link so we can fix it for everyone.
+                      </p>
+                      <p class="text-zinc-500 text-xs mt-2">Thank you for helping us improve VYBZ</p>
+                  </div>
+              </div>
+          `,
       };
 
+      // URL SLUG MAPPING
+      const slugToPage = {
+          'home': null,
+          'about-us': 'About Us',
+          'eula': 'EULA',
+          'terms-of-use': 'Terms of Use',
+          'privacy-policy': 'Privacy Policy',
+          'cookie-policy': 'Cookie Policy',
+          'community-guidelines': 'Community Guidelines',
+          'parental-guide': 'Parental Guide',
+          'account-types': 'Account Types',
+          'vybz-for-business': 'VYBZ for Business',
+          'ambassador-calendar': 'Ambassador Calendar',
+          'become-an-ambassador': 'Become an Ambassador',
+          'broken-link-not-broken-heart': 'Broken Link'
+      };
+
+      const pageToSlug = {};
+      for (const [slug, page] of Object.entries(slugToPage)) {
+          if (page) pageToSlug[page] = slug;
+      }
+
       // NAVIGATION LOGIC
-      function showPage(pageId) {
+      function showPage(pageId, updateUrl) {
           window.scrollTo(0,0);
           document.querySelectorAll('.page-content').forEach(el => {
               el.classList.remove('active');
@@ -2779,12 +2837,65 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
           const target = document.getElementById(pageId === 'home' ? 'home' : 'legal-content');
           target.style.display = 'block';
           setTimeout(() => { target.classList.add('active'); if(typeof ScrollTrigger !== 'undefined' && pageId === 'home') ScrollTrigger.refresh(); }, 50);
+
+          // Update URL for home
+          if (updateUrl !== false && pageId === 'home') {
+              history.pushState({ page: 'home' }, '', '/');
+          }
       }
 
-      function showLegal(title) {
+      function showLegal(title, updateUrl) {
           document.getElementById('legal-title').innerText = title;
-          document.getElementById('legal-body').innerHTML = pageContent[title] || "<p>Content loading...</p>";
-          showPage('legal');
+          document.getElementById('legal-body').innerHTML = pageContent[title] || pageContent['Broken Link'];
+          showPage('legal', false);
+
+          // Update URL
+          if (updateUrl !== false) {
+              const slug = pageToSlug[title] || 'broken-link-not-broken-heart';
+              history.pushState({ page: title }, '', '/' + slug);
+          }
+      }
+
+      // Handle browser back/forward
+      window.addEventListener('popstate', function(e) {
+          if (e.state && e.state.page) {
+              if (e.state.page === 'home') {
+                  showPage('home', false);
+              } else {
+                  showLegal(e.state.page, false);
+              }
+          } else {
+              // Default to home
+              showPage('home', false);
+          }
+      });
+
+      // Route based on URL on page load
+      function initRouter() {
+          const path = window.location.pathname.replace(/^\//, '').replace(/\/$/, '');
+
+          if (!path || path === 'home' || path === 'index.html') {
+              // Home page - replace state so back button works correctly
+              history.replaceState({ page: 'home' }, '', '/');
+              return;
+          }
+
+          const pageName = slugToPage[path];
+          if (pageName) {
+              history.replaceState({ page: pageName }, '', '/' + path);
+              showLegal(pageName, false);
+          } else {
+              // Unknown route - show broken link page
+              history.replaceState({ page: 'Broken Link' }, '', '/' + path);
+              showLegal('Broken Link', false);
+          }
+      }
+
+      // Initialize router after DOM is ready
+      if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', initRouter);
+      } else {
+          initRouter();
       }
 
       // Calendar View Toggle

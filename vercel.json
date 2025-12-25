@@ -2,6 +2,21 @@
   "version": 2,
   "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    { "source": "/home", "destination": "/" },
+    { "source": "/about-us", "destination": "/" },
+    { "source": "/eula", "destination": "/" },
+    { "source": "/terms-of-use", "destination": "/" },
+    { "source": "/privacy-policy", "destination": "/" },
+    { "source": "/cookie-policy", "destination": "/" },
+    { "source": "/community-guidelines", "destination": "/" },
+    { "source": "/parental-guide", "destination": "/" },
+    { "source": "/account-types", "destination": "/" },
+    { "source": "/vybz-for-business", "destination": "/" },
+    { "source": "/ambassador-calendar", "destination": "/" },
+    { "source": "/become-an-ambassador", "destination": "/" },
+    { "source": "/broken-link-not-broken-heart", "destination": "/" }
+  ],
   "headers": [
     {
       "source": "/(.*)",
