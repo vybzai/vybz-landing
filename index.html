@@ -1224,146 +1224,156 @@ html.legal-route #home { display: none !important; }
           `,
           'VYBZ for Business': `
               <div class="space-y-12">
-                  <!-- Hero Section -->
-                  <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-sunset-orange via-sunset-orange/80 to-amber-500 p-8 md:p-12 text-center">
-                      <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMwMDAiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50"></div>
-                      <div class="relative z-10">
-                          <div class="inline-flex items-center gap-2 bg-black/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
-                              <img src="./images/badges/business.svg" alt="Business Badge" class="w-6 h-6">
-                              <span class="text-sm font-semibold text-black/80">VYBZ for Business</span>
+                  <!-- HERO SECTION -->
+                  <section class="relative isolate overflow-hidden rounded-3xl min-h-[500px] flex flex-col items-center justify-center text-center px-6 border border-white/10">
+                      <!-- Animated BG -->
+                      <div class="absolute inset-0 bg-main-black">
+                           <div class="absolute inset-0 bg-gradient-to-tr from-sunset-orange/10 via-black to-black opacity-80"></div>
+                           <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-sunset-orange/20 rounded-full blur-[120px] animate-pulse-glow"></div>
+                      </div>
+                      
+                      <div class="relative z-10 max-w-4xl mx-auto">
+                          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-md mb-6 animate-[fadeIn_1s_ease-out]">
+                              <img src="./images/badges/business.svg" alt="Business Badge" class="w-4 h-4">
+                              <span class="text-[10px] uppercase tracking-widest text-zinc-300 font-bold">VYBZ for Business</span>
                           </div>
-                          <h2 class="text-3xl md:text-5xl font-bold text-black mb-4 leading-tight">
-                              Connect with customers<br>like never before
-                          </h2>
-                          <p class="text-lg md:text-xl text-black/70 max-w-2xl mx-auto mb-8">
+                          
+                          <h1 class="text-4xl md:text-6xl font-black text-white tracking-tight leading-none mb-6 animate-[fadeIn_1s_ease-out_0.2s_both]">
+                              CONNECT WITH CUSTOMERS <br>
+                              <span class="text-transparent bg-clip-text bg-gradient-to-r from-sunset-orange to-amber-500">LIKE NEVER BEFORE.</span>
+                          </h1>
+                          
+                          <p class="text-lg md:text-xl text-zinc-400 font-medium leading-relaxed mb-10 max-w-2xl mx-auto animate-[fadeIn_1s_ease-out_0.4s_both]">
                               Reach people in your neighbourhood the moment they're nearby. Real-time. Real connections. Real results.
                           </p>
-                          <a href="https://apps.apple.com/gb/app/vybz-meet-people-nearby/id1661684666" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-black text-white px-8 py-4 rounded-full font-semibold hover:bg-black/80 transition-colors">
-                              <iconify-icon icon="lucide:store" class="text-xl"></iconify-icon>
-                              Register Your Business
-                          </a>
+                          
+                          <div class="flex flex-col sm:flex-row gap-4 justify-center animate-[fadeIn_1s_ease-out_0.6s_both]">
+                              <a href="https://apps.apple.com/gb/app/vybz-meet-people-nearby/id1661684666" target="_blank" class="px-8 py-4 bg-white text-black rounded-full font-bold hover:scale-105 transition-transform flex items-center gap-2">
+                                  <iconify-icon icon="lucide:store" class="text-xl"></iconify-icon>
+                                  Register Your Business
+                              </a>
+                          </div>
                       </div>
-                  </div>
+                  </section>
 
-                  <!-- Features Grid -->
+                  <!-- FEATURES GRID -->
                   <div class="grid md:grid-cols-2 gap-6">
                       <!-- Feature 1: Promote -->
-                      <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-main-purple/20 to-main-purple/5 border border-main-purple/20 p-8 hover:border-main-purple/40 transition-all">
-                          <div class="absolute top-0 right-0 w-32 h-32 bg-main-purple/10 rounded-full blur-3xl group-hover:bg-main-purple/20 transition-all"></div>
+                      <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group hover:border-main-purple/50 transition-all duration-300">
+                          <div class="absolute top-0 right-0 w-32 h-32 bg-main-purple/20 rounded-full blur-3xl group-hover:bg-main-purple/30 transition-all"></div>
                           <div class="relative z-10">
-                              <div class="w-14 h-14 rounded-2xl bg-main-purple/20 flex items-center justify-center mb-6">
+                              <div class="w-14 h-14 rounded-2xl bg-main-purple/20 flex items-center justify-center mb-6 border border-main-purple/20">
                                   <iconify-icon icon="lucide:megaphone" class="text-2xl text-main-purple"></iconify-icon>
                               </div>
-                              <h3 class="text-xl font-bold text-white mb-3">Promote in the Neighbourhood</h3>
-                              <p class="text-zinc-400 leading-relaxed">
+                              <h3 class="text-2xl font-bold text-white mb-3">Promote locally</h3>
+                              <p class="text-zinc-400 leading-relaxed text-sm">
                                   Your posts reach everyone nearby. When someone walks past your venue, they see what you're offering. Lunch specials, events, promotions. Right place, right time.
                               </p>
                           </div>
                       </div>
 
                       <!-- Feature 2: Real-time Interaction -->
-                      <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-electric-blue/20 to-electric-blue/5 border border-electric-blue/20 p-8 hover:border-electric-blue/40 transition-all">
-                          <div class="absolute top-0 right-0 w-32 h-32 bg-electric-blue/10 rounded-full blur-3xl group-hover:bg-electric-blue/20 transition-all"></div>
+                      <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group hover:border-electric-blue/50 transition-all duration-300">
+                          <div class="absolute top-0 right-0 w-32 h-32 bg-electric-blue/20 rounded-full blur-3xl group-hover:bg-electric-blue/30 transition-all"></div>
                           <div class="relative z-10">
-                              <div class="w-14 h-14 rounded-2xl bg-electric-blue/20 flex items-center justify-center mb-6">
+                              <div class="w-14 h-14 rounded-2xl bg-electric-blue/20 flex items-center justify-center mb-6 border border-electric-blue/20">
                                   <iconify-icon icon="lucide:zap" class="text-2xl text-electric-blue"></iconify-icon>
                               </div>
-                              <h3 class="text-xl font-bold text-white mb-3">Real-Time In-Venue Interaction</h3>
-                              <p class="text-zinc-400 leading-relaxed">
+                              <h3 class="text-2xl font-bold text-white mb-3">Real-Time Interaction</h3>
+                              <p class="text-zinc-400 leading-relaxed text-sm">
                                   Engage with customers while they're actually at your location. Answer questions, take orders, share updates. The conversation happens where your business happens.
                               </p>
                           </div>
                       </div>
 
                       <!-- Feature 3: Direct Messaging -->
-                      <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-sunset-orange/20 to-sunset-orange/5 border border-sunset-orange/20 p-8 hover:border-sunset-orange/40 transition-all">
-                          <div class="absolute top-0 right-0 w-32 h-32 bg-sunset-orange/10 rounded-full blur-3xl group-hover:bg-sunset-orange/20 transition-all"></div>
+                      <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group hover:border-sunset-orange/50 transition-all duration-300">
+                          <div class="absolute top-0 right-0 w-32 h-32 bg-sunset-orange/20 rounded-full blur-3xl group-hover:bg-sunset-orange/30 transition-all"></div>
                           <div class="relative z-10">
-                              <div class="w-14 h-14 rounded-2xl bg-sunset-orange/20 flex items-center justify-center mb-6">
+                              <div class="w-14 h-14 rounded-2xl bg-sunset-orange/20 flex items-center justify-center mb-6 border border-sunset-orange/20">
                                   <iconify-icon icon="lucide:message-circle" class="text-2xl text-sunset-orange"></iconify-icon>
                               </div>
-                              <h3 class="text-xl font-bold text-white mb-3">Direct Customer Messaging</h3>
-                              <p class="text-zinc-400 leading-relaxed">
+                              <h3 class="text-2xl font-bold text-white mb-3">Direct Messaging</h3>
+                              <p class="text-zinc-400 leading-relaxed text-sm">
                                   Customers can message you directly. Questions about your menu, availability, reservations. No middleman. Just real conversations that convert.
                               </p>
                           </div>
                       </div>
 
                       <!-- Feature 4: Map Visibility -->
-                      <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-500/20 to-emerald-500/5 border border-emerald-500/20 p-8 hover:border-emerald-500/40 transition-all">
-                          <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-3xl group-hover:bg-emerald-500/20 transition-all"></div>
+                      <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group hover:border-emerald-500/50 transition-all duration-300">
+                          <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/20 rounded-full blur-3xl group-hover:bg-emerald-500/30 transition-all"></div>
                           <div class="relative z-10">
-                              <div class="w-14 h-14 rounded-2xl bg-emerald-500/20 flex items-center justify-center mb-6">
+                              <div class="w-14 h-14 rounded-2xl bg-emerald-500/20 flex items-center justify-center mb-6 border border-emerald-500/20">
                                   <iconify-icon icon="lucide:map-pin" class="text-2xl text-emerald-500"></iconify-icon>
                               </div>
-                              <h3 class="text-xl font-bold text-white mb-3">Visible on the Map</h3>
-                              <p class="text-zinc-400 leading-relaxed">
+                              <h3 class="text-2xl font-bold text-white mb-3">Map Visibility</h3>
+                              <p class="text-zinc-400 leading-relaxed text-sm">
                                   Your business appears on the VYBZ map. Users exploring the area can discover you, see what's happening, and walk right in. Foot traffic, amplified.
                               </p>
                           </div>
                       </div>
                   </div>
 
-                  <!-- Stats Section -->
-                  <div class="grid grid-cols-3 gap-4 md:gap-8">
-                      <div class="text-center p-6 rounded-2xl bg-white/5 border border-white/5">
-                          <p class="text-3xl md:text-4xl font-bold text-main-purple mb-2">100%</p>
-                          <p class="text-sm text-zinc-500">Local Reach</p>
+                  <!-- STATS SECTION -->
+                  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                      <div class="glass-panel p-8 rounded-3xl text-center hover:scale-[1.02] transition-transform duration-300">
+                          <p class="text-5xl font-black text-white mb-2 tracking-tighter">100%</p>
+                          <p class="text-sm font-bold text-zinc-500 uppercase tracking-wide">Local Reach</p>
                       </div>
-                      <div class="text-center p-6 rounded-2xl bg-white/5 border border-white/5">
-                          <p class="text-3xl md:text-4xl font-bold text-sunset-orange mb-2">Real-Time</p>
-                          <p class="text-sm text-zinc-500">Customer Engagement</p>
+                      <div class="glass-panel p-8 rounded-3xl text-center hover:scale-[1.02] transition-transform duration-300">
+                          <p class="text-5xl font-black text-sunset-orange mb-2 tracking-tighter">Real-Time</p>
+                          <p class="text-sm font-bold text-zinc-500 uppercase tracking-wide">Engagement</p>
                       </div>
-                      <div class="text-center p-6 rounded-2xl bg-white/5 border border-white/5">
-                          <p class="text-3xl md:text-4xl font-bold text-electric-blue mb-2">Free</p>
-                          <p class="text-sm text-zinc-500">To Get Started</p>
-                      </div>
-                  </div>
-
-                  <!-- How It Works -->
-                  <div class="glass-panel p-8 md:p-10 rounded-2xl">
-                      <h2 class="text-2xl font-bold text-white mb-8 text-center">How It Works</h2>
-                      <div class="grid md:grid-cols-3 gap-8">
-                          <div class="text-center">
-                              <div class="w-12 h-12 rounded-full bg-main-purple/20 flex items-center justify-center mx-auto mb-4">
-                                  <span class="text-xl font-bold text-main-purple">1</span>
-                              </div>
-                              <h4 class="font-semibold text-white mb-2">Download & Register</h4>
-                              <p class="text-sm text-zinc-400">Get the app and create a business account. It takes 2 minutes.</p>
-                          </div>
-                          <div class="text-center">
-                              <div class="w-12 h-12 rounded-full bg-sunset-orange/20 flex items-center justify-center mx-auto mb-4">
-                                  <span class="text-xl font-bold text-sunset-orange">2</span>
-                              </div>
-                              <h4 class="font-semibold text-white mb-2">Get Verified</h4>
-                              <p class="text-sm text-zinc-400">We review your business within 3 days. You'll get the verified badge.</p>
-                          </div>
-                          <div class="text-center">
-                              <div class="w-12 h-12 rounded-full bg-electric-blue/20 flex items-center justify-center mx-auto mb-4">
-                                  <span class="text-xl font-bold text-electric-blue">3</span>
-                              </div>
-                              <h4 class="font-semibold text-white mb-2">Start Connecting</h4>
-                              <p class="text-sm text-zinc-400">Post updates, appear on the map, and engage with customers nearby.</p>
-                          </div>
+                      <div class="glass-panel p-8 rounded-3xl text-center hover:scale-[1.02] transition-transform duration-300">
+                          <p class="text-5xl font-black text-electric-blue mb-2 tracking-tighter">Free</p>
+                          <p class="text-sm font-bold text-zinc-500 uppercase tracking-wide">To Start</p>
                       </div>
                   </div>
 
-                  <!-- CTA Section -->
-                  <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-main-purple to-electric-blue p-8 md:p-12 text-center">
-                      <div class="absolute inset-0 bg-black/20"></div>
-                      <div class="relative z-10">
-                          <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">Ready to grow your business?</h2>
-                          <p class="text-white/80 mb-8 max-w-xl mx-auto">Join businesses across Riyadh, Dubai, and Kuwait who are already connecting with customers on VYBZ.</p>
-                          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                              <a href="https://apps.apple.com/gb/app/vybz-meet-people-nearby/id1661684666" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-white text-black px-8 py-4 rounded-full font-semibold hover:bg-white/90 transition-colors">
-                                  <iconify-icon icon="lucide:download"></iconify-icon>
-                                  Download VYBZ
-                              </a>
-                              <a href="#" onclick="showLegal('Account Types'); return false;" class="inline-flex items-center justify-center gap-2 bg-white/20 text-white px-8 py-4 rounded-full font-semibold hover:bg-white/30 transition-colors backdrop-blur-sm">
-                                  <iconify-icon icon="lucide:badge-check"></iconify-icon>
-                                  Learn About Verification
-                              </a>
+                  <!-- HOW IT WORKS -->
+                  <div class="relative border border-white/10 rounded-3xl p-8 md:p-12 bg-white/[0.02]">
+                      <h2 class="text-3xl font-bold text-white mb-10 text-center">How It Works</h2>
+                      <div class="grid md:grid-cols-3 gap-10 relative">
+                           <!-- Connector Line (Desktop) -->
+                           <div class="hidden md:block absolute top-6 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+                           
+                          <div class="text-center relative z-10">
+                              <div class="w-14 h-14 rounded-full bg-[#111] border border-white/20 flex items-center justify-center mx-auto mb-6 shadow-xl">
+                                  <span class="text-xl font-bold text-white">1</span>
+                              </div>
+                              <h4 class="text-lg font-bold text-white mb-3">Download & Register</h4>
+                              <p class="text-sm text-zinc-400 leading-relaxed">Get the app and create a business account. It takes 2 minutes.</p>
                           </div>
+                          <div class="text-center relative z-10">
+                              <div class="w-14 h-14 rounded-full bg-[#111] border border-white/20 flex items-center justify-center mx-auto mb-6 shadow-xl">
+                                  <span class="text-xl font-bold text-white">2</span>
+                              </div>
+                              <h4 class="text-lg font-bold text-white mb-3">Get Verified</h4>
+                              <p class="text-sm text-zinc-400 leading-relaxed">We review your business within 3 days. You'll get the verified badge.</p>
+                          </div>
+                          <div class="text-center relative z-10">
+                              <div class="w-14 h-14 rounded-full bg-[#111] border border-white/20 flex items-center justify-center mx-auto mb-6 shadow-xl">
+                                  <span class="text-xl font-bold text-white">3</span>
+                              </div>
+                              <h4 class="text-lg font-bold text-white mb-3">Start Connecting</h4>
+                              <p class="text-sm text-zinc-400 leading-relaxed">Post updates, appear on the map, and engage with customers nearby.</p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- BOTTOM CTA -->
+                  <div class="text-center py-12">
+                      <h2 class="text-2xl md:text-3xl font-bold text-white mb-6">Ready to grow your business?</h2>
+                      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                          <a href="https://apps.apple.com/gb/app/vybz-meet-people-nearby/id1661684666" target="_blank" class="inline-flex items-center justify-center gap-2 bg-white text-black px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform">
+                              <iconify-icon icon="lucide:download"></iconify-icon>
+                              Download VYBZ
+                          </a>
+                          <a href="#" onclick="showLegal('Account Types'); return false;" class="inline-flex items-center justify-center gap-2 bg-white/10 text-white px-8 py-4 rounded-full font-bold hover:bg-white/20 transition-all border border-white/10">
+                              <iconify-icon icon="lucide:badge-check"></iconify-icon>
+                              About Verification
+                          </a>
                       </div>
                   </div>
               </div>
