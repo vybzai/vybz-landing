@@ -3008,16 +3008,27 @@ html.legal-route #home { display: none !important; }
           history.scrollRestoration = 'manual';
       }
 
-      function scrollToTopInstant() {
-          try {
-              window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
-          } catch (e) {
-              window.scrollTo(0, 0);
-          }
-      }
+	      function scrollToTopInstant() {
+	          const html = document.documentElement;
+	          const body = document.body;
+	          const prevHtmlScrollBehavior = html.style.scrollBehavior;
+	          const prevBodyScrollBehavior = body ? body.style.scrollBehavior : '';
+
+	          html.style.scrollBehavior = 'auto';
+	          if (body) body.style.scrollBehavior = 'auto';
+
+	          try {
+	              window.scrollTo(0, 0);
+	          } finally {
+	              html.style.scrollBehavior = prevHtmlScrollBehavior;
+	              if (body) body.style.scrollBehavior = prevBodyScrollBehavior;
+	          }
+	      }
 
 	      function showPage(pageId, updateUrl, options) {
 	          const shouldScrollToTop = !(options && options.scrollToTop === false);
+	          const onShown = options && typeof options.onShown === 'function' ? options.onShown : null;
+
 	          if (shouldScrollToTop) scrollToTopInstant();
 
           // Remove legal-route class when going to home (allows proper display)
@@ -3025,19 +3036,18 @@ html.legal-route #home { display: none !important; }
               document.documentElement.classList.remove('legal-route');
           }
 
-          const onShown = options && typeof options.onShown === 'function' ? options.onShown : null;
-
-          document.querySelectorAll('.page-content').forEach(el => {
-              el.classList.remove('active');
-              setTimeout(() => { if(!el.classList.contains('active')) el.style.display = 'none'; }, 400);
-          });
-          const target = document.getElementById(pageId === 'home' ? 'home' : 'legal-content');
-          target.style.display = 'block';
-          setTimeout(() => {
-              target.classList.add('active');
-              if (typeof ScrollTrigger !== 'undefined' && pageId === 'home') ScrollTrigger.refresh();
-              if (onShown) onShown();
-          }, 50);
+	          document.querySelectorAll('.page-content').forEach(el => {
+	              el.classList.remove('active');
+	              setTimeout(() => { if(!el.classList.contains('active')) el.style.display = 'none'; }, 400);
+	          });
+	          const target = document.getElementById(pageId === 'home' ? 'home' : 'legal-content');
+	          target.style.display = 'block';
+	          setTimeout(() => {
+	              target.classList.add('active');
+	              if (typeof ScrollTrigger !== 'undefined' && pageId === 'home') ScrollTrigger.refresh();
+	              if (shouldScrollToTop) scrollToTopInstant();
+	              if (onShown) onShown();
+	          }, 50);
 
 	          // Update URL for home
 	          if (updateUrl !== false && pageId === 'home') {
