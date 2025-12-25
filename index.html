@@ -141,7 +141,19 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
 /* PAGE TRANSITIONS */
 .page-content { display: none; opacity: 0; transition: opacity 0.4s ease; }
 .page-content.active { display: block; opacity: 1; }
-</style></head>
+/* Hide home immediately when on legal page route */
+html.legal-route #home { display: none !important; }
+</style>
+<script>
+// Early route detection - prevent home page flash on legal page URLs
+(function() {
+  var path = window.location.pathname.replace(/^\//, '').replace(/\/$/, '');
+  if (path && path !== 'home' && path !== 'index.html') {
+    document.documentElement.classList.add('legal-route');
+  }
+})();
+</script>
+</head>
 
   <body class="min-h-screen flex flex-col">
     <!-- NAV -->
@@ -541,7 +553,7 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
           <iconify-icon icon="lucide:arrow-left"></iconify-icon>
           Back to Home
         </button>
-        <h1 id="legal-title" class="text-3xl md:text-4xl font-bold text-white mb-8"></h1>
+        <h1 id="legal-title" class="text-3xl md:text-4xl font-bold text-white mb-12"></h1>
         <div id="legal-body" class="prose prose-invert prose-p:text-zinc-400 prose-headings:text-white max-w-none"></div>
       </div>
     </main>
@@ -2830,6 +2842,12 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
       // NAVIGATION LOGIC
       function showPage(pageId, updateUrl) {
           window.scrollTo(0,0);
+
+          // Remove legal-route class when going to home (allows proper display)
+          if (pageId === 'home') {
+              document.documentElement.classList.remove('legal-route');
+          }
+
           document.querySelectorAll('.page-content').forEach(el => {
               el.classList.remove('active');
               setTimeout(() => { if(!el.classList.contains('active')) el.style.display = 'none'; }, 400);
@@ -2878,6 +2896,13 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
               // Home page - replace state so back button works correctly
               history.replaceState({ page: 'home' }, '', '/');
               return;
+          }
+
+          // Immediately hide home page (no transition) when loading a legal page directly
+          const home = document.getElementById('home');
+          if (home) {
+              home.classList.remove('active');
+              home.style.display = 'none';
           }
 
           const pageName = slugToPage[path];
