@@ -104,6 +104,7 @@ images/
 ├── map/        # Riyadh map section assets
 ├── avatars/    # User pin avatars
 ├── logos/      # VYBZ brand assets (SVG)
+├── screens/    # App screenshots for product sections
 └── og-image.png
 ```
 
