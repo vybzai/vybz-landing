@@ -338,7 +338,7 @@ html.legal-route #home { display: none !important; }
           <a href="#" onclick="showPage('home')" class="px-5 py-1.5 text-xs font-medium text-white bg-white/10 rounded-full transition-all hover:bg-white/15">
             Home
           </a>
-          <a href="#how" class="px-5 py-1.5 text-xs font-medium text-zinc-400 hover:text-white transition-all">
+          <a href="#how" onclick="scrollToHow(); return false;" class="px-5 py-1.5 text-xs font-medium text-zinc-400 hover:text-white transition-all">
             How it works
           </a>
         </div>
@@ -3075,6 +3075,27 @@ html.legal-route #home { display: none !important; }
           document.addEventListener('DOMContentLoaded', initRouter);
       } else {
           initRouter();
+      }
+
+      // Scroll to How It Works section
+      function scrollToHow() {
+          // Ensure home page is visible first
+          const home = document.getElementById('home');
+          if (home) {
+              document.documentElement.classList.remove('legal-route');
+              document.querySelectorAll('.page-content').forEach(el => {
+                  el.classList.remove('active');
+                  el.style.display = 'none';
+              });
+              home.style.display = 'block';
+              home.classList.add('active');
+              history.pushState({ page: 'home' }, '', '/');
+          }
+          // Scroll to the #how section
+          const howSection = document.getElementById('how');
+          if (howSection) {
+              howSection.scrollIntoView({ behavior: 'smooth' });
+          }
       }
 
       // Calendar View Toggle
