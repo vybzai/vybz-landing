@@ -1,0 +1,179 @@
+# VYBZ - Complete Documentation
+
+> VYBZ is a real-time, location-first social app for meeting people around you. Available in Riyadh, Dubai, and Kuwait. No dating, no swiping - just genuine connections at cafes, universities, and local hangouts.
+
+---
+
+## What is VYBZ?
+
+VYBZ is a location-first social app for meeting people around you. In real life, in real time. Whether you're in your dorm, in class, or at your favourite hangout, VYBZ shows you who's nearby, what's happening, and lets you jump into conversations tied to real places.
+
+The app is built around one dynamic feed that adapts to where you are and how many people are around. It works for quick moments right here, right now, or for seeing what's going on in your area. Explore who's nearby, share what you're up to, and turn those moments into real connections.
+
+### Core Concept
+
+VYBZ bridges the gap between online and offline social interaction. Instead of endless scrolling through curated content, VYBZ connects you with real people in real places, right now.
+
+---
+
+## Key Features
+
+### 1. Location Feed
+See what's happening at your exact location in real-time. Posts from people at the same cafe, campus building, or venue appear in your feed.
+
+### 2. Neighbourhood Feed
+Discover activity across your wider area. See what's trending in your neighbourhood, upcoming events, and active spots.
+
+### 3. Map View
+Visual pins on a map showing where people are and what they're doing. Discover busy spots and interesting conversations nearby.
+
+### 4. Direct Messaging
+Connect with people you meet through the app. Start conversations that began at a location and continue them anywhere.
+
+### 5. Business Accounts
+Verified local businesses can create profiles, post updates, and engage with customers who are actually at or near their location.
+
+---
+
+## Account Types & Verification
+
+VYBZ has different account types with verification badges:
+
+### Verified Account (Black Badge)
+For individuals who have completed identity verification. Shows you're a real person.
+
+### VYBZ Team (Purple Badge)
+Official VYBZ employees and team members.
+
+### Ambassador (Purple Badge with Speaker Icon)
+Community ambassadors who help grow and moderate the VYBZ community.
+
+### Business Account (Purple Badge with Dollar Icon)
+Verified businesses that have been approved to engage with customers on the platform.
+
+---
+
+## VYBZ for Business
+
+Local businesses can use VYBZ to:
+
+- **Appear on the Map**: Your business shows up when users explore nearby
+- **Real-Time Engagement**: Chat with customers while they're at your location
+- **Direct Messaging**: Answer questions about menu, availability, reservations
+- **Post Updates**: Share specials, events, and what's happening now
+
+### How to Get Started
+1. Download VYBZ and create a business account
+2. Submit verification (reviewed within 3 days)
+3. Start posting and engaging with nearby customers
+
+---
+
+## Ambassador Program
+
+### What it Means to be an Ambassador
+
+As a VYBZ Ambassador, you're the catalyst for genuine connections. You ignite engaging conversations and represent your community.
+
+**Three Pillars:**
+- **Inspire and Impact**: Share moments from day-to-day life that motivate people
+- **Represent**: Turn online interactions into personal connections
+- **Connect**: Engage with your community at events and local spots
+
+### Responsibilities
+- **Content Creation**: Regularly post authentic content
+- **Critical Feedback**: Participate in feedback sessions to shape the app
+- **Community Participation**: Be present in group DMs and local events
+
+### Perks
+- Earn rewards for active participation
+- Exclusive access to promotions from partner businesses
+- Connect with like-minded creators and community members
+
+*Note: The ambassador program is currently being finalized for different regions.*
+
+---
+
+## Community Guidelines
+
+### Your Identity
+- Use your accurate date of birth and phone number during verification
+- Don't impersonate others or deceive about your identity
+- Don't spam or send unwanted messages
+- Don't use feeds for business advertising (use Business accounts instead)
+
+### Content Rules
+- No nudity or sexually explicit content
+- No harassment or bullying
+- No hate speech or discrimination
+- No violence or threats
+- No illegal activities
+- No misinformation or fake content
+
+### Privacy & Safety
+- Don't share others' personal information without consent
+- Don't post images of people in private spaces without permission
+- Respect when someone asks you to remove content featuring them
+
+---
+
+## Privacy & Data
+
+### What We Collect
+- Location data (only when app is in use)
+- Profile information you provide
+- Content you post
+- Device information for app functionality
+
+### How We Use It
+- To show you relevant nearby content
+- To connect you with people in your area
+- To improve app features and safety
+- We never sell your personal data
+
+### Your Controls
+- You control when location sharing is active
+- You can delete your account and data anytime
+- You choose what to share on your profile
+
+---
+
+## Technical Information
+
+- **Platform**: iOS (Android coming soon)
+- **Availability**: Riyadh (Saudi Arabia), Dubai (UAE), Kuwait
+- **Company**: VYBZ Inc.
+- **Headquarters**: 24 Dering Street, London W1S 1BL, United Kingdom
+
+---
+
+## Contact & Support
+
+- **Email**: support@vybzapp.com
+- **Website**: https://vybzapp.com
+- **App Store**: https://apps.apple.com/gb/app/vybz-meet-people-nearby/id1661684666
+
+---
+
+## Legal Links
+
+- Privacy Policy: https://vybzapp.com/privacy-policy
+- Terms of Use: https://vybzapp.com/terms-of-use
+- EULA: https://vybzapp.com/eula
+- Cookie Policy: https://vybzapp.com/cookie-policy
+- Community Guidelines: https://vybzapp.com/community-guidelines
+
+---
+
+## Trademark Notice
+
+VYBZ is a registered trademark owned by VYBZ Inc. in:
+- United States (Registration No: 6342707)
+- European Union (Registration No: 018146753)
+- United Kingdom (Registration No: UK00003441428)
+
+Any unauthorised use is expressly prohibited.
+
+---
+
+*Last updated: December 2025*

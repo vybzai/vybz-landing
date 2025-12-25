@@ -1,0 +1,46 @@
+# VYBZ
+
+> VYBZ is a real-time, location-first social app for meeting people around you. Available in Riyadh, Dubai, and Kuwait. No dating, no swiping - just genuine connections at cafes, universities, and local hangouts.
+
+VYBZ shows you who's nearby, what's happening, and lets you jump into conversations tied to real places. The app is built around one dynamic feed that adapts to where you are and how many people are around.
+
+## Core Features
+
+- **Location Feed**: See what's happening at your exact location in real-time
+- **Neighbourhood Feed**: Discover activity across your wider area
+- **Map View**: Visual pins showing where people are and what they're doing
+- **Direct Messaging**: Connect with people you meet through the app
+- **Business Accounts**: Verified local businesses can engage with customers
+
+## About
+
+- [About Us](https://vybzapp.com/about-us): Company mission, team, and app overview
+- [Community Guidelines](https://vybzapp.com/community-guidelines): Rules for respectful app usage
+
+## Legal
+
+- [Privacy Policy](https://vybzapp.com/privacy-policy): How we handle your data
+- [Terms of Use](https://vybzapp.com/terms-of-use): User agreement and conditions
+- [EULA](https://vybzapp.com/eula): End User License Agreement
+- [Cookie Policy](https://vybzapp.com/cookie-policy): Cookie usage information
+
+## Programs
+
+- [VYBZ for Business](https://vybzapp.com/vybz-for-business): Features for local businesses to connect with customers
+- [Become an Ambassador](https://vybzapp.com/become-an-ambassador): Join our ambassador program
+- [Account Types](https://vybzapp.com/account-types): Verification badges and account levels
+
+## Download
+
+- [iOS App Store](https://apps.apple.com/gb/app/vybz-meet-people-nearby/id1661684666): Download VYBZ for iPhone
+
+## Contact
+
+- **Support**: support@vybzapp.com
+- **Website**: https://vybzapp.com
+- **Address**: 24 Dering Street, London W1S 1BL, United Kingdom
+
+## Optional
+
+- [Parental Guide](https://vybzapp.com/parental-guide): Information for parents about app safety
+- [Ambassador Calendar](https://vybzapp.com/ambassador-calendar): Events calendar for ambassadors
