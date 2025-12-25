@@ -2994,13 +2994,16 @@ html.legal-route #home { display: none !important; }
       }
 
       // NAVIGATION LOGIC
-      function showPage(pageId, updateUrl) {
-          window.scrollTo(0,0);
+      function showPage(pageId, updateUrl, options) {
+          const shouldScrollToTop = !(options && options.scrollToTop === false);
+          if (shouldScrollToTop) window.scrollTo(0, 0);
 
           // Remove legal-route class when going to home (allows proper display)
           if (pageId === 'home') {
               document.documentElement.classList.remove('legal-route');
           }
+
+          const onShown = options && typeof options.onShown === 'function' ? options.onShown : null;
 
           document.querySelectorAll('.page-content').forEach(el => {
               el.classList.remove('active');
@@ -3008,7 +3011,11 @@ html.legal-route #home { display: none !important; }
           });
           const target = document.getElementById(pageId === 'home' ? 'home' : 'legal-content');
           target.style.display = 'block';
-          setTimeout(() => { target.classList.add('active'); if(typeof ScrollTrigger !== 'undefined' && pageId === 'home') ScrollTrigger.refresh(); }, 50);
+          setTimeout(() => {
+              target.classList.add('active');
+              if (typeof ScrollTrigger !== 'undefined' && pageId === 'home') ScrollTrigger.refresh();
+              if (onShown) onShown();
+          }, 50);
 
           // Update URL for home
           if (updateUrl !== false && pageId === 'home') {
@@ -3079,23 +3086,29 @@ html.legal-route #home { display: none !important; }
 
       // Scroll to How It Works section
       function scrollToHow() {
-          // Ensure home page is visible first
+          const scroll = () => {
+              const howSection = document.getElementById('how');
+              if (!howSection) return;
+
+              const nav = document.querySelector('nav');
+              const headerOffset = nav ? nav.offsetHeight : 0;
+              const extraOffset = 16;
+
+              const top = howSection.getBoundingClientRect().top + window.pageYOffset - headerOffset - extraOffset;
+              window.scrollTo({ top: Math.max(top, 0), behavior: 'smooth' });
+          };
+
           const home = document.getElementById('home');
-          if (home) {
-              document.documentElement.classList.remove('legal-route');
-              document.querySelectorAll('.page-content').forEach(el => {
-                  el.classList.remove('active');
-                  el.style.display = 'none';
-              });
-              home.style.display = 'block';
-              home.classList.add('active');
-              history.pushState({ page: 'home' }, '', '/');
+          const isHomeVisible = home && home.classList.contains('active') && getComputedStyle(home).display !== 'none';
+          if (isHomeVisible) {
+              requestAnimationFrame(scroll);
+              return;
           }
-          // Scroll to the #how section
-          const howSection = document.getElementById('how');
-          if (howSection) {
-              howSection.scrollIntoView({ behavior: 'smooth' });
-          }
+
+          showPage('home', undefined, {
+              scrollToTop: false,
+              onShown: () => requestAnimationFrame(scroll),
+          });
       }
 
       // Calendar View Toggle
