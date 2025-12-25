@@ -529,6 +529,10 @@ html.legal-route #home { display: none !important; }
 
         <!-- SECTION 2: TRENDING VIBES -->
         <section class="py-16 sm:py-20 md:py-24 relative overflow-hidden bg-main-black border-t border-white/5">
+          <!-- Background Gradient Orbs -->
+          <div class="absolute left-0 top-1/4 w-[400px] h-[400px] bg-main-purple/5 rounded-full blur-[100px] pointer-events-none"></div>
+          <div class="absolute right-0 bottom-0 w-[300px] h-[300px] bg-sunset-orange/5 rounded-full blur-[100px] pointer-events-none"></div>
+
           <div class="max-w-7xl mx-auto px-4 sm:px-6 mb-8 sm:mb-10 md:mb-12 flex items-end justify-between gap-4">
             <div>
               <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight mb-2">
@@ -540,113 +544,181 @@ html.legal-route #home { display: none !important; }
             </div>
             <!-- Navigation Arrows -->
             <div class="hidden md:flex gap-2">
-              <button class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5 text-white/50 hover:text-white transition-colors" aria-label="Previous vibes">
+              <button class="w-10 h-10 rounded-full glass-panel flex items-center justify-center hover:bg-white/10 text-white/50 hover:text-white transition-all duration-300" aria-label="Previous vibes">
                 <iconify-icon icon="lucide:arrow-left" aria-hidden="true"></iconify-icon>
               </button>
-              <button class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5 text-white/50 hover:text-white transition-colors" aria-label="Next vibes">
+              <button class="w-10 h-10 rounded-full glass-panel flex items-center justify-center hover:bg-white/10 text-white/50 hover:text-white transition-all duration-300" aria-label="Next vibes">
                 <iconify-icon icon="lucide:arrow-right" aria-hidden="true"></iconify-icon>
               </button>
             </div>
           </div>
 
           <!-- Carousel -->
-          <div class="flex overflow-x-auto snap-x snap-mandatory gap-4 sm:gap-5 md:gap-6 px-4 sm:px-6 pb-12 sm:pb-14 md:pb-16 no-scrollbar">
+          <div class="flex overflow-x-auto snap-x snap-mandatory gap-5 sm:gap-6 md:gap-8 px-4 sm:px-6 pb-12 sm:pb-14 md:pb-16 no-scrollbar">
             <!-- Card 1: Coffee -->
-            <div class="min-w-[280px] md:min-w-[320px] snap-center">
-              <div class="bg-polaroid-white p-3 pb-6 rounded-2xl shadow-[0_0_30px_rgba(255,255,255,0.03)] transform -rotate-1 hover:rotate-0 transition-all duration-500 group cursor-pointer h-full">
-                <div class="aspect-[4/5] bg-zinc-200 overflow-hidden rounded-lg relative mb-4 transform-gpu isolate [-webkit-mask-image:-webkit-radial-gradient(white,black)]">
-                  <img src="./images/cards/coffee.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter saturate-[0.85] group-hover:saturate-100" alt="Friends meeting for coffee at a local Riyadh cafe on VYBZ" loading="lazy" width="320" height="400">
-                  <div class="absolute bottom-3 left-3">
-                    <div class="px-3 py-1.5 bg-black/70 backdrop-blur-md rounded-full border border-white/10 flex items-center gap-1.5 shadow-lg">
-                      <span class="text-xs">☕</span>
-                      <span class="text-[10px] font-bold text-white uppercase tracking-wide">
+            <div class="min-w-[280px] md:min-w-[320px] snap-center flex-shrink-0 self-start">
+              <div class="glass-panel rounded-3xl overflow-hidden transform -rotate-1 hover:rotate-0 hover:scale-[1.02] hover:border-main-purple/30 transition-all duration-500 group cursor-pointer">
+                <!-- Image Container -->
+                <div class="aspect-[4/5] w-full overflow-hidden relative transform-gpu isolate [-webkit-mask-image:-webkit-radial-gradient(white,black)]">
+                  <img src="./images/cards/coffee.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Friends meeting for coffee at a local Riyadh cafe on VYBZ" loading="lazy" width="320" height="400">
+                  <!-- Top Gradient Overlay for badges -->
+                  <div class="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/60 via-black/30 to-transparent pointer-events-none"></div>
+                  <!-- Bottom Gradient Overlay for content -->
+                  <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black/80 via-black/40 to-transparent pointer-events-none"></div>
+                  <!-- Category Badge -->
+                  <div class="absolute top-4 left-4">
+                    <div class="px-3 py-1.5 bg-main-purple/20 backdrop-blur-md rounded-full border border-main-purple/30 flex items-center gap-2">
+                      <span class="text-sm">☕</span>
+                      <span class="text-[10px] font-bold text-main-purple uppercase tracking-wide">
                         Specialty Coffee
                       </span>
                     </div>
                   </div>
-                </div>
-                <div class="px-2">
-                  <h3 class="font-bold text-black text-lg leading-none mb-1.5">
-                    Elixir Bunn
-                  </h3>
-                  <p class="text-zinc-500 text-xs font-medium">
-                    Riyadh • 0.8km away
-                  </p>
+                  <!-- Live Indicator -->
+                  <div class="absolute top-4 right-4">
+                    <div class="px-2.5 py-1 bg-green-500/20 backdrop-blur-md rounded-full border border-green-500/30 flex items-center gap-1.5">
+                      <span class="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></span>
+                      <span class="text-[9px] font-bold text-green-400 uppercase tracking-wide">Live</span>
+                    </div>
+                  </div>
+                  <!-- Content Overlay -->
+                  <div class="absolute bottom-0 left-0 right-0 p-5">
+                    <h3 class="font-bold text-white text-xl leading-tight mb-1.5 group-hover:text-main-purple transition-colors">
+                      Elixir Bunn
+                    </h3>
+                    <div class="flex items-center gap-2 text-zinc-400 text-sm">
+                      <iconify-icon icon="lucide:map-pin" class="text-main-purple text-xs"></iconify-icon>
+                      <span>Riyadh</span>
+                      <span class="text-zinc-600">•</span>
+                      <span>0.8km away</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
             <!-- Card 2: Desert -->
-            <div class="min-w-[280px] md:min-w-[320px] snap-center pt-8">
-              <div class="bg-polaroid-white p-3 pb-6 rounded-2xl shadow-[0_0_30px_rgba(255,255,255,0.03)] transform rotate-1 hover:rotate-0 transition-all duration-500 group cursor-pointer h-full">
-                <div class="aspect-[4/5] bg-zinc-200 overflow-hidden rounded-lg relative mb-4 transform-gpu isolate [-webkit-mask-image:-webkit-radial-gradient(white,black)]">
-                  <img src="./images/cards/desert.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter saturate-[0.85] group-hover:saturate-100" alt="Adventure seekers exploring desert activities near Dubai" loading="lazy" width="320" height="400">
-                  <div class="absolute bottom-3 left-3">
-                    <div class="px-3 py-1.5 bg-black/70 backdrop-blur-md rounded-full border border-white/10 flex items-center gap-1.5 shadow-lg">
-                      <span class="text-xs">⛺</span>
-                      <span class="text-[10px] font-bold text-white uppercase tracking-wide">
+            <div class="min-w-[280px] md:min-w-[320px] snap-center flex-shrink-0 self-start pt-8">
+              <div class="glass-panel rounded-3xl overflow-hidden transform rotate-1 hover:rotate-0 hover:scale-[1.02] hover:border-sunset-orange/30 transition-all duration-500 group cursor-pointer">
+                <!-- Image Container -->
+                <div class="aspect-[4/5] w-full overflow-hidden relative transform-gpu isolate [-webkit-mask-image:-webkit-radial-gradient(white,black)]">
+                  <img src="./images/cards/desert.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Adventure seekers exploring desert activities near Dubai" loading="lazy" width="320" height="400">
+                  <!-- Top Gradient Overlay for badges -->
+                  <div class="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/60 via-black/30 to-transparent pointer-events-none"></div>
+                  <!-- Bottom Gradient Overlay for content -->
+                  <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black/80 via-black/40 to-transparent pointer-events-none"></div>
+                  <!-- Category Badge -->
+                  <div class="absolute top-4 left-4">
+                    <div class="px-3 py-1.5 bg-sunset-orange/20 backdrop-blur-md rounded-full border border-sunset-orange/30 flex items-center gap-2">
+                      <span class="text-sm">⛺</span>
+                      <span class="text-[10px] font-bold text-sunset-orange uppercase tracking-wide">
                         Winter Camping
                       </span>
                     </div>
                   </div>
-                </div>
-                <div class="px-2">
-                  <h3 class="font-bold text-black text-lg leading-none mb-1.5">
-                    Thumama Dunes
-                  </h3>
-                  <p class="text-zinc-500 text-xs font-medium">
-                    Riyadh • 32km away
-                  </p>
+                  <!-- Trending Badge -->
+                  <div class="absolute top-4 right-4">
+                    <div class="px-2.5 py-1 bg-sunset-orange/20 backdrop-blur-md rounded-full border border-sunset-orange/30 flex items-center gap-1.5">
+                      <iconify-icon icon="lucide:trending-up" class="text-sunset-orange text-xs"></iconify-icon>
+                      <span class="text-[9px] font-bold text-sunset-orange uppercase tracking-wide">Hot</span>
+                    </div>
+                  </div>
+                  <!-- Content Overlay -->
+                  <div class="absolute bottom-0 left-0 right-0 p-5">
+                    <h3 class="font-bold text-white text-xl leading-tight mb-1.5 group-hover:text-sunset-orange transition-colors">
+                      Thumama Dunes
+                    </h3>
+                    <div class="flex items-center gap-2 text-zinc-400 text-sm">
+                      <iconify-icon icon="lucide:map-pin" class="text-sunset-orange text-xs"></iconify-icon>
+                      <span>Riyadh</span>
+                      <span class="text-zinc-600">•</span>
+                      <span>32km away</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
             <!-- Card 3: Gaming -->
-            <div class="min-w-[280px] md:min-w-[320px] snap-center">
-              <div class="bg-polaroid-white p-3 pb-6 rounded-2xl shadow-[0_0_30px_rgba(255,255,255,0.03)] transform -rotate-2 hover:rotate-0 transition-all duration-500 group cursor-pointer h-full">
-                <div class="aspect-[4/5] bg-zinc-200 overflow-hidden rounded-lg relative mb-4 transform-gpu isolate [-webkit-mask-image:-webkit-radial-gradient(white,black)]">
-                  <img src="./images/cards/gaming.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter saturate-[0.85] group-hover:saturate-100" alt="Gamers connecting at local gaming lounges in Kuwait" loading="lazy" width="320" height="400">
-                  <div class="absolute bottom-3 left-3">
-                    <div class="px-3 py-1.5 bg-black/70 backdrop-blur-md rounded-full border border-white/10 flex items-center gap-1.5 shadow-lg">
-                      <span class="text-xs">🎮</span>
-                      <span class="text-[10px] font-bold text-white uppercase tracking-wide">
+            <div class="min-w-[280px] md:min-w-[320px] snap-center flex-shrink-0 self-start">
+              <div class="glass-panel rounded-3xl overflow-hidden transform -rotate-2 hover:rotate-0 hover:scale-[1.02] hover:border-electric-blue/30 transition-all duration-500 group cursor-pointer">
+                <!-- Image Container -->
+                <div class="aspect-[4/5] w-full overflow-hidden relative transform-gpu isolate [-webkit-mask-image:-webkit-radial-gradient(white,black)]">
+                  <img src="./images/cards/gaming.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Gamers connecting at local gaming lounges in Kuwait" loading="lazy" width="320" height="400">
+                  <!-- Top Gradient Overlay for badges -->
+                  <div class="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/60 via-black/30 to-transparent pointer-events-none"></div>
+                  <!-- Bottom Gradient Overlay for content -->
+                  <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black/80 via-black/40 to-transparent pointer-events-none"></div>
+                  <!-- Category Badge -->
+                  <div class="absolute top-4 left-4">
+                    <div class="px-3 py-1.5 bg-electric-blue/20 backdrop-blur-md rounded-full border border-electric-blue/30 flex items-center gap-2">
+                      <span class="text-sm">🎮</span>
+                      <span class="text-[10px] font-bold text-electric-blue uppercase tracking-wide">
                         Ranked Match
                       </span>
                     </div>
                   </div>
-                </div>
-                <div class="px-2">
-                  <h3 class="font-bold text-black text-lg leading-none mb-1.5">
-                    Glitch Arena
-                  </h3>
-                  <p class="text-zinc-500 text-xs font-medium">
-                    Dubai • 2.1km away
-                  </p>
+                  <!-- Live Indicator -->
+                  <div class="absolute top-4 right-4">
+                    <div class="px-2.5 py-1 bg-green-500/20 backdrop-blur-md rounded-full border border-green-500/30 flex items-center gap-1.5">
+                      <span class="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></span>
+                      <span class="text-[9px] font-bold text-green-400 uppercase tracking-wide">Live</span>
+                    </div>
+                  </div>
+                  <!-- Content Overlay -->
+                  <div class="absolute bottom-0 left-0 right-0 p-5">
+                    <h3 class="font-bold text-white text-xl leading-tight mb-1.5 group-hover:text-electric-blue transition-colors">
+                      Glitch Arena
+                    </h3>
+                    <div class="flex items-center gap-2 text-zinc-400 text-sm">
+                      <iconify-icon icon="lucide:map-pin" class="text-electric-blue text-xs"></iconify-icon>
+                      <span>Dubai</span>
+                      <span class="text-zinc-600">•</span>
+                      <span>2.1km away</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
             <!-- Card 4: Study -->
-            <div class="min-w-[280px] md:min-w-[320px] snap-center pt-6">
-              <div class="bg-polaroid-white p-3 pb-6 rounded-2xl shadow-[0_0_30px_rgba(255,255,255,0.03)] transform rotate-2 hover:rotate-0 transition-all duration-500 group cursor-pointer h-full">
-                <div class="aspect-[4/5] bg-zinc-200 overflow-hidden rounded-lg relative mb-4 transform-gpu isolate [-webkit-mask-image:-webkit-radial-gradient(white,black)]">
-                  <img src="./images/cards/study.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter saturate-[0.85] group-hover:saturate-100" alt="Students meeting at university study groups" loading="lazy" width="320" height="400">
-                  <div class="absolute bottom-3 left-3">
-                    <div class="px-3 py-1.5 bg-black/70 backdrop-blur-md rounded-full border border-white/10 flex items-center gap-1.5 shadow-lg">
-                      <span class="text-xs">📚</span>
-                      <span class="text-[10px] font-bold text-white uppercase tracking-wide">
+            <div class="min-w-[280px] md:min-w-[320px] snap-center flex-shrink-0 self-start pt-6">
+              <div class="glass-panel rounded-3xl overflow-hidden transform rotate-2 hover:rotate-0 hover:scale-[1.02] hover:border-main-purple/30 transition-all duration-500 group cursor-pointer">
+                <!-- Image Container -->
+                <div class="aspect-[4/5] w-full overflow-hidden relative transform-gpu isolate [-webkit-mask-image:-webkit-radial-gradient(white,black)]">
+                  <img src="./images/cards/study.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Students meeting at university study groups" loading="lazy" width="320" height="400">
+                  <!-- Top Gradient Overlay for badges -->
+                  <div class="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/60 via-black/30 to-transparent pointer-events-none"></div>
+                  <!-- Bottom Gradient Overlay for content -->
+                  <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black/80 via-black/40 to-transparent pointer-events-none"></div>
+                  <!-- Category Badge -->
+                  <div class="absolute top-4 left-4">
+                    <div class="px-3 py-1.5 bg-main-purple/20 backdrop-blur-md rounded-full border border-main-purple/30 flex items-center gap-2">
+                      <span class="text-sm">📚</span>
+                      <span class="text-[10px] font-bold text-main-purple uppercase tracking-wide">
                         Focus Mode
                       </span>
                     </div>
                   </div>
-                </div>
-                <div class="px-2">
-                  <h3 class="font-bold text-black text-lg leading-none mb-1.5">
-                    National Library
-                  </h3>
-                  <p class="text-zinc-500 text-xs font-medium">
-                    Kuwait City • 5km away
-                  </p>
+                  <!-- Quiet Badge -->
+                  <div class="absolute top-4 right-4">
+                    <div class="px-2.5 py-1 bg-main-purple/20 backdrop-blur-md rounded-full border border-main-purple/30 flex items-center gap-1.5">
+                      <iconify-icon icon="lucide:volume-x" class="text-main-purple text-xs"></iconify-icon>
+                      <span class="text-[9px] font-bold text-main-purple uppercase tracking-wide">Quiet</span>
+                    </div>
+                  </div>
+                  <!-- Content Overlay -->
+                  <div class="absolute bottom-0 left-0 right-0 p-5">
+                    <h3 class="font-bold text-white text-xl leading-tight mb-1.5 group-hover:text-main-purple transition-colors">
+                      National Library
+                    </h3>
+                    <div class="flex items-center gap-2 text-zinc-400 text-sm">
+                      <iconify-icon icon="lucide:map-pin" class="text-main-purple text-xs"></iconify-icon>
+                      <span>Kuwait City</span>
+                      <span class="text-zinc-600">•</span>
+                      <span>5km away</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
