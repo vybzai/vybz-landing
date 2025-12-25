@@ -313,15 +313,25 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
 /* Hide home immediately when on legal page route */
 html.legal-route #home { display: none !important; }
 </style>
-<script>
-// Early route detection - prevent home page flash on legal page URLs
-(function() {
-  var path = window.location.pathname.replace(/^\//, '').replace(/\/$/, '');
-  if (path && path !== 'home' && path !== 'index.html') {
-    document.documentElement.classList.add('legal-route');
-  }
-})();
-</script>
+	<script>
+	// Early route detection - prevent home page flash on legal page URLs
+	(function() {
+	  var isFile = window.location.protocol === 'file:';
+	  var slug = '';
+	  if (isFile) {
+	    slug = window.location.hash.replace(/^#\/?/, '').replace(/\/$/, '');
+	    if (slug && slug !== 'hero' && slug !== 'how') {
+	      document.documentElement.classList.add('legal-route');
+	    }
+	    return;
+	  }
+
+	  var path = window.location.pathname.replace(/^\//, '').replace(/\/$/, '');
+	  if (path && path !== 'home' && path !== 'index.html') {
+	    document.documentElement.classList.add('legal-route');
+	  }
+	})();
+	</script>
 </head>
 
   <body class="min-h-screen flex flex-col">
@@ -335,7 +345,7 @@ html.legal-route #home { display: none !important; }
 
         <!-- Center Pills - Absolutely centered -->
         <div class="hidden md:flex items-center gap-1 bg-white/5 backdrop-blur-md p-1 rounded-full border border-white/5 absolute left-1/2 -translate-x-1/2">
-          <a href="#" onclick="showPage('home')" class="px-5 py-1.5 text-xs font-medium text-white bg-white/10 rounded-full transition-all hover:bg-white/15">
+          <a href="/" onclick="showPage('home'); return false;" class="px-5 py-1.5 text-xs font-medium text-white bg-white/10 rounded-full transition-all hover:bg-white/15">
             Home
           </a>
           <a href="#how" onclick="scrollToHow(); return false;" class="px-5 py-1.5 text-xs font-medium text-zinc-400 hover:text-white transition-all">
@@ -755,22 +765,22 @@ html.legal-route #home { display: none !important; }
           <h4 class="text-white font-semibold mb-4">Legal</h4>
           <ul class="space-y-3 text-zinc-500 text-xs md:text-sm">
             <li>
-              <a href="#" onclick="showLegal('Terms of Use')" class="hover:text-main-purple transition-colors">
+              <a href="/terms-of-use" onclick="showLegal('Terms of Use'); return false;" class="hover:text-main-purple transition-colors">
                 Terms of Use
               </a>
             </li>
             <li>
-              <a href="#" onclick="showLegal('Privacy Policy')" class="hover:text-main-purple transition-colors">
+              <a href="/privacy-policy" onclick="showLegal('Privacy Policy'); return false;" class="hover:text-main-purple transition-colors">
                 Privacy Policy
               </a>
             </li>
             <li>
-              <a href="#" onclick="showLegal('EULA')" class="hover:text-main-purple transition-colors">
+              <a href="/eula" onclick="showLegal('EULA'); return false;" class="hover:text-main-purple transition-colors">
                 EULA
               </a>
             </li>
             <li>
-              <a href="#" onclick="showLegal('Cookie Policy')" class="hover:text-main-purple transition-colors">
+              <a href="/cookie-policy" onclick="showLegal('Cookie Policy'); return false;" class="hover:text-main-purple transition-colors">
                 Cookie Policy
               </a>
             </li>
@@ -782,32 +792,32 @@ html.legal-route #home { display: none !important; }
           <h4 class="text-white font-semibold mb-4">Company</h4>
           <ul class="space-y-3 text-zinc-500 text-xs md:text-sm">
             <li>
-              <a href="#" onclick="showLegal('About Us')" class="hover:text-main-purple transition-colors">
+              <a href="/about-us" onclick="showLegal('About Us'); return false;" class="hover:text-main-purple transition-colors">
                 About Us
               </a>
             </li>
             <li>
-              <a href="#" onclick="showLegal('Community Guidelines')" class="hover:text-main-purple transition-colors">
+              <a href="/community-guidelines" onclick="showLegal('Community Guidelines'); return false;" class="hover:text-main-purple transition-colors">
                 Community Guidelines
               </a>
             </li>
             <li>
-              <a href="#" onclick="showLegal('Account Types')" class="hover:text-main-purple transition-colors">
+              <a href="/account-types" onclick="showLegal('Account Types'); return false;" class="hover:text-main-purple transition-colors">
                 Account Types
               </a>
             </li>
             <li>
-              <a href="#" onclick="showLegal('VYBZ for Business')" class="hover:text-main-purple transition-colors">
+              <a href="/vybz-for-business" onclick="showLegal('VYBZ for Business'); return false;" class="hover:text-main-purple transition-colors">
                 VYBZ for Business
               </a>
             </li>
             <li>
-              <a href="#" onclick="showLegal('Ambassador Calendar')" class="hover:text-main-purple transition-colors">
+              <a href="/ambassador-calendar" onclick="showLegal('Ambassador Calendar'); return false;" class="hover:text-main-purple transition-colors">
                 Ambassador Calendar
               </a>
             </li>
             <li>
-              <a href="#" onclick="showLegal('Become an Ambassador')" class="hover:text-main-purple transition-colors">
+              <a href="/become-an-ambassador" onclick="showLegal('Become an Ambassador'); return false;" class="hover:text-main-purple transition-colors">
                 Become an Ambassador
               </a>
             </li>
@@ -2994,9 +3004,21 @@ html.legal-route #home { display: none !important; }
       }
 
       // NAVIGATION LOGIC
-      function showPage(pageId, updateUrl, options) {
-          const shouldScrollToTop = !(options && options.scrollToTop === false);
-          if (shouldScrollToTop) window.scrollTo(0, 0);
+      if ('scrollRestoration' in history) {
+          history.scrollRestoration = 'manual';
+      }
+
+      function scrollToTopInstant() {
+          try {
+              window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+          } catch (e) {
+              window.scrollTo(0, 0);
+          }
+      }
+
+	      function showPage(pageId, updateUrl, options) {
+	          const shouldScrollToTop = !(options && options.scrollToTop === false);
+	          if (shouldScrollToTop) scrollToTopInstant();
 
           // Remove legal-route class when going to home (allows proper display)
           if (pageId === 'home') {
@@ -3017,23 +3039,25 @@ html.legal-route #home { display: none !important; }
               if (onShown) onShown();
           }, 50);
 
-          // Update URL for home
-          if (updateUrl !== false && pageId === 'home') {
-              history.pushState({ page: 'home' }, '', '/');
-          }
-      }
+	          // Update URL for home
+	          if (updateUrl !== false && pageId === 'home') {
+	              const homeUrl = window.location.protocol === 'file:' ? window.location.pathname : '/';
+	              history.pushState({ page: 'home' }, '', homeUrl);
+	          }
+	      }
 
-      function showLegal(title, updateUrl) {
-          document.getElementById('legal-title').innerText = title;
-          document.getElementById('legal-body').innerHTML = pageContent[title] || pageContent['Broken Link'];
-          showPage('legal', false);
+	      function showLegal(title, updateUrl) {
+	          document.getElementById('legal-title').innerText = title;
+	          document.getElementById('legal-body').innerHTML = pageContent[title] || pageContent['Broken Link'];
+	          showPage('legal', false, { onShown: scrollToTopInstant });
 
-          // Update URL
-          if (updateUrl !== false) {
-              const slug = pageToSlug[title] || 'broken-link-not-broken-heart';
-              history.pushState({ page: title }, '', '/' + slug);
-          }
-      }
+	          // Update URL
+	          if (updateUrl !== false) {
+	              const slug = pageToSlug[title] || 'broken-link-not-broken-heart';
+	              const url = window.location.protocol === 'file:' ? '#' + slug : '/' + slug;
+	              history.pushState({ page: title }, '', url);
+	          }
+	      }
 
       // Handle browser back/forward
       window.addEventListener('popstate', function(e) {
@@ -3049,33 +3073,46 @@ html.legal-route #home { display: none !important; }
           }
       });
 
-      // Route based on URL on page load
-      function initRouter() {
-          const path = window.location.pathname.replace(/^\//, '').replace(/\/$/, '');
+	      // Route based on URL on page load
+	      function initRouter() {
+	          const isFile = window.location.protocol === 'file:';
+	          const path = isFile
+	              ? window.location.hash.replace(/^#\/?/, '').replace(/\/$/, '')
+	              : window.location.pathname.replace(/^\//, '').replace(/\/$/, '');
 
-          if (!path || path === 'home' || path === 'index.html') {
-              // Home page - replace state so back button works correctly
-              history.replaceState({ page: 'home' }, '', '/');
-              return;
-          }
+	          if (!path || path === 'home' || path === 'index.html') {
+	              // Home page - replace state so back button works correctly
+	              if (!isFile) {
+	                  history.replaceState({ page: 'home' }, '', '/');
+	              }
+	              return;
+	          }
+	
+	          // Allow basic anchor navigation when previewing via file://
+	          if (isFile && (path === 'hero' || path === 'how')) {
+	              if (path === 'how') scrollToHow();
+	              return;
+	          }
 
-          // Immediately hide home page (no transition) when loading a legal page directly
-          const home = document.getElementById('home');
-          if (home) {
-              home.classList.remove('active');
+	          // Immediately hide home page (no transition) when loading a legal page directly
+	          const home = document.getElementById('home');
+	          if (home) {
+	              home.classList.remove('active');
               home.style.display = 'none';
           }
 
-          const pageName = slugToPage[path];
-          if (pageName) {
-              history.replaceState({ page: pageName }, '', '/' + path);
-              showLegal(pageName, false);
-          } else {
-              // Unknown route - show broken link page
-              history.replaceState({ page: 'Broken Link' }, '', '/' + path);
-              showLegal('Broken Link', false);
-          }
-      }
+	          const pageName = slugToPage[path];
+	          if (pageName) {
+	              const url = isFile ? '#' + path : '/' + path;
+	              history.replaceState({ page: pageName }, '', url);
+	              showLegal(pageName, false);
+	          } else {
+	              // Unknown route - show broken link page
+	              const url = isFile ? '#' + path : '/' + path;
+	              history.replaceState({ page: 'Broken Link' }, '', url);
+	              showLegal('Broken Link', false);
+	          }
+	      }
 
       // Initialize router after DOM is ready
       if (document.readyState === 'loading') {
