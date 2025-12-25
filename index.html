@@ -339,15 +339,15 @@ html.legal-route #home { display: none !important; }
     <nav class="fixed top-0 w-full z-50 px-4 sm:px-6 py-3 sm:py-4 glass-nav transition-all duration-300">
       <div class="max-w-7xl mx-auto flex justify-between items-center relative">
         <!-- Logo -->
-        <button class="flex items-center gap-2 cursor-pointer group z-10" onclick="showPage('home')" aria-label="VYBZ Home">
-          <img src="./images/logos/LogoTypeWithMarkWhite.svg" alt="VYBZ" class="h-6 sm:h-7 w-auto" width="120" height="28">
-        </button>
+	        <button class="flex items-center gap-2 cursor-pointer group z-10" onclick="goHome()" aria-label="VYBZ Home">
+	          <img src="./images/logos/LogoTypeWithMarkWhite.svg" alt="VYBZ" class="h-6 sm:h-7 w-auto" width="120" height="28">
+	        </button>
 
         <!-- Center Pills - Absolutely centered -->
         <div class="hidden md:flex items-center gap-1 bg-white/5 backdrop-blur-md p-1 rounded-full border border-white/5 absolute left-1/2 -translate-x-1/2">
-          <a href="/" onclick="showPage('home'); return false;" class="px-5 py-1.5 text-xs font-medium text-white bg-white/10 rounded-full transition-all hover:bg-white/15">
-            Home
-          </a>
+	          <a href="/" onclick="goHome(); return false;" class="px-5 py-1.5 text-xs font-medium text-white bg-white/10 rounded-full transition-all hover:bg-white/15">
+	            Home
+	          </a>
           <a href="#how" onclick="scrollToHow(); return false;" class="px-5 py-1.5 text-xs font-medium text-zinc-400 hover:text-white transition-all">
             How it works
           </a>
@@ -728,10 +728,10 @@ html.legal-route #home { display: none !important; }
 
       <!-- LEGAL PAGES CONTAINER -->
       <div id="legal-content" class="page-content max-w-3xl mx-auto px-6 py-24 min-h-[60vh]">
-        <button onclick="showPage('home')" class="mb-8 flex items-center gap-2 text-zinc-400 hover:text-white transition-colors text-sm font-semibold uppercase tracking-wider">
-          <iconify-icon icon="lucide:arrow-left"></iconify-icon>
-          Back to Home
-        </button>
+	        <button onclick="goHome()" class="mb-8 flex items-center gap-2 text-zinc-400 hover:text-white transition-colors text-sm font-semibold uppercase tracking-wider">
+	          <iconify-icon icon="lucide:arrow-left"></iconify-icon>
+	          Back to Home
+	        </button>
         <h2 id="legal-title" class="text-3xl md:text-4xl font-bold text-white mb-16 md:mb-20"></h2>
         <div id="legal-body" class="prose prose-invert prose-p:text-zinc-400 prose-headings:text-white max-w-none"></div>
       </div>
@@ -2959,10 +2959,10 @@ html.legal-route #home { display: none !important; }
                               Please bear with us while we fix this.
                           </p>
                           <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                              <a href="#" onclick="showPage('home'); return false;" class="inline-flex items-center justify-center gap-2 bg-main-purple text-white px-8 py-4 rounded-full font-semibold hover:opacity-90 transition-opacity">
-                                  <iconify-icon icon="lucide:home"></iconify-icon>
-                                  Back to Home
-                              </a>
+	                              <a href="/" onclick="goHome(); return false;" class="inline-flex items-center justify-center gap-2 bg-main-purple text-white px-8 py-4 rounded-full font-semibold hover:opacity-90 transition-opacity">
+	                                  <iconify-icon icon="lucide:home"></iconify-icon>
+	                                  Back to Home
+	                              </a>
                               <a href="mailto:support@vybzapp.com?subject=Broken%20Link%20Report%20%5Bvybzapp.com%5D&body=Hi%20VYBZ%20Team%2C%0A%0AI%20found%20a%20broken%20link%20on%20your%20website.%0A%0ABroken%20URL%3A%20%0AExpected%20page%3A%20%0A%0AThank%20you!" class="inline-flex items-center justify-center gap-2 bg-white/10 text-white px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition-colors">
                                   <iconify-icon icon="lucide:mail"></iconify-icon>
                                   Report This Issue
@@ -3023,6 +3023,26 @@ html.legal-route #home { display: none !important; }
 	              html.style.scrollBehavior = prevHtmlScrollBehavior;
 	              if (body) body.style.scrollBehavior = prevBodyScrollBehavior;
 	          }
+	      }
+
+	      function scrollToTopSmooth() {
+	          if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+	              scrollToTopInstant();
+	              return;
+	          }
+	          window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+	      }
+
+	      function goHome() {
+	          const home = document.getElementById('home');
+	          const isHomeVisible = home && home.classList.contains('active') && getComputedStyle(home).display !== 'none';
+	          if (isHomeVisible) {
+	              scrollToTopSmooth();
+	              const homeUrl = window.location.protocol === 'file:' ? window.location.pathname : '/';
+	              history.pushState({ page: 'home' }, '', homeUrl);
+	              return;
+	          }
+	          showPage('home');
 	      }
 
 	      function showPage(pageId, updateUrl, options) {
