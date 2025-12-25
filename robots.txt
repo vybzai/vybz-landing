@@ -1,0 +1,25 @@
+# Robots.txt for VYBZ
+# https://vybzapp.com
+
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# LLMs and AI crawlers
+User-agent: GPTBot
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: Claude-Web
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /llms.txt
+Allow: /llms-full.txt
+
+# Sitemap
+Sitemap: https://vybzapp.com/sitemap.xml
