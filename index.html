@@ -620,6 +620,11 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
                 VYBZ for Business
               </a>
             </li>
+            <li>
+              <a href="#" onclick="showLegal('Ambassador Calendar')" class="hover:text-main-purple transition-colors">
+                Ambassador Calendar
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -1174,6 +1179,94 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
                               </a>
                           </div>
                       </div>
+                  </div>
+              </div>
+          `,
+          'Ambassador Calendar': `
+              <div class="space-y-8">
+                  <!-- Hero Section -->
+                  <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-main-purple via-main-purple/90 to-electric-blue p-8 md:p-12 text-center">
+                      <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50"></div>
+                      <div class="relative z-10">
+                          <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+                              <img src="./images/badges/ambassador.svg" alt="Ambassador Badge" class="w-6 h-6">
+                              <span class="text-sm font-semibold text-white">Ambassador Program</span>
+                          </div>
+                          <h1 class="text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight">
+                              VYBZ CALENDAR
+                          </h1>
+                          <p class="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
+                              Experience our dynamic community calendar. Stay synchronized with events, workshops, and special moments that shape our vibrant collective journey.
+                          </p>
+                      </div>
+                  </div>
+
+                  <!-- View Toggle Info -->
+                  <div class="flex flex-wrap justify-center gap-4">
+                      <div class="inline-flex items-center gap-2 bg-main-purple/20 text-main-purple px-4 py-2 rounded-full text-sm font-medium">
+                          <iconify-icon icon="lucide:calendar"></iconify-icon>
+                          Month View
+                      </div>
+                      <div class="inline-flex items-center gap-2 bg-electric-blue/20 text-electric-blue px-4 py-2 rounded-full text-sm font-medium">
+                          <iconify-icon icon="lucide:list"></iconify-icon>
+                          Agenda View
+                      </div>
+                      <div class="inline-flex items-center gap-2 bg-sunset-orange/20 text-sunset-orange px-4 py-2 rounded-full text-sm font-medium">
+                          <iconify-icon icon="lucide:globe"></iconify-icon>
+                          UK Time (GMT)
+                      </div>
+                  </div>
+
+                  <!-- Calendar Embed -->
+                  <div class="rounded-2xl overflow-hidden border border-white/10 bg-white">
+                      <iframe
+                          src="https://calendar.google.com/calendar/embed?src=c_c509d130c8fc6794b48e4b6dd03e51b4faccbeb6afc3993cc442110c28ee968e%40group.calendar.google.com&ctz=Europe%2FLondon&showTitle=0&showNav=1&showPrint=0&showTabs=1&showCalendars=0"
+                          style="border: 0"
+                          width="100%"
+                          height="600"
+                          frameborder="0"
+                          scrolling="no"
+                          title="VYBZ Community Calendar"
+                          loading="lazy">
+                      </iframe>
+                  </div>
+
+                  <!-- Add to Calendar CTA -->
+                  <div class="glass-panel p-6 md:p-8 rounded-2xl text-center">
+                      <h3 class="text-xl font-bold text-white mb-3">Never Miss an Event</h3>
+                      <p class="text-zinc-400 mb-6 max-w-lg mx-auto">Add the VYBZ calendar to your Google Calendar and stay updated with all community events, workshops, and special moments.</p>
+                      <a href="https://calendar.google.com/calendar/u/0?cid=Y19jNTA5ZDEzMGM4ZmM2Nzk0YjQ4ZTRiNmRkMDNlNTFiNGZhY2NiZWI2YWZjMzk5M2NjNDQyMTEwYzI4ZWU5NjhlQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-main-purple text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity">
+                          <iconify-icon icon="lucide:plus"></iconify-icon>
+                          Add to Google Calendar
+                      </a>
+                  </div>
+
+                  <!-- Ambassador Info -->
+                  <div class="grid md:grid-cols-2 gap-6">
+                      <div class="bg-white/5 rounded-2xl border border-white/5 p-6">
+                          <div class="w-12 h-12 rounded-xl bg-main-purple/20 flex items-center justify-center mb-4">
+                              <iconify-icon icon="lucide:users" class="text-xl text-main-purple"></iconify-icon>
+                          </div>
+                          <h4 class="font-semibold text-white mb-2">Ambassador Events</h4>
+                          <p class="text-sm text-zinc-400">Exclusive meetups, training sessions, and networking opportunities for VYBZ ambassadors.</p>
+                      </div>
+                      <div class="bg-white/5 rounded-2xl border border-white/5 p-6">
+                          <div class="w-12 h-12 rounded-xl bg-sunset-orange/20 flex items-center justify-center mb-4">
+                              <iconify-icon icon="lucide:sparkles" class="text-xl text-sunset-orange"></iconify-icon>
+                          </div>
+                          <h4 class="font-semibold text-white mb-2">Special Moments</h4>
+                          <p class="text-sm text-zinc-400">Product launches, community celebrations, and milestone events that bring us together.</p>
+                      </div>
+                  </div>
+
+                  <!-- Become Ambassador CTA -->
+                  <div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-main-purple/20 to-electric-blue/20 border border-main-purple/20 p-8 text-center">
+                      <h3 class="text-xl font-bold text-white mb-3">Want to Join the Ambassador Program?</h3>
+                      <p class="text-zinc-400 mb-6">Get special perks, exclusive access to events, and help grow the VYBZ community.</p>
+                      <a href="#" onclick="showLegal('Account Types'); return false;" class="inline-flex items-center gap-2 bg-main-purple text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity">
+                          <iconify-icon icon="lucide:badge-check"></iconify-icon>
+                          Learn More
+                      </a>
                   </div>
               </div>
           `,
