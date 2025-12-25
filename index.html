@@ -1201,16 +1201,16 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
                       </div>
                   </div>
 
-                  <!-- View Toggle Info -->
+                  <!-- View Toggle Buttons -->
                   <div class="flex flex-wrap justify-center gap-4">
-                      <div class="inline-flex items-center gap-2 bg-main-purple/20 text-main-purple px-4 py-2 rounded-full text-sm font-medium">
+                      <button id="cal-month-btn" onclick="switchCalendarView('MONTH')" class="inline-flex items-center gap-2 bg-main-purple text-white px-4 py-2 rounded-full text-sm font-medium cursor-pointer hover:opacity-90 transition-all">
                           <iconify-icon icon="lucide:calendar"></iconify-icon>
                           Month View
-                      </div>
-                      <div class="inline-flex items-center gap-2 bg-electric-blue/20 text-electric-blue px-4 py-2 rounded-full text-sm font-medium">
+                      </button>
+                      <button id="cal-agenda-btn" onclick="switchCalendarView('AGENDA')" class="inline-flex items-center gap-2 bg-white/10 text-zinc-400 px-4 py-2 rounded-full text-sm font-medium cursor-pointer hover:bg-white/20 transition-all">
                           <iconify-icon icon="lucide:list"></iconify-icon>
                           Agenda View
-                      </div>
+                      </button>
                       <div class="inline-flex items-center gap-2 bg-sunset-orange/20 text-sunset-orange px-4 py-2 rounded-full text-sm font-medium">
                           <iconify-icon icon="lucide:globe"></iconify-icon>
                           UK Time (GMT)
@@ -1220,7 +1220,8 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
                   <!-- Calendar Embed -->
                   <div class="rounded-2xl overflow-hidden border border-white/10 bg-white">
                       <iframe
-                          src="https://calendar.google.com/calendar/embed?src=c_c509d130c8fc6794b48e4b6dd03e51b4faccbeb6afc3993cc442110c28ee968e%40group.calendar.google.com&ctz=Europe%2FLondon&showTitle=0&showNav=1&showPrint=0&showTabs=1&showCalendars=0"
+                          id="vybz-calendar-iframe"
+                          src="https://calendar.google.com/calendar/embed?src=c_c509d130c8fc6794b48e4b6dd03e51b4faccbeb6afc3993cc442110c28ee968e%40group.calendar.google.com&ctz=Europe%2FLondon&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0&mode=MONTH"
                           style="border: 0"
                           width="100%"
                           height="600"
@@ -2619,6 +2620,27 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
           document.getElementById('legal-title').innerText = title;
           document.getElementById('legal-body').innerHTML = pageContent[title] || "<p>Content loading...</p>";
           showPage('legal');
+      }
+
+      // Calendar View Toggle
+      function switchCalendarView(mode) {
+          const iframe = document.getElementById('vybz-calendar-iframe');
+          if (!iframe) return;
+
+          const baseUrl = 'https://calendar.google.com/calendar/embed?src=c_c509d130c8fc6794b48e4b6dd03e51b4faccbeb6afc3993cc442110c28ee968e%40group.calendar.google.com&ctz=Europe%2FLondon&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0&mode=';
+          iframe.src = baseUrl + mode;
+
+          // Update button styles
+          const monthBtn = document.getElementById('cal-month-btn');
+          const agendaBtn = document.getElementById('cal-agenda-btn');
+
+          if (mode === 'MONTH') {
+              monthBtn.className = 'inline-flex items-center gap-2 bg-main-purple text-white px-4 py-2 rounded-full text-sm font-medium cursor-pointer hover:opacity-90 transition-all';
+              agendaBtn.className = 'inline-flex items-center gap-2 bg-white/10 text-zinc-400 px-4 py-2 rounded-full text-sm font-medium cursor-pointer hover:bg-white/20 transition-all';
+          } else {
+              agendaBtn.className = 'inline-flex items-center gap-2 bg-main-purple text-white px-4 py-2 rounded-full text-sm font-medium cursor-pointer hover:opacity-90 transition-all';
+              monthBtn.className = 'inline-flex items-center gap-2 bg-white/10 text-zinc-400 px-4 py-2 rounded-full text-sm font-medium cursor-pointer hover:bg-white/20 transition-all';
+          }
       }
 
       // ANIMATIONS - Initialize after GSAP loads (deferred)
