@@ -169,7 +169,7 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
       <!-- HOME PAGE -->
       <div id="home" class="page-content active">
         <!-- HERO SECTION -->
-        <section class="relative isolate min-h-[90vh] w-full flex flex-col justify-center items-center overflow-hidden px-4 pt-20">
+        <section id="hero" class="relative isolate min-h-[90vh] w-full flex flex-col justify-center items-center overflow-hidden px-4 pt-20">
           <!-- 3D SPLINE BACKGROUND -->
           <div class="absolute inset-0 z-0 pointer-events-none opacity-80 mix-blend-screen">
             <iframe src="https://my.spline.design/liquidring-PGc8zQXZyDUpVFvWNgohNZnv" frameborder="0" width="100%" height="100%" class="w-full h-full scale-100 sm:scale-110 md:scale-110 origin-center translate-x-0 sm:translate-x-[1.5%]" title="VYBZ Liquid Ring" loading="lazy"></iframe>
@@ -2218,12 +2218,12 @@ box-shadow: 0 0 0 1px rgba(0,0,0,0.2), 0 8px 40px rgba(0,0,0,0.4);
         // Simplified animations for mobile
         if (isMobile) {
           gsap.to("h1", {
-            scrollTrigger: { trigger: "header", start: "top center", toggleActions: "play none none reverse" },
+            scrollTrigger: { trigger: "#hero", start: "top center", toggleActions: "play none none reverse" },
             y: 25, opacity: 0.8, duration: 0.5
           });
         } else {
           gsap.to("h1", {
-            scrollTrigger: { trigger: "header", start: "top top", end: "bottom top", scrub: 1 },
+            scrollTrigger: { trigger: "#hero", start: "top top", end: "bottom top", scrub: 1 },
             y: 50, opacity: 0.8
           });
         }
