@@ -28,9 +28,15 @@ git push origin main
 
 ## Architecture
 
-Single-file architecture - everything is in `index.html`:
-- **CSS:** Tailwind CDN with custom config (colors, animations)
-- **JS:** Inline GSAP animations with ScrollTrigger
+Multi-file (no build step). `index.html` remains the deployable entrypoint:
+- **CSS:** `styles/main.css`
+- **Tailwind config:** `scripts/tailwind-config.js`
+- **JS:** split by concern under `scripts/`:
+  - `legal-content.js` (legal HTML strings)
+  - `router.js` (SPA routing + scroll helpers)
+  - `animations.js` (GSAP + ScrollTrigger)
+  - `interactions.js` (filters, tabs, hover)
+  - `calendar.js` (calendar toggle)
 - **3D:** Spline embed (iframe) for hero background
 
 ## Routing & Navigation (Important)
@@ -38,12 +44,12 @@ Single-file architecture - everything is in `index.html`:
 This site is a lightweight SPA: all “pages” are rendered from `index.html` and shown/hidden with JS.
 
 - **Home:** `#home`
-- **Legal pages:** content is injected into `#legal-content` via `pageContent[...]` + `showLegal(title)`
+- **Legal pages:** content is injected into `#legal-content` via `pageContent[...]` in `scripts/legal-content.js` + `showLegal(title)` in `scripts/router.js`
 
 ### Adding a new legal page
 
-1. Add the page HTML to `pageContent['Your Title']` in `index.html`
-2. Add a slug mapping in `slugToPage` (`'your-slug': 'Your Title'`)
+1. Add the page HTML to `pageContent['Your Title']` in `scripts/legal-content.js`
+2. Add a slug mapping in `slugToPage` (`'your-slug': 'Your Title'`) in `scripts/router.js`
 3. Add a rewrite in `vercel.json` so `'/your-slug'` rewrites to `'/'` (direct loads must still serve `index.html`)
 4. Add/update a link using this pattern (keeps deployed URLs shareable/SEO-friendly):
    - `href="/your-slug"`
@@ -61,7 +67,7 @@ When opening `index.html` directly (no server), `history.pushState('/your-slug')
 - Legal-page navigation should always start at the top: `showLegal()` scrolls to the top and `history.scrollRestoration` is set to `manual`.
 - `showPage()` scrolls to the top by default; if you need to navigate to home and then scroll to a section, call:
   - `showPage('home', undefined, { scrollToTop: false, onShown: () => {/* scroll */} })`
-  - See `scrollToHow()` in `index.html` for the fixed-header offset pattern.
+  - See `scrollToHow()` in `scripts/router.js` for the fixed-header offset pattern.
 
 ### Key Styling Tokens
 ```javascript

@@ -1,0 +1,2124 @@
+// DATA FOR LEGAL/CONTENT PAGES
+      const pageContent = {
+          'About Us': `
+              <div class="space-y-8">
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <p class="text-base leading-relaxed text-zinc-300 mb-4">
+                          VYBZ is a location-first social app for meeting people around you. In real life, in real time. Whether you're in your dorm, in class, or at your favourite hangout, VYBZ shows you who's nearby, what's happening, and lets you jump into conversations tied to real places.
+                      </p>
+                      <p class="text-base leading-relaxed text-zinc-300">
+                          The app is built around <strong class="text-white">one dynamic feed</strong> that adapts to where you are and how many people are around. It works for quick moments right here, right now, or for seeing what's going on in your area. Explore who's nearby, share what you're up to, and turn those moments into real connections.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-6">Key Features</h3>
+                      <ul class="space-y-3 text-zinc-300 text-sm leading-relaxed">
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span><strong class="text-white">Real-Time Local Feed:</strong> One feed that adapts to your surroundings. See what's happening right here or what's going on nearby.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span><strong class="text-white">Live Hubs:</strong> See activity around real venues and locations. Join in where things are actually happening.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span><strong class="text-white">Live Chat:</strong> Group chats tied to places. Meet people who are actually there.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span><strong class="text-white">AR Lenses:</strong> Connect your Bitmoji and use Snap Lenses powered by Snap Inc.'s Camera Kit. Lenses change based on where you are.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span><strong class="text-white">DMs & Friends:</strong> Add people, message them, keep talking after the moment passes.</span>
+                          </li>
+                      </ul>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-6">Corporate Overview</h3>
+                      <p class="text-sm text-zinc-300 leading-relaxed mb-4">
+                          VYBZ Inc. builds mobile products and digital services. We also have a UK subsidiary, <strong class="text-white">Bianance Ltd</strong>, incorporated in England and Wales.
+                      </p>
+                      <div class="bg-white/5 rounded-xl p-4 mt-4">
+                          <p class="text-sm text-white font-semibold mb-2">Bianance Ltd</p>
+                          <ul class="space-y-1 text-zinc-300 text-sm">
+                              <li>Address: <strong class="text-white">24 Dering Street, London W1S 1BL, United Kingdom</strong></li>
+                              <li>Company number: <strong class="text-white">13201710</strong></li>
+                              <li>Director: <strong class="text-white">Mr. Sani Mammadov</strong></li>
+                          </ul>
+                      </div>
+                      <p class="text-sm text-zinc-300 leading-relaxed mt-4">
+                          Bianance Ltd handles our <strong class="text-white">UK and EU</strong> operations, including legal and regulatory stuff, so we can run things properly in those regions.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8 bg-gradient-to-br from-main-purple/5 to-transparent border-main-purple/20">
+                      <h3 class="text-xl font-bold text-white mb-4">Get Started</h3>
+                      <p class="text-base text-zinc-300 leading-relaxed">
+                          Download VYBZ and see who's around.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-lg font-bold text-white mb-3">Trademark Notice</h3>
+                      <p class="text-sm text-zinc-400 leading-relaxed">
+                          All product names, logos, and brands are property of their respective owners. Use of these names, logos, and brands does not imply endorsement.
+                      </p>
+                  </div>
+              </div>
+          `,
+          'Press Event': `
+              <div class="space-y-8">
+                  <!-- Hero -->
+                  <div class="glass-panel p-8 md:p-12 rounded-2xl text-center">
+                      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">VYBZ Press Event</h2>
+                      <p class="text-xl text-zinc-300 mb-2">20 November 2024</p>
+                      <p class="text-lg text-zinc-400 mb-6">7:00 PM - Late</p>
+                      <div class="inline-flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full text-sm text-zinc-300 mb-8">
+                          <iconify-icon icon="lucide:map-pin"></iconify-icon>
+                          Kingsland Locke, Dalston
+                      </div>
+                      <div class="max-w-sm mx-auto">
+                          <a href="https://links.vybzapp.com/Xm4D17H7FOb" target="_blank" rel="noopener noreferrer" class="block w-full px-8 py-4 text-lg font-bold text-white rounded-full bg-main-purple hover:opacity-90 transition-opacity">
+                              Claim Your Promo
+                          </a>
+                      </div>
+                  </div>
+
+                  <!-- Agenda -->
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-6">Presentation Agenda</h3>
+                      <div class="space-y-4">
+                          <div class="flex flex-col sm:flex-row sm:items-start border-l-2 border-main-purple pl-4">
+                              <div class="text-base font-bold text-white mb-1 sm:mb-0 sm:w-24">7:00 PM</div>
+                              <div>
+                                  <p class="font-semibold text-white">Welcome and Team Introductions</p>
+                                  <p class="text-zinc-400 text-sm">Opening remarks and meet the team</p>
+                              </div>
+                          </div>
+                          <div class="flex flex-col sm:flex-row sm:items-start border-l-2 border-main-purple pl-4">
+                              <div class="text-base font-bold text-white mb-1 sm:mb-0 sm:w-24">7:10 PM</div>
+                              <div>
+                                  <p class="font-semibold text-white">VYBZ Vision & Mission</p>
+                                  <p class="text-zinc-400 text-sm">2025 expansion plans and ambassador program overview</p>
+                              </div>
+                          </div>
+                          <div class="flex flex-col sm:flex-row sm:items-start border-l-2 border-main-purple pl-4">
+                              <div class="text-base font-bold text-white mb-1 sm:mb-0 sm:w-24">7:21 PM</div>
+                              <div>
+                                  <p class="font-semibold text-white">Connecting Creatives</p>
+                                  <p class="text-zinc-400 text-sm">Creating meaningful experiences through VYBZ</p>
+                              </div>
+                          </div>
+                          <div class="flex flex-col sm:flex-row sm:items-start border-l-2 border-main-purple pl-4">
+                              <div class="text-base font-bold text-white mb-1 sm:mb-0 sm:w-24">7:32 PM</div>
+                              <div>
+                                  <p class="font-semibold text-white">Ambassador Program</p>
+                                  <p class="text-zinc-400 text-sm">A new approach to community building</p>
+                              </div>
+                          </div>
+                          <div class="flex flex-col sm:flex-row sm:items-start border-l-2 border-main-purple pl-4">
+                              <div class="text-base font-bold text-white mb-1 sm:mb-0 sm:w-24">7:43 PM</div>
+                              <div>
+                                  <p class="font-semibold text-white">Creativity on VYBZ</p>
+                                  <p class="text-zinc-400 text-sm">Impact on user connections and engagement</p>
+                              </div>
+                          </div>
+                          <div class="flex flex-col sm:flex-row sm:items-start border-l-2 border-main-purple pl-4">
+                              <div class="text-base font-bold text-white mb-1 sm:mb-0 sm:w-24">7:54 PM</div>
+                              <div>
+                                  <p class="font-semibold text-white">In-App Communication</p>
+                                  <p class="text-zinc-400 text-sm">Maintaining focus on real-life connections</p>
+                              </div>
+                          </div>
+                          <div class="flex flex-col sm:flex-row sm:items-start border-l-2 border-main-purple pl-4">
+                              <div class="text-base font-bold text-white mb-1 sm:mb-0 sm:w-24">8:05 PM</div>
+                              <div>
+                                  <p class="font-semibold text-white">Future of VYBZ</p>
+                                  <p class="text-zinc-400 text-sm">2025 roadmap, business profiles & monetization strategy</p>
+                              </div>
+                          </div>
+                          <div class="flex flex-col sm:flex-row sm:items-start border-l-2 border-electric-blue pl-4">
+                              <div class="text-base font-bold text-white mb-1 sm:mb-0 sm:w-24">8:26 PM</div>
+                              <div>
+                                  <p class="font-semibold text-white">Special Guest Introduction</p>
+                              </div>
+                          </div>
+                          <div class="flex flex-col sm:flex-row sm:items-start border-l-2 border-sunset-orange pl-4">
+                              <div class="text-base font-bold text-white mb-1 sm:mb-0 sm:w-24">8:30 PM</div>
+                              <div>
+                                  <p class="font-semibold text-white">Special Guest Performance & Swarm</p>
+                                  <p class="text-zinc-400 text-sm">Live music and networking</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Venue -->
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-6">Venue</h3>
+                      <div class="mb-6">
+                          <p class="text-lg font-semibold text-white mb-2">Kingsland Locke Dalston</p>
+                          <p class="text-zinc-400">30 Kingsland High St, London E8 2LQ</p>
+                          <div class="mt-4 space-y-2 text-sm text-zinc-400">
+                              <p><iconify-icon icon="lucide:train-front" class="mr-2"></iconify-icon>Nearest station: Dalston Kingsland (2 min walk)</p>
+                              <p><iconify-icon icon="lucide:bus" class="mr-2"></iconify-icon>Buses: 67, 149, 243</p>
+                              <p><iconify-icon icon="lucide:car" class="mr-2"></iconify-icon>Limited street parking available</p>
+                          </div>
+                      </div>
+                      <a href="https://maps.google.com/?q=Kingsland+Locke+Dalston,30+Kingsland+High+St,London+E8+2LQ" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-main-purple text-white px-4 py-2 rounded-lg hover:opacity-90 transition-opacity">
+                          <iconify-icon icon="lucide:navigation"></iconify-icon>
+                          Get Directions
+                      </a>
+                  </div>
+
+                  <!-- What to Expect -->
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-6">What to Expect</h3>
+                      <ul class="space-y-4 text-zinc-300">
+                          <li class="flex items-center gap-3">
+                              <iconify-icon icon="lucide:wine" class="text-xl text-main-purple"></iconify-icon>
+                              Complimentary drinks and canapes
+                          </li>
+                          <li class="flex items-center gap-3">
+                              <iconify-icon icon="lucide:music" class="text-xl text-main-purple"></iconify-icon>
+                              Live music and exclusive performances
+                          </li>
+                          <li class="flex items-center gap-3">
+                              <iconify-icon icon="lucide:star" class="text-xl text-main-purple"></iconify-icon>
+                              Special guest appearances
+                          </li>
+                          <li class="flex items-center gap-3">
+                              <iconify-icon icon="lucide:camera" class="text-xl text-main-purple"></iconify-icon>
+                              Photo opportunities
+                          </li>
+                      </ul>
+                  </div>
+
+                  <!-- Dress Code -->
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-3">Dress Code</h3>
+                      <p class="text-zinc-300">Dress to impress</p>
+                  </div>
+
+                  <!-- Press Registration -->
+                  <div class="glass-panel p-6 md:p-8 rounded-2xl text-center bg-gradient-to-br from-main-purple/10 to-transparent border-main-purple/20">
+                      <h3 class="text-xl font-bold text-white mb-4">Press Registration</h3>
+                      <p class="text-zinc-300 mb-4">For press inquiries and RSVP, please contact your press representative</p>
+                      <p class="text-sm text-zinc-500">Limited capacity event. Early confirmation recommended.</p>
+                  </div>
+              </div>
+          `,
+          'Account Types': `
+              <div class="space-y-10">
+                  <!-- Overview -->
+                  <div class="glass-panel p-6 md:p-8 rounded-2xl">
+                      <h2 class="text-2xl font-bold text-white mb-4">Overview & Importance of Verification</h2>
+                      <p class="text-base leading-relaxed text-zinc-300">
+                          Discover the benefits and requirements of our account verification system, designed to enhance trust and safety within the VYBZ community. Verification establishes the authenticity of profiles, fostering a secure environment for genuine interactions.
+                      </p>
+                  </div>
+
+                  <!-- Account Types Summary -->
+                  <div class="bg-gradient-to-br from-sunset-orange/20 to-sunset-orange/5 rounded-2xl border border-sunset-orange/20 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-6">VYBZ Account Types</h3>
+                      <div class="space-y-4">
+                          <div class="flex items-center gap-4 bg-white/5 rounded-xl p-4">
+                              <img src="./images/badges/verified.svg" alt="Admin Badge" class="w-10 h-10">
+                              <div>
+                                  <p class="font-semibold text-white">VYBZ Admin</p>
+                                  <p class="text-sm text-zinc-400">All accounts with this badge are VYBZ admins</p>
+                              </div>
+                          </div>
+                          <div class="flex items-center gap-4 bg-white/5 rounded-xl p-4">
+                              <img src="./images/badges/vybz-team.svg" alt="Team Badge" class="w-10 h-10">
+                              <div>
+                                  <p class="font-semibold text-white">VYBZ Team</p>
+                                  <p class="text-sm text-zinc-400">Our beautiful team accounts</p>
+                              </div>
+                          </div>
+                          <div class="flex items-center gap-4 bg-white/5 rounded-xl p-4">
+                              <img src="./images/badges/business.svg" alt="Business Badge" class="w-10 h-10">
+                              <div>
+                                  <p class="font-semibold text-white">Business</p>
+                                  <p class="text-sm text-zinc-400">Verified business accounts</p>
+                              </div>
+                          </div>
+                          <div class="flex items-center gap-4 bg-white/5 rounded-xl p-4">
+                              <img src="./images/badges/ambassador.svg" alt="Ambassador Badge" class="w-10 h-10">
+                              <div>
+                                  <p class="font-semibold text-white">Ambassador</p>
+                                  <p class="text-sm text-zinc-400">Badge belongs to our beloved Ambassadors</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Verified Admin Section -->
+                  <div class="space-y-6">
+                      <h3 class="text-xl font-bold text-sunset-orange">Verified Admin</h3>
+                      <div class="bg-white/5 rounded-2xl border border-white/10 p-8 text-center">
+                          <img src="./images/badges/verified.svg" alt="Admin Badge" class="w-20 h-20 mx-auto mb-6">
+                          <h4 class="text-2xl font-bold text-white mb-3">Verified Admin</h4>
+                          <p class="text-zinc-400 max-w-md mx-auto">
+                              This account is verified since September 2023. Verified Admins manage all the admin stuff.
+                          </p>
+                      </div>
+                      <div class="bg-white/5 rounded-2xl border border-white/5 p-6">
+                          <h5 class="font-semibold text-white mb-3">Admin Roles</h5>
+                          <ul class="space-y-2 text-sm text-zinc-400">
+                              <li class="flex gap-2"><span class="text-main-purple">•</span>Moderation & Trust: Assures users that content moderation is conducted by trusted VYBZ team.</li>
+                              <li class="flex gap-2"><span class="text-main-purple">•</span>Support Efficiency: Highlights the efficiency and reliability of support provided by verified admins.</li>
+                          </ul>
+                          <h5 class="font-semibold text-white mt-6 mb-2">Badge Details</h5>
+                          <p class="text-sm text-zinc-400">Badge Meaning: The badge represents the admin's role in platform integrity and user support.</p>
+                      </div>
+                  </div>
+
+                  <!-- Verified VYBZ Team Member Section -->
+                  <div class="space-y-6">
+                      <h3 class="text-xl font-bold text-main-purple">Verified VYBZ Team Member</h3>
+                      <div class="bg-white/5 rounded-2xl border border-white/10 p-8 text-center">
+                          <img src="./images/badges/vybz-team.svg" alt="Team Badge" class="w-20 h-20 mx-auto mb-6">
+                          <h4 class="text-2xl font-bold text-white mb-3">Verified VYBZ Team Member</h4>
+                          <p class="text-zinc-400 max-w-md mx-auto">
+                              This account is verified since September 2023. Team Members are doing their best to keep the app running (at least we try to).
+                          </p>
+                      </div>
+                      <div class="bg-white/5 rounded-2xl border border-white/5 p-6">
+                          <h5 class="font-semibold text-white mb-3">VYBZ Team Member Roles</h5>
+                          <ul class="space-y-2 text-sm text-zinc-400">
+                              <li class="flex gap-2"><span class="text-main-purple">•</span>Official Communication: Designated representatives authorised to communicate official platform updates.</li>
+                              <li class="flex gap-2"><span class="text-main-purple">•</span>Community Guidance: Ability to guide community with credibility.</li>
+                              <li class="flex gap-2"><span class="text-main-purple">•</span>Elevated Help and support to all VYBZ community.</li>
+                          </ul>
+                          <h5 class="font-semibold text-white mt-6 mb-2">Badge Details</h5>
+                          <p class="text-sm text-zinc-400">Badge Meaning: The badge signifies an official team member with authoritative knowledge of VYBZ.</p>
+                      </div>
+                  </div>
+
+                  <!-- Verified Ambassador Section -->
+                  <div class="space-y-6">
+                      <h3 class="text-xl font-bold text-main-purple">Verified Ambassador</h3>
+                      <div class="bg-white/5 rounded-2xl border border-white/10 p-8 text-center">
+                          <img src="./images/badges/ambassador.svg" alt="Ambassador Badge" class="w-20 h-20 mx-auto mb-6">
+                          <h4 class="text-2xl font-bold text-white mb-3">Verified Ambassador</h4>
+                          <p class="text-zinc-400 max-w-md mx-auto">
+                              This account is verified since September 2023. Verified Ambassadors get special perks with VYBZ.
+                          </p>
+                      </div>
+                      <div class="bg-white/5 rounded-2xl border border-white/5 p-6">
+                          <h5 class="font-semibold text-white mb-3">Eligibility Criteria</h5>
+                          <ul class="space-y-2 text-sm text-zinc-400">
+                              <li class="flex gap-2"><span class="text-main-purple">•</span>VYBZ Account: Download the app and create an account.</li>
+                              <li class="flex gap-2"><span class="text-main-purple">•</span>Apply to become an ambassador using the link in your profile settings once you download the app and create an account.</li>
+                          </ul>
+                          <h5 class="font-semibold text-white mt-6 mb-3">Verification Benefits</h5>
+                          <ul class="space-y-2 text-sm text-zinc-400">
+                              <li class="flex gap-2"><span class="text-main-purple">•</span>Special perks and easter eggs.</li>
+                          </ul>
+                          <h5 class="font-semibold text-white mt-6 mb-3">How to Get Verified</h5>
+                          <ul class="space-y-2 text-sm text-zinc-400">
+                              <li class="flex gap-2"><span class="text-main-purple">•</span>Complete the verification process via the app. Click below to download the app and create a user account.</li>
+                              <li class="flex gap-2"><span class="text-main-purple">•</span>Verification Review Process: We will contact you via the app on further steps.</li>
+                          </ul>
+                          <h5 class="font-semibold text-white mt-6 mb-2">Badge Details</h5>
+                          <p class="text-sm text-zinc-400">Badge Meaning: Signifies a verified ambassador account on VYBZ, ensuring credibility.</p>
+                      </div>
+	                      <div class="text-center">
+	                          <a href="/become-an-ambassador" onclick="showLegal('Become an Ambassador'); return false;" class="inline-block px-8 py-3 bg-main-purple text-white font-semibold rounded-full hover:opacity-90 transition-opacity">
+	                              Become an Ambassador
+	                          </a>
+	                      </div>
+	                  </div>
+
+                  <!-- Verified Business Section -->
+                  <div class="space-y-6">
+                      <h3 class="text-xl font-bold text-sunset-orange">Verified Business</h3>
+                      <div class="bg-white/5 rounded-2xl border border-white/10 p-8 text-center">
+                          <img src="./images/badges/business.svg" alt="Business Badge" class="w-20 h-20 mx-auto mb-6">
+                          <h4 class="text-2xl font-bold text-white mb-3">Verified Business</h4>
+                          <p class="text-zinc-400 max-w-md mx-auto">
+                              This account is verified since September 2023. Verified Businesses can promote their services, cooperate and interact with users on VYBZ.
+                          </p>
+                      </div>
+                      <div class="bg-white/5 rounded-2xl border border-white/5 p-6">
+                          <h5 class="font-semibold text-white mb-3">Eligibility Criteria</h5>
+                          <ul class="space-y-2 text-sm text-zinc-400">
+                              <li class="flex gap-2"><span class="text-main-purple">•</span>Business Registration: Your business should be mainly in the GCC sector. It should be a GCC business.</li>
+                              <li class="flex gap-2"><span class="text-main-purple">•</span>Service Offering: Description of the service that the business provides on VYBZ.</li>
+                          </ul>
+                          <h5 class="font-semibold text-white mt-6 mb-3">Verification Benefits</h5>
+                          <ul class="space-y-2 text-sm text-zinc-400">
+                              <li class="flex gap-2"><span class="text-main-purple">•</span>Business Visibility: Your business posts will be visible to all VYBZ users in the neighbourhood. VYBZ will allow more footfall to your business and increase your revenue. VYBZ will help you reach new clients.</li>
+                              <li class="flex gap-2"><span class="text-main-purple">•</span>User Trust: Verified businesses are trusted and recommended by VYBZ.</li>
+                          </ul>
+                          <h5 class="font-semibold text-white mt-6 mb-3">How to Get Verified</h5>
+                          <ul class="space-y-2 text-sm text-zinc-400">
+                              <li class="flex gap-2"><span class="text-main-purple">•</span>Download the app and create a business account.</li>
+                              <li class="flex gap-2"><span class="text-main-purple">•</span>Verification Review Process: Once you've created your business account, We will review it within 3 working days and either approve your account or if necessary request more information. You will receive a confirmation email as soon as your account has been approved.</li>
+                          </ul>
+                          <h5 class="font-semibold text-white mt-6 mb-2">Badge Details</h5>
+                          <p class="text-sm text-zinc-400">Badge Meaning: Signifies a verified business presence on VYBZ, ensuring credibility.</p>
+                      </div>
+                      <div class="text-center">
+                          <a href="https://apps.apple.com/gb/app/vybz-meet-people-nearby/id1661684666" target="_blank" rel="noopener noreferrer" class="inline-block px-8 py-3 bg-sunset-orange text-black font-semibold rounded-full hover:opacity-90 transition-opacity">
+                              Register on VYBZ app
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          `,
+          'VYBZ for Business': `
+              <div class="space-y-12">
+                  <!-- HERO SECTION -->
+                  <section class="relative isolate overflow-hidden rounded-3xl min-h-[500px] flex flex-col items-center justify-center text-center px-6 border border-white/10">
+                      <!-- Animated BG -->
+                      <div class="absolute inset-0 bg-main-black">
+                           <div class="absolute inset-0 bg-gradient-to-tr from-sunset-orange/10 via-black to-black opacity-80"></div>
+                           <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-sunset-orange/20 rounded-full blur-[120px] animate-pulse-glow"></div>
+                      </div>
+                      
+                      <div class="relative z-10 max-w-4xl mx-auto">
+                          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-md mb-6 animate-[fadeIn_1s_ease-out]">
+                              <img src="./images/badges/business.svg" alt="Business Badge" class="w-4 h-4">
+                              <span class="text-[10px] uppercase tracking-widest text-zinc-300 font-bold">VYBZ for Business</span>
+                          </div>
+                          
+                          <h1 class="text-4xl md:text-6xl font-black text-white tracking-tight leading-none mb-6 animate-[fadeIn_1s_ease-out_0.2s_both]">
+                              CONNECT WITH CUSTOMERS <br>
+                              <span class="text-transparent bg-clip-text bg-gradient-to-r from-sunset-orange to-amber-500">LIKE NEVER BEFORE.</span>
+                          </h1>
+                          
+                          <p class="text-lg md:text-xl text-zinc-400 font-medium leading-relaxed mb-10 max-w-2xl mx-auto animate-[fadeIn_1s_ease-out_0.4s_both]">
+                              Reach people in your neighbourhood the moment they're nearby. Real-time. Real connections. Real results.
+                          </p>
+                          
+                          <div class="flex flex-col sm:flex-row gap-4 justify-center animate-[fadeIn_1s_ease-out_0.6s_both]">
+                              <a href="https://apps.apple.com/gb/app/vybz-meet-people-nearby/id1661684666" target="_blank" class="px-8 py-4 bg-white text-black rounded-full font-bold hover:scale-105 transition-transform flex items-center gap-2">
+                                  <iconify-icon icon="lucide:store" class="text-xl"></iconify-icon>
+                                  Register Your Business
+                              </a>
+                          </div>
+                      </div>
+                  </section>
+
+                  <!-- FEATURES GRID -->
+                  <div class="grid md:grid-cols-2 gap-6">
+                      <!-- Feature 1: Promote -->
+                      <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group hover:border-main-purple/50 transition-all duration-300">
+                          <div class="absolute top-0 right-0 w-32 h-32 bg-main-purple/20 rounded-full blur-3xl group-hover:bg-main-purple/30 transition-all"></div>
+                          <div class="relative z-10">
+                              <div class="w-14 h-14 rounded-2xl bg-main-purple/20 flex items-center justify-center mb-6 border border-main-purple/20">
+                                  <iconify-icon icon="lucide:megaphone" class="text-2xl text-main-purple"></iconify-icon>
+                              </div>
+                              <h3 class="text-2xl font-bold text-white mb-3">Promote locally</h3>
+                              <p class="text-zinc-400 leading-relaxed text-sm">
+                                  Your posts reach everyone nearby. When someone walks past your venue, they see what you're offering. Lunch specials, events, promotions. Right place, right time.
+                              </p>
+                          </div>
+                      </div>
+
+                      <!-- Feature 2: Real-time Interaction -->
+                      <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group hover:border-electric-blue/50 transition-all duration-300">
+                          <div class="absolute top-0 right-0 w-32 h-32 bg-electric-blue/20 rounded-full blur-3xl group-hover:bg-electric-blue/30 transition-all"></div>
+                          <div class="relative z-10">
+                              <div class="w-14 h-14 rounded-2xl bg-electric-blue/20 flex items-center justify-center mb-6 border border-electric-blue/20">
+                                  <iconify-icon icon="lucide:zap" class="text-2xl text-electric-blue"></iconify-icon>
+                              </div>
+                              <h3 class="text-2xl font-bold text-white mb-3">Real-Time Interaction</h3>
+                              <p class="text-zinc-400 leading-relaxed text-sm">
+                                  Engage with customers while they're actually at your location. Answer questions, take orders, share updates. The conversation happens where your business happens.
+                              </p>
+                          </div>
+                      </div>
+
+                      <!-- Feature 3: Direct Messaging -->
+                      <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group hover:border-sunset-orange/50 transition-all duration-300">
+                          <div class="absolute top-0 right-0 w-32 h-32 bg-sunset-orange/20 rounded-full blur-3xl group-hover:bg-sunset-orange/30 transition-all"></div>
+                          <div class="relative z-10">
+                              <div class="w-14 h-14 rounded-2xl bg-sunset-orange/20 flex items-center justify-center mb-6 border border-sunset-orange/20">
+                                  <iconify-icon icon="lucide:message-circle" class="text-2xl text-sunset-orange"></iconify-icon>
+                              </div>
+                              <h3 class="text-2xl font-bold text-white mb-3">Direct Messaging</h3>
+                              <p class="text-zinc-400 leading-relaxed text-sm">
+                                  Customers can message you directly. Questions about your menu, availability, reservations. No middleman. Just real conversations that convert.
+                              </p>
+                          </div>
+                      </div>
+
+                      <!-- Feature 4: Map Visibility -->
+                      <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group hover:border-emerald-500/50 transition-all duration-300">
+                          <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/20 rounded-full blur-3xl group-hover:bg-emerald-500/30 transition-all"></div>
+                          <div class="relative z-10">
+                              <div class="w-14 h-14 rounded-2xl bg-emerald-500/20 flex items-center justify-center mb-6 border border-emerald-500/20">
+                                  <iconify-icon icon="lucide:map-pin" class="text-2xl text-emerald-500"></iconify-icon>
+                              </div>
+                              <h3 class="text-2xl font-bold text-white mb-3">Map Visibility</h3>
+                              <p class="text-zinc-400 leading-relaxed text-sm">
+                                  Your business appears on the VYBZ map. Users exploring the area can discover you, see what's happening, and walk right in. Foot traffic, amplified.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- STATS SECTION -->
+                  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                      <div class="glass-panel p-8 rounded-3xl text-center hover:scale-[1.02] transition-transform duration-300">
+                          <p class="text-5xl font-black text-white mb-2 tracking-tighter">100%</p>
+                          <p class="text-sm font-bold text-zinc-500 uppercase tracking-wide">Local Reach</p>
+                      </div>
+                      <div class="glass-panel p-8 rounded-3xl text-center hover:scale-[1.02] transition-transform duration-300">
+                          <p class="text-5xl font-black text-sunset-orange mb-2 tracking-tighter">Real-Time</p>
+                          <p class="text-sm font-bold text-zinc-500 uppercase tracking-wide">Engagement</p>
+                      </div>
+                      <div class="glass-panel p-8 rounded-3xl text-center hover:scale-[1.02] transition-transform duration-300">
+                          <p class="text-5xl font-black text-electric-blue mb-2 tracking-tighter">Free</p>
+                          <p class="text-sm font-bold text-zinc-500 uppercase tracking-wide">To Start</p>
+                      </div>
+                  </div>
+
+                  <!-- HOW IT WORKS -->
+                  <div class="relative border border-white/10 rounded-3xl p-8 md:p-12 bg-white/[0.02]">
+                      <h2 class="text-3xl font-bold text-white mb-10 text-center">How It Works</h2>
+                      <div class="grid md:grid-cols-3 gap-10 relative">
+                           <!-- Connector Line (Desktop) -->
+                           <div class="hidden md:block absolute top-6 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+                           
+                          <div class="text-center relative z-10">
+                              <div class="w-14 h-14 rounded-full bg-[#111] border border-white/20 flex items-center justify-center mx-auto mb-6 shadow-xl">
+                                  <span class="text-xl font-bold text-white">1</span>
+                              </div>
+                              <h4 class="text-lg font-bold text-white mb-3">Download & Register</h4>
+                              <p class="text-sm text-zinc-400 leading-relaxed">Get the app and create a business account. It takes 2 minutes.</p>
+                          </div>
+                          <div class="text-center relative z-10">
+                              <div class="w-14 h-14 rounded-full bg-[#111] border border-white/20 flex items-center justify-center mx-auto mb-6 shadow-xl">
+                                  <span class="text-xl font-bold text-white">2</span>
+                              </div>
+                              <h4 class="text-lg font-bold text-white mb-3">Get Verified</h4>
+                              <p class="text-sm text-zinc-400 leading-relaxed">We review your business within 3 days. You'll get the verified badge.</p>
+                          </div>
+                          <div class="text-center relative z-10">
+                              <div class="w-14 h-14 rounded-full bg-[#111] border border-white/20 flex items-center justify-center mx-auto mb-6 shadow-xl">
+                                  <span class="text-xl font-bold text-white">3</span>
+                              </div>
+                              <h4 class="text-lg font-bold text-white mb-3">Start Connecting</h4>
+                              <p class="text-sm text-zinc-400 leading-relaxed">Post updates, appear on the map, and engage with customers nearby.</p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- BOTTOM CTA -->
+                  <div class="text-center py-12">
+                      <h2 class="text-2xl md:text-3xl font-bold text-white mb-6">Ready to grow your business?</h2>
+                      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                          <a href="https://apps.apple.com/gb/app/vybz-meet-people-nearby/id1661684666" target="_blank" class="inline-flex items-center justify-center gap-2 bg-white text-black px-8 py-4 rounded-full font-bold hover:scale-105 transition-transform">
+                              <iconify-icon icon="lucide:download"></iconify-icon>
+                              Download VYBZ
+                          </a>
+                          <a href="#" onclick="showLegal('Account Types'); return false;" class="inline-flex items-center justify-center gap-2 bg-white/10 text-white px-8 py-4 rounded-full font-bold hover:bg-white/20 transition-all border border-white/10">
+                              <iconify-icon icon="lucide:badge-check"></iconify-icon>
+                              About Verification
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          `,
+          'Ambassador Calendar': `
+              <div class="space-y-8">
+                  <!-- Hero Section -->
+                  <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-main-purple via-main-purple/90 to-electric-blue p-8 md:p-12 text-center">
+                      <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50"></div>
+                      <div class="relative z-10">
+                          <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+                              <img src="./images/badges/ambassador.svg" alt="Ambassador Badge" class="w-6 h-6">
+                              <span class="text-sm font-semibold text-white">Ambassador Program</span>
+                          </div>
+                          <h2 class="text-3xl md:text-5xl font-bold text-white mb-4 tracking-tight">
+                              VYBZ CALENDAR
+                          </h2>
+                          <p class="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
+                              Experience our dynamic community calendar. Stay synchronized with events, workshops, and special moments that shape our vibrant collective journey.
+                          </p>
+                      </div>
+                  </div>
+
+                  <!-- View Toggle Buttons -->
+                  <div class="flex flex-wrap justify-center gap-4">
+                      <button id="cal-month-btn" onclick="switchCalendarView('MONTH')" class="inline-flex items-center gap-2 bg-main-purple text-white px-4 py-2 rounded-full text-sm font-medium cursor-pointer hover:opacity-90 transition-all">
+                          <iconify-icon icon="lucide:calendar"></iconify-icon>
+                          Month View
+                      </button>
+                      <button id="cal-agenda-btn" onclick="switchCalendarView('AGENDA')" class="inline-flex items-center gap-2 bg-white/10 text-zinc-400 px-4 py-2 rounded-full text-sm font-medium cursor-pointer hover:bg-white/20 transition-all">
+                          <iconify-icon icon="lucide:list"></iconify-icon>
+                          Agenda View
+                      </button>
+                      <div class="inline-flex items-center gap-2 bg-sunset-orange/20 text-sunset-orange px-4 py-2 rounded-full text-sm font-medium">
+                          <iconify-icon icon="lucide:globe"></iconify-icon>
+                          UK Time (GMT)
+                      </div>
+                  </div>
+
+                  <!-- Calendar Embed -->
+                  <div class="rounded-2xl overflow-hidden border border-white/10 bg-white">
+                      <iframe
+                          id="vybz-calendar-iframe"
+                          src="https://calendar.google.com/calendar/embed?src=c_c509d130c8fc6794b48e4b6dd03e51b4faccbeb6afc3993cc442110c28ee968e%40group.calendar.google.com&ctz=Europe%2FLondon&showTitle=0&showNav=1&showPrint=0&showTabs=0&showCalendars=0&mode=MONTH"
+                          style="border: 0"
+                          width="100%"
+                          height="600"
+                          frameborder="0"
+                          scrolling="no"
+                          title="VYBZ Community Calendar"
+                          loading="lazy">
+                      </iframe>
+                  </div>
+
+                  <!-- Add to Calendar CTA -->
+                  <div class="glass-panel p-6 md:p-8 rounded-2xl text-center">
+                      <h3 class="text-xl font-bold text-white mb-3">Never Miss an Event</h3>
+                      <p class="text-zinc-400 mb-6 max-w-lg mx-auto">Add the VYBZ calendar to your Google Calendar and stay updated with all community events, workshops, and special moments.</p>
+                      <a href="https://calendar.google.com/calendar/u/0?cid=Y19jNTA5ZDEzMGM4ZmM2Nzk0YjQ4ZTRiNmRkMDNlNTFiNGZhY2NiZWI2YWZjMzk5M2NjNDQyMTEwYzI4ZWU5NjhlQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-main-purple text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity">
+                          <iconify-icon icon="lucide:plus"></iconify-icon>
+                          Add to Google Calendar
+                      </a>
+                  </div>
+
+                  <!-- Ambassador Info -->
+                  <div class="grid md:grid-cols-2 gap-6">
+                      <div class="bg-white/5 rounded-2xl border border-white/5 p-6">
+                          <div class="w-12 h-12 rounded-xl bg-main-purple/20 flex items-center justify-center mb-4">
+                              <iconify-icon icon="lucide:users" class="text-xl text-main-purple"></iconify-icon>
+                          </div>
+                          <h4 class="font-semibold text-white mb-2">Ambassador Events</h4>
+                          <p class="text-sm text-zinc-400">Exclusive meetups, training sessions, and networking opportunities for VYBZ ambassadors.</p>
+                      </div>
+                      <div class="bg-white/5 rounded-2xl border border-white/5 p-6">
+                          <div class="w-12 h-12 rounded-xl bg-sunset-orange/20 flex items-center justify-center mb-4">
+                              <iconify-icon icon="lucide:sparkles" class="text-xl text-sunset-orange"></iconify-icon>
+                          </div>
+                          <h4 class="font-semibold text-white mb-2">Special Moments</h4>
+                          <p class="text-sm text-zinc-400">Product launches, community celebrations, and milestone events that bring us together.</p>
+                      </div>
+                  </div>
+
+                  <!-- Become Ambassador CTA -->
+                  <div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-main-purple/20 to-electric-blue/20 border border-main-purple/20 p-8 text-center">
+                      <h3 class="text-xl font-bold text-white mb-3">Want to Join the Ambassador Program?</h3>
+                      <p class="text-zinc-400 mb-6">Get special perks, exclusive access to events, and help grow the VYBZ community.</p>
+                      <a href="#" onclick="showLegal('Become an Ambassador'); return false;" class="inline-flex items-center gap-2 bg-main-purple text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity">
+                          <iconify-icon icon="lucide:megaphone"></iconify-icon>
+                          Learn More
+                      </a>
+                  </div>
+              </div>
+          `,
+          'Become an Ambassador': `
+              <div class="space-y-12">
+                  <!-- HERO -->
+                  <section class="relative isolate overflow-hidden rounded-3xl min-h-[500px] flex flex-col items-center justify-center text-center px-6 border border-white/10">
+                      <!-- Animated BG -->
+                      <div class="absolute inset-0 bg-main-black">
+                           <div class="absolute inset-0 bg-gradient-to-b from-main-purple/20 via-black to-black opacity-60"></div>
+                           <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-main-purple/30 rounded-full blur-[120px] animate-pulse-glow"></div>
+                      </div>
+                      
+                      <div class="relative z-10 max-w-3xl mx-auto">
+                          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-md mb-6 animate-[fadeIn_1s_ease-out]">
+                              <span class="w-2 h-2 rounded-full bg-main-purple animate-pulse"></span>
+                              <span class="text-[10px] uppercase tracking-widest text-zinc-300 font-bold">Coming Soon</span>
+                          </div>
+                          
+                          <h2 class="text-5xl md:text-7xl font-black text-white tracking-tight leading-none mb-6 animate-[fadeIn_1s_ease-out_0.2s_both]">
+                              BE THE <br>
+                              <span class="text-gradient">MAIN CHARACTER.</span>
+                          </h2>
+                          
+                          <p class="text-lg md:text-xl text-zinc-400 font-medium leading-relaxed mb-10 max-w-xl mx-auto animate-[fadeIn_1s_ease-out_0.4s_both]">
+                              Don't just use the app. Own your city. Become a VYBZ Ambassador and turn your social life into your side hustle.
+                          </p>
+                          
+                          <div class="flex flex-col sm:flex-row gap-4 justify-center animate-[fadeIn_1s_ease-out_0.6s_both]">
+                              <a href="https://form.typeform.com/to/VYZ1ZpTb" target="_blank" class="px-8 py-4 bg-white text-black rounded-full font-bold hover:scale-105 transition-transform flex items-center gap-2">
+                                  Join the Waitlist
+                                  <iconify-icon icon="lucide:arrow-right"></iconify-icon>
+                              </a>
+                          </div>
+                      </div>
+                  </section>
+
+                  <!-- REAL PEOPLE SECTION (Using Polaroid Style) -->
+                  <section class="relative">
+                      <div class="flex items-end justify-between mb-8 px-2">
+                          <div>
+                              <h2 class="text-3xl font-bold text-white mb-2">The Vibe Squad</h2>
+                              <p class="text-zinc-400 text-sm">Real people. Real influence.</p>
+                          </div>
+                      </div>
+                      
+                      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                          <!-- Card 1 -->
+                          <div class="bg-polaroid-white p-3 pb-6 rounded-2xl shadow-xl transform -rotate-1 hover:rotate-0 transition-all duration-300 group">
+                              <div class="aspect-[4/5] bg-zinc-200 overflow-hidden rounded-lg mb-4 relative transform-gpu isolate [-webkit-mask-image:-webkit-radial-gradient(white,black)]">
+                                  <img src="./images/cards/coffee.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" alt="Ambassador">
+                                  <div class="absolute bottom-3 left-3">
+                                       <div class="px-2 py-1 bg-black/70 backdrop-blur-md rounded-md border border-white/10">
+                                          <span class="text-[10px] font-bold text-white uppercase">The Connector</span>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="px-2">
+                                  <h3 class="font-bold text-black text-lg">Sarah</h3>
+                                  <p class="text-zinc-500 text-xs font-medium">Riyadh • 2.5k Followers</p>
+                              </div>
+                          </div>
+                           <!-- Card 2 -->
+                          <div class="bg-polaroid-white p-3 pb-6 rounded-2xl shadow-xl transform rotate-2 hover:rotate-0 transition-all duration-300 group md:-mt-8">
+                              <div class="aspect-[4/5] bg-zinc-200 overflow-hidden rounded-lg mb-4 relative transform-gpu isolate [-webkit-mask-image:-webkit-radial-gradient(white,black)]">
+                                  <img src="./images/cards/gaming.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" alt="Ambassador">
+                                  <div class="absolute bottom-3 left-3">
+                                       <div class="px-2 py-1 bg-black/70 backdrop-blur-md rounded-md border border-white/10">
+                                          <span class="text-[10px] font-bold text-white uppercase">The Creator</span>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="px-2">
+                                  <h3 class="font-bold text-black text-lg">Ahmed</h3>
+                                  <p class="text-zinc-500 text-xs font-medium">Dubai • 5.1k Followers</p>
+                              </div>
+                          </div>
+                           <!-- Card 3 -->
+                          <div class="bg-polaroid-white p-3 pb-6 rounded-2xl shadow-xl transform -rotate-1 hover:rotate-0 transition-all duration-300 group">
+                              <div class="aspect-[4/5] bg-zinc-200 overflow-hidden rounded-lg mb-4 relative transform-gpu isolate [-webkit-mask-image:-webkit-radial-gradient(white,black)]">
+                                  <img src="./images/cards/desert.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" alt="Ambassador">
+                                   <div class="absolute bottom-3 left-3">
+                                       <div class="px-2 py-1 bg-black/70 backdrop-blur-md rounded-md border border-white/10">
+                                          <span class="text-[10px] font-bold text-white uppercase">The Explorer</span>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="px-2">
+                                  <h3 class="font-bold text-black text-lg">Fahad</h3>
+                                  <p class="text-zinc-500 text-xs font-medium">Kuwait • 1.8k Followers</p>
+                              </div>
+                          </div>
+                      </div>
+                  </section>
+
+                  <!-- PERKS GRID -->
+                  <section class="grid md:grid-cols-2 gap-6">
+                      <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group">
+                          <div class="absolute top-0 right-0 w-32 h-32 bg-main-purple/20 rounded-full blur-3xl group-hover:bg-main-purple/30 transition-all"></div>
+                          <iconify-icon icon="lucide:gem" class="text-4xl text-main-purple mb-4"></iconify-icon>
+                          <h3 class="text-2xl font-bold text-white mb-2">Get Paid</h3>
+                          <p class="text-zinc-400 text-sm leading-relaxed">
+                              Earn real rewards for the vibes you create. Performance-based incentives and exclusive merch drops.
+                          </p>
+                      </div>
+                      <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group">
+                          <div class="absolute top-0 right-0 w-32 h-32 bg-sunset-orange/20 rounded-full blur-3xl group-hover:bg-sunset-orange/30 transition-all"></div>
+                           <iconify-icon icon="lucide:ticket" class="text-4xl text-sunset-orange mb-4"></iconify-icon>
+                          <h3 class="text-2xl font-bold text-white mb-2">VIP Access</h3>
+                          <p class="text-zinc-400 text-sm leading-relaxed">
+                              Skip the line. Get on the guest list for the hottest events in town and exclusive VYBZ parties.
+                          </p>
+                      </div>
+                       <div class="glass-panel p-8 rounded-3xl relative overflow-hidden group md:col-span-2">
+                          <div class="absolute top-0 right-0 w-64 h-64 bg-main-purple/10 rounded-full blur-3xl group-hover:bg-main-purple/20 transition-all"></div>
+                           <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
+                              <div class="w-16 h-16 rounded-full bg-main-purple/20 flex items-center justify-center flex-shrink-0">
+                                  <img src="./images/badges/ambassador.svg" alt="Ambassador Badge" class="w-10 h-10">
+                              </div>
+                              <div>
+                                  <h3 class="text-2xl font-bold text-white mb-2">Ambassador Badge</h3>
+                                  <p class="text-zinc-400 text-sm leading-relaxed max-w-xl">
+                                      Stand out in the feed. Get the official Ambassador badge on your profile and early access to new features before anyone else.
+                                  </p>
+                              </div>
+                           </div>
+                      </div>
+                  </section>
+
+                  <!-- FINAL CTA -->
+                  <div class="text-center py-12">
+                      <p class="text-zinc-500 text-sm mb-6 font-medium">Ready to make waves?</p>
+                      <a href="https://form.typeform.com/to/VYZ1ZpTb" target="_blank" class="inline-flex items-center gap-2 border-b border-white text-white pb-1 hover:text-main-purple hover:border-main-purple transition-all font-bold">
+                          Join the Waitlist
+                      </a>
+                  </div>
+              </div>
+          `,
+          'Community Guidelines': `
+              <div class="space-y-8">
+                  <div class="glass-panel p-6 md:p-8 rounded-2xl">
+                      <p class="text-base leading-relaxed text-zinc-300">
+                          Welcome to VYBZ. These are the ground rules for using the app. They apply to everything you post, share, and say on here. The short version: be yourself, be respectful, and don't ruin it for everyone else.
+                      </p>
+                  </div>
+
+                  <div class="glass-panel p-6 md:p-8 rounded-2xl">
+                      <h3 class="text-xl font-bold text-white mb-4">Your Identity — Impersonation & Spam</h3>
+                      <ul class="space-y-3 text-zinc-300 text-sm leading-relaxed">
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Use your accurate date of birth and own phone number during onboarding verification.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Avoid impersonation and do not pretend to be someone else or attempt to deceive others about your identity.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Refrain from sending unwanted email, comments, emoji reactions, DM's, or other forms of commercial or harassing communications.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>The Neighbourhood Feed or Location Feed should not be used to advertise your business or organization, and content imitating VYBZ advert formats is prohibited.</span></li>
+                      </ul>
+                  </div>
+
+                  <div class="glass-panel p-6 md:p-8 rounded-2xl">
+                      <h3 class="text-xl font-bold text-white mb-4">Sexually Explicit Content</h3>
+                      <ul class="space-y-3 text-zinc-300 text-sm leading-relaxed">
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>We don't allow nudity on VYBZ, with some exceptions, like photos for medical knowledge or nudity in photos of paintings and sculptures.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>We prohibit accounts that promote or distribute pornographic content.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Sexual content involving minors is illegal. You should never share, save, screenshot, screen record or send nude or sexual content to anyone who is under 18 years old. Even if the content involves yourself. You should never ask, guide or encourage minors to send sexual content to you. Any child sexual exploitation will be reported directly to the police and other relevant authorities.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Don't promote or otherwise advertise sexual services</span></li>
+                      </ul>
+                  </div>
+
+                  <div class="glass-panel p-6 md:p-8 rounded-2xl">
+                      <h3 class="text-xl font-bold text-white mb-4">Harassment & Bullying</h3>
+                      <ul class="space-y-3 text-zinc-300 text-sm leading-relaxed">
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>You should be kind to others on the platform</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>We have zero tolerance on bullying or harassment of any kind. Don't bully or spam other users</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Don't send a message or post with the intention of making someone feel bad. If someone blocks you, don't try to contact them from another account.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Don't post images of people in private spaces — like a bathroom, locker room or a medical facility — without their knowledge and consent.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>If someone is in your post and asks you to remove it, please do.</span></li>
+                      </ul>
+                  </div>
+
+                  <div class="glass-panel p-6 md:p-8 rounded-2xl">
+                      <h3 class="text-xl font-bold text-white mb-4">Social Media Account Linking</h3>
+                      <ul class="space-y-3 text-zinc-300 text-sm leading-relaxed">
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span><strong class="text-white">Snapchat</strong> — you should only link your personal Snapchat account with VYBZ. Any commercial or non-personal account liking is not allowed.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span><strong class="text-white">Instagram</strong> — you should only link your personal Instagram account with VYBZ. Any commercial or non-personal account liking is not allowed.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span><strong class="text-white">Twitter</strong> — you should only link your personal Twitter account with VYBZ. Any commercial or non-personal account liking is not allowed.</span></li>
+                      </ul>
+                  </div>
+
+                  <div class="glass-panel p-6 md:p-8 rounded-2xl">
+                      <h3 class="text-xl font-bold text-white mb-4">Personality Tiles - Custom Tiles on Tabloid</h3>
+                      <p class="text-zinc-300 text-sm leading-relaxed">
+                          Don't create custom tiles, including but not limited to questionnaires, polls, memes, jokes etc. that break any of our Community Guidelines.
+                      </p>
+                  </div>
+
+                  <div class="glass-panel p-6 md:p-8 rounded-2xl bg-gradient-to-br from-red-500/5 to-transparent border-red-500/20">
+                      <h3 class="text-xl font-bold text-white mb-4">Self-harm and Suicide</h3>
+                      <p class="text-zinc-300 text-sm leading-relaxed mb-4">
+                          We understand that some of our users, especially the young ones are facing and dealing with some difficult issues in their everyday lives and might need our support. We want to stress that you are not alone and if you or anyone you know are in danger our self-harm or suicide please contact 999 In the UK and 911 in United States or your national emergency number.
+                      </p>
+                      <div class="space-y-3 text-zinc-300 text-sm leading-relaxed">
+                          <p>
+                              <strong class="text-white">Users in the UK</strong> can dial 111, Option 2, the National Health Services' First Response Service for mental health crises and support and visit <a href="http://www.samaritans.org/" target="_blank" class="text-main-purple hover:text-sunset-orange transition-colors underline">Samaritans</a> a registered charity aimed at providing emotional support to anyone in distress or at risk of suicide throughout the United Kingdom
+                          </p>
+                          <p>
+                              <strong class="text-white">Users in the US</strong> can dial 1-800-273-8255 or visit <a href="http://suicidepreventionlifeline.org/" target="_blank" class="text-main-purple hover:text-sunset-orange transition-colors underline">The National Suicide Prevention Lifeline</a> which is a 24-hour, toll-free, confidential suicide prevention hotline available to anyone in suicidal crisis or emotional distress.
+                          </p>
+                          <p class="mt-4">
+                              It's not OK to promote or otherwise glorify self harm that involves but is not limited to eating disorders, hunger strikes, cutting or any other form of self-injury.
+                          </p>
+                      </div>
+                  </div>
+
+                  <div class="glass-panel p-6 md:p-8 rounded-2xl">
+                      <h3 class="text-xl font-bold text-white mb-4">Threats & Violence</h3>
+                      <ul class="space-y-3 text-zinc-300 text-sm leading-relaxed">
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Never privately or publicly threaten anyone or a group of people or someone's property.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Don't Encourage or otherwise incite acts of Violence or organised crime, including terrorism.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Don't post images or videos of gratuitous violence, including animal abuse.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Media depicting sexual violence and/or assault is not permitted.</span></li>
+                      </ul>
+                  </div>
+
+                  <div class="glass-panel p-6 md:p-8 rounded-2xl">
+                      <h3 class="text-xl font-bold text-white mb-4">Hate Speech & False Information</h3>
+                      <ul class="space-y-3 text-zinc-300 text-sm leading-relaxed">
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Don't post any content that demeans, defames, or promotes discrimination or violence on the basis of race, ethnicity, national origin, religion, sexual orientation, gender identity, disability, or veteran status.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>We prohibit malicious deception and deliberately spread false information that causes harm.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>We do not allow insulting, offending, or attacking anyone's faith on VYBZ. Your account will be banned, and the offensive content removed.</span></li>
+                      </ul>
+                  </div>
+
+                  <div class="glass-panel p-6 md:p-8 rounded-2xl">
+                      <h3 class="text-xl font-bold text-white mb-4">Illegal Content</h3>
+                      <ul class="space-y-3 text-zinc-300 text-sm leading-relaxed">
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Don't use VYBZ for any illegal activities — including to buy or sell illegal drugs, contraband, counterfeit goods, or illegal weapons.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Offering sexual services and selling firearms and drugs are prohibited.</span></li>
+                      </ul>
+                  </div>
+
+                  <div class="glass-panel p-6 md:p-8 rounded-2xl">
+                      <h3 class="text-xl font-bold text-white mb-4">Business Profiles and Interaction</h3>
+
+                      <h4 class="text-base font-semibold text-white mt-6 mb-3">Business Information and Claims</h4>
+                      <ul class="space-y-3 text-zinc-300 text-sm leading-relaxed">
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Engage with business profiles, claimed or unclaimed, in a constructive and respectful manner.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Contribute to accurate and reliable business listings by reporting inaccuracies and interacting responsibly.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Businesses are encouraged to claim their profiles, and any claim should be true and verifiable.</span></li>
+                      </ul>
+
+                      <h4 class="text-base font-semibold text-white mt-6 mb-3">User-Generated Content on Business Profiles</h4>
+                      <ul class="space-y-3 text-zinc-300 text-sm leading-relaxed">
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Ensure content shared, including reviews and images, is relevant and respectful to businesses and users alike.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Avoid using business profiles for promotional purposes or spamming the community with irrelevant information.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Do not create content that misrepresents or impersonates official communications from businesses or VYBZ.</span></li>
+                      </ul>
+                  </div>
+
+                  <div class="glass-panel p-6 md:p-8 rounded-2xl">
+                      <h3 class="text-xl font-bold text-white mb-4">Reporting and Moderation</h3>
+
+                      <h4 class="text-base font-semibold text-white mt-6 mb-3">Reporting Inaccuracies and Violations</h4>
+                      <ul class="space-y-3 text-zinc-300 text-sm leading-relaxed">
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Actively report inaccuracies, misrepresentations, or any violations of community guidelines.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Understand the role of moderation in managing content and ensuring adherence to community guidelines.</span></li>
+                      </ul>
+
+                      <h4 class="text-base font-semibold text-white mt-6 mb-3">Account Penalties and Banning</h4>
+                      <ul class="space-y-3 text-zinc-300 text-sm leading-relaxed">
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Be aware that violations of community guidelines can result in warnings, account restrictions, or banning.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>A mechanism for appealing decisions regarding penalties or content removal will be provided.</span></li>
+                      </ul>
+                  </div>
+
+                  <div class="glass-panel p-6 md:p-8 rounded-2xl">
+                      <h3 class="text-xl font-bold text-white mb-4">Safe and Ethical Use of Technology</h3>
+
+                      <h4 class="text-base font-semibold text-white mt-6 mb-3">Technology Use and Misuse</h4>
+                      <ul class="space-y-3 text-zinc-300 text-sm leading-relaxed">
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Utilize VYBZ's technological features, including location services and messaging, ethically and respectfully.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Do not misuse location data or other information available through VYBZ to infringe upon the privacy of others.</span></li>
+                      </ul>
+
+                      <h4 class="text-base font-semibold text-white mt-6 mb-3">Augmented Reality and Real-world Interaction</h4>
+                      <ul class="space-y-3 text-zinc-300 text-sm leading-relaxed">
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Use Augmented Reality (AR) and other immersive features safely and mindfully, considering real-world surroundings.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Ensure that use of AR features is respectful in both digital and physical spaces.</span></li>
+                      </ul>
+                  </div>
+
+                  <div class="glass-panel p-6 md:p-8 rounded-2xl">
+                      <h3 class="text-xl font-bold text-white mb-4">Respect and Inclusion</h3>
+
+                      <h4 class="text-base font-semibold text-white mt-6 mb-3">Inclusivity and Diversity</h4>
+                      <ul class="space-y-3 text-zinc-300 text-sm leading-relaxed">
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Maintain an inclusive and welcoming environment for all users and businesses.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Do not engage in discriminatory behavior or create content that targets others based on protected characteristics.</span></li>
+                      </ul>
+                  </div>
+
+                  <div class="glass-panel p-6 md:p-8 rounded-2xl bg-gradient-to-br from-main-purple/5 to-transparent border-main-purple/20">
+                      <h3 class="text-xl font-bold text-white mb-4">Final Note</h3>
+                      <p class="text-zinc-300 text-sm leading-relaxed">
+                          Remember that adherence to these guidelines ensures a positive and constructive environment for all Vybers. Let's maintain a respectful and supportive community where everyone feels valued and welcomed.
+                      </p>
+                  </div>
+              </div>
+          `,
+          'Terms of Use': `
+              <div class="space-y-8">
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <p class="text-base leading-relaxed text-zinc-300 mb-6">
+                          These Terms govern the use of VYBZ and any related Agreement or legal relationship with the Owner in a legally binding way. Capitalized words are defined in the relevant dedicated section of this document.
+                      </p>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          The User must read this document carefully.
+                      </p>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          Although the entire contractual relationship relating to these Products is entered into solely by the Owner and Users, Users acknowledge and agree that, where VYBZ has been provided to them via the Apple App Store, Apple may enforce these Terms as a third-party beneficiary.
+                      </p>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          Nothing in these Terms creates any relationship of employment, agency, or partnership between the involved parties.
+                      </p>
+                      <div class="mt-6 p-4 bg-black/20 rounded-xl border border-white/10">
+                          <p class="text-sm font-semibold text-white mb-2">VYBZ is provided by:</p>
+                          <p class="text-sm text-zinc-300">VYBZ Inc.<br>24 Dering Street<br>London W1S 1BL<br>United Kingdom</p>
+                          <p class="text-sm text-zinc-300 mt-3"><strong class="text-white">Owner contact email:</strong> support@vybzapp.com</p>
+                      </div>
+                      <div class="mt-6">
+                          <p class="text-sm font-semibold text-white mb-3">"VYBZ" refers to:</p>
+                          <ul class="space-y-2 text-zinc-300 text-sm">
+                              <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>This website, including its subdomains and any other website through which the Owner makes its Service available;</span></li>
+                              <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Applications for mobile, tablet and other smart device systems;</span></li>
+                              <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>The Application Program Interfaces (API);</span></li>
+                              <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>The Service;</span></li>
+                              <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Any applications, sample and content files, source code, scripts, instruction sets or software included as part of the Service, as well as any related documentation;</span></li>
+                          </ul>
+                      </div>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-6">What the User Should Know at a Glance</h3>
+                      <ul class="space-y-3 text-zinc-300 text-sm">
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Please note that some provisions in these Terms may only apply to certain categories of Users. In particular, certain provisions may only apply to Consumers or to those Users that do not qualify as Consumers. Such limitations are always explicitly mentioned within each affected clause. In the absence of any such mention, clauses apply to all Users.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Usage of VYBZ and the Service is age restricted, as detailed in the relevant section of this document.</span></li>
+                      </ul>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-6">Terms of Use</h3>
+                      <p class="text-sm text-zinc-300 mb-6">
+                          Unless otherwise specified, the terms of use detailed in this section apply generally when using VYBZ. Single or additional conditions of use or access may apply in specific scenarios and in such cases are additionally indicated within this document.
+                      </p>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          By using VYBZ, Users confirm to meet the following requirements:
+                      </p>
+                      <ul class="space-y-2 text-zinc-300 text-sm mb-6">
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>There are no restrictions for Users in terms of being Consumers or Business Users;</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Users must be older than 18;</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Users aren't located in a country that is subject to a U.S. Government embargo, or that has been designated by the U.S. Government as a "terrorist-supporting" country;</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Users aren't listed on any U.S. Government list of prohibited or restricted parties;</span></li>
+                      </ul>
+
+                      <h4 class="text-lg font-semibold text-white mt-8 mb-4">Account Registration</h4>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          To use the Service Users must register or create a User account, providing all required data or information in a complete and truthful manner. Failure to do so will cause unavailability of the Service.
+                      </p>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          Users are responsible for keeping their login credentials confidential and safe. For this reason, Users are also required to choose passwords that meet the highest standards of strength permitted by VYBZ.
+                      </p>
+                      <p class="text-sm text-zinc-300 mb-6">
+                          By registering, Users agree to be fully responsible for all activities that occur under their username and password. Users are required to immediately and unambiguously inform the Owner via the contact details indicated in this document, if they think their personal information, including but not limited to User accounts, access credentials or personal data, have been violated, unduly disclosed or stolen.
+                      </p>
+
+                      <p class="text-sm font-semibold text-white mb-3">Conditions for Account Registration</p>
+                      <p class="text-sm text-zinc-300 mb-3">Registration of User accounts on VYBZ is subject to the conditions outlined below. By registering, Users agree to meet such conditions.</p>
+                      <ul class="space-y-2 text-zinc-300 text-sm">
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Accounts registered by bots or any other automated methods are not permitted.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Unless otherwise specified, each User must register only one account.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Unless explicitly permitted, a User account may not be shared with other persons.</span></li>
+                      </ul>
+
+                      <h4 class="text-lg font-semibold text-white mt-8 mb-4">Account Termination</h4>
+                      <p class="text-sm text-zinc-300 mb-3">Users can terminate their account and stop using the Service at any time by doing the following:</p>
+                      <ul class="space-y-2 text-zinc-300 text-sm">
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>By using the tools provided for account termination on VYBZ.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>By directly contacting the Owner at the contact details provided in this document.</span></li>
+                      </ul>
+
+                      <h4 class="text-lg font-semibold text-white mt-8 mb-4">Account Suspension and Deletion</h4>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          The Owner reserves the right, at its sole discretion, to suspend or delete at any time and without notice, User accounts which it deems inappropriate, offensive or in violation of these Terms.
+                      </p>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          The suspension or deletion of User accounts shall not entitle Users to any claims for compensation, damages or reimbursement.
+                      </p>
+                      <p class="text-sm text-zinc-300">
+                          The suspension or deletion of accounts due to causes attributable to the User does not exempt the User from paying any applicable fees or prices.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-6">Content on VYBZ</h3>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          Unless where otherwise specified or clearly recognizable, all content available on VYBZ is owned or provided by the Owner or its licensors.
+                      </p>
+                      <p class="text-sm text-zinc-300 mb-6">
+                          The Owner undertakes its utmost effort to ensure that the content provided on VYBZ infringes no applicable legal provisions or third-party rights. However, it may not always be possible to achieve such a result. In such cases, without prejudice to any legal prerogatives of Users to enforce their rights, Users are kindly asked to preferably report related complaints using the contact details provided in this document.
+                      </p>
+
+                      <h4 class="text-lg font-semibold text-white mt-6 mb-4">Rights Regarding Content on VYBZ - All Rights Reserved</h4>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          The Owner holds and reserves all intellectual property rights for any such content. Users may not therefore use such content in any way that is not necessary or implicit in the proper use of the Service.
+                      </p>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          In particular, but without limitation, Users may not copy, download, share (beyond the limits set forth below), modify, translate, transform, publish, transmit, sell, sublicense, edit, transfer/assign to third parties or create derivative works from the content available on VYBZ, nor allow any third party to do so through the User or their device, even without the User's knowledge.
+                      </p>
+                      <p class="text-sm text-zinc-300">
+                          Where explicitly stated on VYBZ, the User may download, copy and/or share some content available through VYBZ for its sole personal and non-commercial use and provided that the copyright attributions and all the other attributions requested by the Owner are correctly implemented.
+                      </p>
+
+                      <h4 class="text-lg font-semibold text-white mt-8 mb-4">Content Provided by Users</h4>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          The Owner allows Users to upload, share or provide their own content to VYBZ. By providing content to VYBZ, Users confirm that they are legally allowed to do so and that they are not infringing any statutory provisions and/or third-party rights.
+                      </p>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          Users acknowledge and accept that by providing their own content to VYBZ they grant the Owner a non-exclusive, worldwide, fully paid-up and royalty-free, irrevocable, perpetual (or for the entire protection term), sub-licensable and transferable license to use, access, store, reproduce, modify, distribute, publish, process into derivative works, broadcast, stream, transmit or otherwise exploit such content to provide and promote its Service in any media or manner.
+                      </p>
+                      <p class="text-sm text-zinc-300 mb-6">
+                          To the extent permitted by applicable law, Users waive any moral rights in connection with content they provide to VYBZ.
+                      </p>
+
+                      <p class="text-sm font-semibold text-white mb-3">Liability for Provided Content</p>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          Users are solely liable for any content they upload, post, share, or provide through VYBZ. Users acknowledge and accept that the Owner does not filter or moderate such content.
+                      </p>
+                      <p class="text-sm text-zinc-300 mb-3">
+                          However, the Owner reserves the right to remove, delete or block such content at its own discretion and, without prior notice, to deny the uploading User access to VYBZ:
+                      </p>
+                      <ul class="space-y-2 text-zinc-300 text-sm mb-4">
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Upon becoming aware of any (alleged) violation of these Terms, any third-party rights, or applicable law;</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>If a notice of infringement of intellectual property rights is received;</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>If a notice of violation of a third party's privacy is received;</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Upon order of a public authority; or</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Where the content may represent a risk for Users, third parties and/or the availability of the Service.</span></li>
+                      </ul>
+                      <p class="text-sm text-zinc-300 mb-6">
+                          <strong class="text-white">Removal of content from parts of VYBZ available through the App Store:</strong> If the reported content is deemed objectionable, it will be removed within 24 hours and the User who provided the content will be barred from using the Service.
+                      </p>
+
+                      <p class="text-sm font-semibold text-white mb-3">Access to Provided Content</p>
+                      <p class="text-sm text-zinc-300 mb-3">Content that Users provide to VYBZ is made available according to the criteria outlined within this section.</p>
+                      <ul class="space-y-2 text-zinc-300 text-sm">
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span><strong class="text-white">Publicly available content:</strong> Content meant for public availability shall be automatically made public on VYBZ upon upload or, at the sole discretion of the Owner, at a later stage. Any personal data or identifier (User-ID, avatar) shall also appear in connection with the published content.</span></li>
+                      </ul>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-6">Access to External Resources</h3>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          Through VYBZ Users may have access to external resources provided by third parties. Users acknowledge and accept that the Owner has no control over such resources and is therefore not responsible for their content and availability.
+                      </p>
+                      <p class="text-sm text-zinc-300">
+                          On VYBZ Users may see advertisements provided by third parties. The Owner does not control or moderate these advertisements. If Users click on any such advertisement, they will be interacting with the third party responsible for it.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-6">How to File a Takedown Notice (DMCA Notice)</h3>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          If copyright holders believe that any content on VYBZ infringes upon their copyrights, they may submit a notification pursuant to the DMCA by providing the Owner's Copyright Agent with:
+                      </p>
+                      <ul class="space-y-2 text-zinc-300 text-sm">
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>A physical or electronic signature of an authorized person;</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Identification of the copyrighted work claimed to have been infringed;</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Identification of the material claimed to be infringing and location information;</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Contact information of the notifying party;</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>A statement of good faith belief;</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>A statement that the information is accurate, and under penalty of perjury.</span></li>
+                      </ul>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-6">Acceptable Use</h3>
+                      <p class="text-sm text-zinc-300">
+                          VYBZ and the Service may only be used within the scope of what they are provided for, under these Terms and applicable law. Users are solely responsible for making sure that their use violates no applicable law, regulations or third-party rights.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-6">Software License</h3>
+                      <p class="text-sm text-zinc-300">
+                          Any intellectual or industrial property rights on software embedded in or related to VYBZ are held by the Owner and/or its licensors. The Owner grants Users a revocable, non-exclusive, non-sublicensable and non-transferable license to use the software within the scope of the Service. This license does not grant rights to the original source code.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-6">API Usage Terms</h3>
+                      <p class="text-sm text-zinc-300">
+                          Users may access their data via the API. Any use of the API is bound by these Terms. The User agrees that the Owner bears no responsibility for any damages resulting from the use of the API or third-party products that access data through the API.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-6">Purchase via App Store</h3>
+                      <p class="text-sm text-zinc-300">
+                          VYBZ or specific Products must be purchased via a third-party app store (e.g., Apple App Store, Google Play). These purchases are subject to the third-party's terms and conditions, which shall prevail in case of conflict.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-6">Subscriptions</h3>
+                      <p class="text-sm text-zinc-300 mb-6">
+                          Subscriptions allow Users to receive a Product continuously.
+                      </p>
+
+                      <h4 class="text-lg font-semibold text-white mb-4">Subscriptions Handled via Apple ID</h4>
+                      <ul class="space-y-2 text-zinc-300 text-sm mb-6">
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Payment is charged to the Apple ID account.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Subscriptions automatically renew unless cancelled at least 24 hours before the period ends.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Renewal fees are charged within 24 hours before the end of the current period.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Management and cancellation are handled in Apple App Store account settings.</span></li>
+                      </ul>
+
+                      <h4 class="text-lg font-semibold text-white mb-4">Termination</h4>
+                      <p class="text-sm text-zinc-300">
+                          Subscriptions may be terminated by sending a notice to the Owner or using controls inside VYBZ.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-6">Liability and Indemnification</h3>
+
+                      <h4 class="text-lg font-semibold text-white mb-4">Indemnification</h4>
+                      <p class="text-sm text-zinc-300 mb-6">
+                          The User agrees to indemnify and hold the Owner and its affiliates harmless from any claim or demand (including legal fees) made by any third party due to the User's use of the Service, violation of these Terms, or infringement of any rights.
+                      </p>
+
+                      <h4 class="text-lg font-semibold text-white mb-4">Limitation of Liability</h4>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          Unless otherwise stated, Users shall have no right to claim damages against the Owner. This does not apply to damages to life, health, or physical integrity, or damages resulting from gross negligence or intent.
+                      </p>
+                      <p class="text-sm text-zinc-300">
+                          <strong class="text-white">For Users not qualifying as Consumers:</strong> Liability compensation may not exceed the total payments received by the Owner from the User over the preceding 12 months.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-6">US Users</h3>
+
+                      <h4 class="text-lg font-semibold text-white mb-4">Disclaimer of Warranties</h4>
+                      <p class="text-sm text-zinc-300 mb-6">
+                          VYBZ is provided "as is" and "as available". Use of the Service is at Users' own risk. The Owner disclaims all conditions, representations, and warranties, including merchantability and fitness for a particular purpose.
+                      </p>
+
+                      <h4 class="text-lg font-semibold text-white mb-4">Limitations of Liability</h4>
+                      <p class="text-sm text-zinc-300">
+                          To the maximum extent permitted by law, the Owner shall not be liable for any indirect, punitive, incidental, or consequential damages, or any damage resulting from hacking, tampering, or unauthorized access.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-6">Common Provisions</h3>
+                      <ul class="space-y-3 text-zinc-300 text-sm">
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span><strong class="text-white">No Waiver:</strong> Failure to assert any right does not constitute a waiver.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span><strong class="text-white">Service Interruption:</strong> The Owner reserves the right to interrupt the Service for maintenance or updates.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span><strong class="text-white">Privacy Policy:</strong> Users may refer to the privacy policy of VYBZ.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span><strong class="text-white">Changes to These Terms:</strong> The Owner reserves the right to modify these Terms at any time. Continued use signifies acceptance.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span><strong class="text-white">Assignment of Contract:</strong> The Owner may transfer its rights under these Terms. Users may not without written permission.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span><strong class="text-white">Severability:</strong> If any provision is invalid, the remaining provisions stay in effect.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span><strong class="text-white">Governing Law:</strong> These Terms are governed by the Law of England and Wales.</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span><strong class="text-white">Venue of Jurisdiction:</strong> Exclusive competence lies with the courts where the Owner is based (London, UK). Exceptions apply for EU/UK Consumers.</span></li>
+                      </ul>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-6">Surviving Provisions</h3>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          This Agreement continues until terminated. Provisions intended to survive include:
+                      </p>
+                      <ul class="space-y-2 text-zinc-300 text-sm mb-6">
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>User's grant of licenses (indefinite);</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Indemnification obligations (5 years);</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>Disclaimer of warranties and limitations of liability (indefinite).</span></li>
+                      </ul>
+                      <p class="text-sm text-zinc-400 italic">Latest update: April 11, 2025</p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <details class="group cursor-pointer">
+                          <summary class="flex items-center justify-between text-lg font-bold text-white">
+                              <span>View Full Terms and Conditions</span>
+                              <iconify-icon icon="lucide:chevron-down" class="text-xl group-open:rotate-180 transition-transform duration-300"></iconify-icon>
+                          </summary>
+                          <div class="mt-6 pt-6 border-t border-white/10">
+                              <a href="https://www.iubenda.com/terms-and-conditions/46973518" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe iub-body-embed" title="Terms and Conditions">Terms and Conditions</a>
+                          </div>
+                      </details>
+                  </div>
+              </div>
+          `,
+          'Privacy Policy': `
+              <div class="space-y-8">
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <p class="text-base leading-relaxed text-zinc-300">
+                          Our Privacy Policy Written in a Friendly Language
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-6">Information We Collect</h3>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          There are three basic categories of information we collect:
+                      </p>
+                      <ul class="space-y-2 text-zinc-300 text-sm mb-6">
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>Information you provide.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>Information we get when you use our services.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>Information we get from third parties.</span>
+                          </li>
+                      </ul>
+                      <p class="text-sm text-zinc-300">
+                          Here's a little more detail on each of these categories.
+                      </p>
+
+                      <h4 class="text-lg font-semibold text-white mt-8 mb-4">Information You Provide</h4>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          When you interact with our services, we collect information that you provide to us. For example, most of our services require you to set up a VYBZ account, so we need to collect a few important details about you, such as your name, username, password, email address, gender, phone number, and date of birth and also social media account information from services such as Snapchat, Instagram and Twitter. We may also ask you to provide us with some additional information that will be publicly visible on our services, such as a profile picture or Bitmoji avatar.
+                      </p>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          You'll also provide us whatever information you send through our services, such as posts, messages, media, and other types of content. Keep in mind that the users who view your messages, posts, and any other content can always save that content or copy it outside the app. Don't send messages or share content that you wouldn't want someone to save or share.
+                      </p>
+                      <p class="text-sm text-zinc-300">
+                          When you contact us for support or communicate with us in any other way, we'll collect whatever information that you volunteer to provide us or that we need to resolve your question.
+                      </p>
+
+                      <h4 class="text-lg font-semibold text-white mt-8 mb-4">Information We Get When You Use Our Services</h4>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          When you use our services, we collect information about which of those services you've used and how you've used them. We might know, for instance, that you viewed a particular neighborhood feed, joined a specific location feed for a certain period of time, and sent messages or posts. These are the types of information we collect when you use our services:
+                      </p>
+
+                      <div class="space-y-4">
+                          <div>
+                              <p class="text-sm font-semibold text-white mb-2">Usage Information</p>
+                              <p class="text-sm text-zinc-300 mb-2">We collect information about your activity through our services. For example, we may collect information about:</p>
+                              <ul class="space-y-2 text-zinc-300 text-sm ml-4">
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span>how you interact with our services, such as which neighborhood feeds you joined, posts you viewed or interacted with on VYBZ, which Tabloids you viewed or interacted with, which location feeds you have joined or interacted with, or which search queries you submit.</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span>how you communicate with other VYBZ users, such as their names, the time and date of your communications, the number of messages you exchange with your crew/connections, which crew/connections you exchange messages with the most, and your interactions with messages (such as when you open a message or capture a screenshot).</span>
+                                  </li>
+                              </ul>
+                          </div>
+
+                          <div>
+                              <p class="text-sm font-semibold text-white mb-2">Content Information</p>
+                              <p class="text-sm text-zinc-300">We collect content you create on our services.</p>
+                          </div>
+
+                          <div>
+                              <p class="text-sm font-semibold text-white mb-2">Device Information</p>
+                              <p class="text-sm text-zinc-300 mb-2">We collect information from and about the devices you use. For example, we collect:</p>
+                              <ul class="space-y-2 text-zinc-300 text-sm ml-4">
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span>information about your hardware and software, such as the hardware model, operating system version, device memory, advertising identifiers, unique application identifiers, apps installed, unique device identifiers, browser type, language, battery level, and time zone;</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span>information from device sensors, such as accelerometers, gyroscopes, compasses, microphones, and whether you have headphones connected; and</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span>information about your wireless and mobile network connections, such as mobile phone number, service provider, IP address, and signal strength.</span>
+                                  </li>
+                              </ul>
+                          </div>
+
+                          <div>
+                              <p class="text-sm font-semibold text-white mb-2">Device Phonebook</p>
+                              <p class="text-sm text-zinc-300">We may—with your permission—collect information from your device's phonebook.</p>
+                          </div>
+
+                          <div>
+                              <p class="text-sm font-semibold text-white mb-2">Camera and Photos</p>
+                              <p class="text-sm text-zinc-300">Many of our services require us to collect images and other information from your device's camera and photos. For example, you won't be able to make certain posts or upload photos from your camera roll unless we can access your camera or photos.</p>
+                          </div>
+
+                          <div>
+                              <p class="text-sm font-semibold text-white mb-2">Location Information</p>
+                              <p class="text-sm text-zinc-300">When you use our services we may collect information about your location. With your permission, we may also collect information about your precise location using methods that include GPS, wireless networks, cell towers, Wi-Fi access points, and other sensors, such as gyroscopes, accelerometers, and compasses.</p>
+                          </div>
+
+                          <div>
+                              <p class="text-sm font-semibold text-white mb-2">Information Collected by Cookies and Other Technologies</p>
+                              <p class="text-sm text-zinc-300">Like most online services and mobile applications, we may use cookies and other technologies, such as web beacons, web storage, and unique advertising identifiers, to collect information about your activity, browser, and device. We may also use these technologies to collect information when you interact with services we offer through one of our partners, such as advertising and commerce features. Most web browsers are set to accept cookies by default. If you prefer, you can usually remove or reject browser cookies through the settings on your browser or device. Keep in mind, though, that removing or rejecting cookies could affect the availability and functionality of our services. To learn more about how we and our partners use cookies on our services and your choices, please check out our Cookie Policy.</p>
+                          </div>
+
+                          <div>
+                              <p class="text-sm font-semibold text-white mb-2">Log Information</p>
+                              <p class="text-sm text-zinc-300 mb-2">We also collect log information when you use our website, such as:</p>
+                              <ul class="space-y-2 text-zinc-300 text-sm ml-4">
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span>details about how you've used our services;</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span>device information, such as your web browser type and language;</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span>access times;</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span>pages viewed;</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span>IP address;</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span>identifiers associated with cookies or other technologies that may uniquely identify your device or browser; and</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span>pages you visited before or after navigating to our website.</span>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+
+                      <h4 class="text-lg font-semibold text-white mt-8 mb-4">Information We Collect from Third Parties</h4>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          We may collect information about you from other users, and third parties. Here are a few examples:
+                      </p>
+                      <ul class="space-y-2 text-zinc-300 text-sm">
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>If you link your Snapchat account to VYBZ, we may receive information from the service, like how you use that service.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>If you link your Twitter account to VYBZ, we may receive information from the service, like how you use that service.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>If you link your Apple account to VYBZ, we may receive information from the service, like how you use that service.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>If another user uploads their contact list, we may combine information from that user's contact list with other information we have collected about you.</span>
+                          </li>
+                      </ul>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-6">How We Use Information</h3>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          We use your information to provide you with great experiences, products and services that we work to improve. Here are the ways we do that:
+                      </p>
+                      <ul class="space-y-2 text-zinc-300 text-sm">
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>develop, operate, improve, deliver, maintain, and protect our products and services.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>send you communications, including by email. For example, we may use email to respond to support inquiries or to share information about our products, services, and promotional offers that we think may interest you.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>monitor and analyze trends and usage.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>personalize our services by, among other things, suggesting friends, profile information, or customizing the content we show you.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>contextualize your experience by, among other things, joining you to a neighborhood feed that grants you an optimized experience.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>enhance the safety and security of our products and services.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>verify your identity and prevent fraud or other unauthorized or illegal activity.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>use information we've collected from cookies and other technology to enhance our services and your experience with them.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>enforce our Terms of Service and other usage policies and comply with legal requirements.</span>
+                          </li>
+                      </ul>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-6">How We Share Information</h3>
+                      <p class="text-sm text-zinc-300 mb-6">
+                          We may share information about you in the following ways:
+                      </p>
+
+                      <h4 class="text-lg font-semibold text-white mb-4">With other VYBZ users</h4>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          We may share the following information with other VYBZ users:
+                      </p>
+                      <ul class="space-y-2 text-zinc-300 text-sm mb-6">
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>information about you, such as your username, name, Bitmoji, your Instagram, Snapchat and Twitter usernames or user handles.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>information about how you have interacted with our services, such as your progress bar "score," the names of VYBZ users you are friends with, and other information that will help VYBZ users understand your connections with others using our services. For example, because it may not be clear whether a new crew request comes from someone you actually know, we may share whether you and the requestor have VYBZ Crew members in common.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>any additional information you have directed us to share. For example, using third-party login.</span>
+                          </li>
+                      </ul>
+
+                      <h4 class="text-lg font-semibold text-white mb-4">With all VYBZ users</h4>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          We may share the following information with all VYBZ users as well as with our business partners and the general public:
+                      </p>
+                      <ul class="space-y-2 text-zinc-300 text-sm mb-6">
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>public information like your name, username, profile identifier and profile pictures.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>Tabloid submissions that are set to be public and any content that you submit to an inherently public service, like Neighborhood Feeds, Crew Feeds and Location Feeds. This content may be viewed and shared by the public at large both on and off our services, including through search results, on websites, in apps, and in online and offline broadcasts.</span>
+                          </li>
+                      </ul>
+
+                      <h4 class="text-lg font-semibold text-white mb-4">With third parties</h4>
+                      <ul class="space-y-2 text-zinc-300 text-sm">
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>We may share information about you with service providers who perform services on our behalf, including to measure and optimize the performance of ads and deliver more relevant ads, including on third-party websites and apps.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>We may share information about you with business partners that provide services and functionality on our services.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>We may share information about you, such as device and usage information, to help us and others prevent fraud.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>We may share information about you for legal, safety, and security reasons. We may share information about you if we reasonably believe that disclosing the information is needed to: comply with any valid legal process, governmental request, or applicable law, rule, or regulation; investigate, remedy, or enforce potential Terms of Service violations; protect the rights, property, or safety of us, our users, or others; detect and resolve any fraud or security concerns.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>We may share information about you as part of a merger or acquisition. If VYBZ Inc. gets involved in a merger, asset sale, financing, liquidation or bankruptcy, or acquisition of all or some portion of our business to another company, we may share your information with that company before and after the transaction closes.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>We may also share with third parties that provide services to us or perform business purposes for us aggregated, non-personally identifiable, or de-identified information.</span>
+                          </li>
+                      </ul>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-6">Third-Party Content and Integrations</h3>
+                      <p class="text-sm text-zinc-300">
+                          Our services may contain third-party content and integrations. We are not responsible for how those third parties collect or use your information. As always, we encourage you to review the privacy policies of every third-party service that you visit or use, including those third parties you interact with through our services.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-6">How Long We Keep Your Information</h3>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          Most messages—like Posts and Chats—sent in VYBZ will be stored by default on our servers. Other content, like direct messages, Tabloid Content, Activity notifications are stored by default on our servers. Unless otherwise specified by VYBZ Inc., or a valid user request.
+                      </p>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          We store other information for longer periods of time. For example:
+                      </p>
+                      <ul class="space-y-2 text-zinc-300 text-sm mb-4">
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>We store your basic account information—like your name, phone number, and email address—and list of friends until you ask us to delete them.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>We store location information for different lengths of time based on how precise it is and which services you use. For example, if you use the Map, we store information about your favorite places indefinitely so we can personalize and improve your experience.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>We're constantly collecting and updating information about the things you might like and dislike, so we can provide you with more relevant content.</span>
+                          </li>
+                      </ul>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          If you ever decide to stop using VYBZ, you can just ask us to delete your account. We'll also delete most of the information we've collected about you after you've been inactive for a while—but don't worry, we'll try to contact you first!
+                      </p>
+                      <p class="text-sm text-zinc-300">
+                          Keep in mind that, while our systems are designed to carry out our deletion practices automatically, we cannot promise that deletion will occur within a specific timeframe. There may be legal requirements to store your data and we may need to suspend those deletion practices if we receive valid legal process asking us to preserve content, if we receive reports of abuse or other Terms of Service violations, or if your account or content created by you is flagged by our automated systems for abuse or other Terms of Service violations. Finally, we may also retain certain information in backup for a limited period of time or as required by law.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-6">Control Over Your Information</h3>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          We want you to be in control of your information, so we provide you with the following tools.
+                      </p>
+                      <ul class="space-y-2 text-zinc-300 text-sm">
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span><strong class="text-white">Revoking permissions.</strong> In most cases, if you let us use your information, you can simply revoke your permission by changing the settings in the app or on your device if your device offers those options. Of course, if you do that, certain services may lose full functionality.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span><strong class="text-white">Deletion.</strong> You can also delete some information in the app, like photos posted to Neighborhood, Crew or Location feeds, Tabloid submissions, and messages, replies, emoji reactions, and certain search history.</span>
+                          </li>
+                      </ul>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-6">Users in the European Union</h3>
+                      <p class="text-sm text-zinc-300 mb-6">
+                          If you're a user in the European Union, you should know that VYBZ Inc. is the controller of your personal information. Here is some additional information we would like to bring to your attention:
+                      </p>
+
+                      <h4 class="text-lg font-semibold text-white mb-4">Rights of Access, Deletion, Correction, and Portability</h4>
+                      <p class="text-sm text-zinc-300 mb-6">
+                          You can exercise your rights of access, deletion, correction, and portability as described in the section above.
+                      </p>
+
+                      <h4 class="text-lg font-semibold text-white mb-4">Bases for Using Your Information</h4>
+                      <p class="text-sm text-zinc-300 mb-4">
+                          Your country only allows us to use your personal information when certain conditions apply. These conditions are called "legal bases" and, at VYBZ, we typically rely on one of two:
+                      </p>
+                      <ul class="space-y-2 text-zinc-300 text-sm">
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span><strong class="text-white">Contract.</strong> One reason we might use your information is because you've entered into an agreement with us.</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span><strong class="text-white">Legitimate interest.</strong> Another reason we might use your information is because we have—or a third party has—a legitimate interest in doing so. For example, we need to use your information to provide and improve our services, including protecting your account, delivering your messages or posts, providing customer support, and helping you find local VYBZ users and content we think you'll like. Because all of our services are free, we also may use some information about you to try and show you ads you'll find interesting.</span>
+                          </li>
+                      </ul>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <details class="group cursor-pointer">
+                          <summary class="flex items-center justify-between text-lg font-bold text-white">
+                              <span>View Full Privacy Policy</span>
+                              <iconify-icon icon="lucide:chevron-down" class="text-xl group-open:rotate-180 transition-transform duration-300"></iconify-icon>
+                          </summary>
+                          <div class="mt-6 pt-6 border-t border-white/10">
+                              <a href="https://www.iubenda.com/privacy-policy/46973518" class="iubenda-white no-brand iubenda-embed iub-body-embed" title="Privacy Policy">Privacy Policy</a>
+                          </div>
+                      </details>
+                  </div>
+              </div>
+          `,
+          'EULA': `
+              <div class="space-y-8">
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <p class="text-sm text-zinc-400 mb-4">Copyright 2025 by VYBZ Inc. All rights reserved.</p>
+                      <div class="bg-gradient-to-br from-main-purple/10 to-transparent border border-main-purple/20 rounded-xl p-4 md:p-6">
+                          <p class="text-base font-semibold text-white mb-2">IMPORTANT – READ CAREFULLY:</p>
+                          <p class="text-sm leading-relaxed text-zinc-300">
+                              This End-User License Agreement ("EULA") is a legal agreement between you (either an individual or a single entity) and VYBZ Inc. ("VYBZ") for the VYBZ mobile application software (the "Software") accompanying this EULA, which includes computer software and may include associated media, printed materials, and "online" or electronic documentation (collectively, the "Product"). By installing, copying, or otherwise using the Product, you agree to be bound by the terms of this EULA. If you do not agree to the terms of this EULA, do not install or use the Product.
+                          </p>
+                      </div>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-4">License</h3>
+                      <p class="text-sm text-zinc-300 leading-relaxed">
+                          VYBZ grants you a non-exclusive, non-transferable license to use the Software for your personal, non-commercial use, subject to the terms and conditions of this EULA.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-4">Ownership</h3>
+                      <p class="text-sm text-zinc-300 leading-relaxed">
+                          The Software and all intellectual property rights in the Software are owned by VYBZ and/or its licensors, and are protected by United States copyright laws and international treaties. VYBZ reserves all rights not expressly granted to you in this EULA.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-4">Restrictions on Use</h3>
+                      <p class="text-sm text-zinc-300 mb-4">You may not:</p>
+                      <ul class="space-y-3 text-zinc-300 text-sm leading-relaxed">
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>copy, modify, create derivative works of, distribute, sell, sublicense, rent, lease, loan or otherwise transfer the Software to any third party;</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>reverse engineer, decompile, or disassemble the Software, except to the extent that such activity is expressly permitted by applicable law;</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>use the Software to engage in any illegal activity or to violate any applicable laws, regulations, or ordinances;</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>use the Software to transmit or store any content that is infringing, defamatory, obscene, or otherwise objectionable;</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>use the Software in any way that could damage, disable, overburden, or impair the Software or any third-party systems or networks;</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>use the Software in any way that violates the privacy or intellectual property rights of any third party;</span></li>
+                          <li class="flex gap-3"><span class="text-main-purple mt-1">•</span><span>or remove, alter or obscure any proprietary notices or labels on the Software.</span></li>
+                      </ul>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-4">Privacy</h3>
+                      <p class="text-sm text-zinc-300 leading-relaxed">
+                          VYBZ may collect certain information about you and your use of the Software, as described in the VYBZ Privacy Policy. By using the Software, you consent to VYBZ's collection and use of this information.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-4">Updates</h3>
+                      <p class="text-sm text-zinc-300 leading-relaxed">
+                          From time to time, VYBZ may provide updates, bug fixes, or other changes to the Software. Such updates may be automatically installed without further notice to you.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-4">Termination</h3>
+                      <p class="text-sm text-zinc-300 leading-relaxed">
+                          This EULA will terminate automatically if you fail to comply with any term or condition of this EULA. Upon termination, you must immediately cease all use of the Software and destroy all copies of the Software in your possession.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-4">Disclaimer of Warranties</h3>
+                      <p class="text-sm text-zinc-300 leading-relaxed uppercase">
+                          THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NONINFRINGEMENT. VYBZ DOES NOT WARRANT THAT THE SOFTWARE WILL MEET YOUR REQUIREMENTS OR THAT ITS OPERATION WILL BE UNINTERRUPTED OR ERROR-FREE.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-4">Limitation of Liability</h3>
+                      <p class="text-sm text-zinc-300 leading-relaxed uppercase mb-4">
+                          IN NO EVENT SHALL VYBZ OR ITS LICENSORS BE LIABLE TO YOU FOR ANY CONSEQUENTIAL, INCIDENTAL, INDIRECT, SPECIAL, OR PUNITIVE DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF PROFITS, BUSINESS INTERRUPTION, LOSS OF INFORMATION, OR ANY OTHER PECUNIARY LOSS) ARISING OUT OF THIS EULA OR THE USE OF OR INABILITY TO USE THE SOFTWARE, EVEN IF VYBZ has been advised of the possibility of such damages.
+                      </p>
+                      <p class="text-sm text-zinc-300 leading-relaxed">
+                          The User acknowledges that the use of the VYBZ App is at their own risk.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-4">Governing Law and Jurisdiction</h3>
+                      <p class="text-sm text-zinc-300 leading-relaxed">
+                          This Agreement shall be governed by and construed in accordance with the laws of England and Wales without regard to its conflicts of law provisions. The parties agree that any dispute arising out of or in connection with this Agreement shall be resolved through binding arbitration in accordance with the rules of the London Court of International Arbitration. The arbitration shall take place in London, England, and shall be conducted in the English language. The decision of the arbitrator shall be final and binding on the parties.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-4">Entire Agreement</h3>
+                      <p class="text-sm text-zinc-300 leading-relaxed">
+                          This Agreement constitutes the entire agreement between the User and VYBZ with respect to the VYBZ App and supersedes all prior or contemporaneous communications and proposals, whether oral or written, between the parties. Any waiver of any provision of this Agreement will be effective only if in writing and signed by VYBZ.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-4">Assignment</h3>
+                      <p class="text-sm text-zinc-300 leading-relaxed">
+                          The User may not assign or transfer this Agreement, in whole or in part, without the prior written consent of VYBZ. VYBZ may assign this Agreement, in whole or in part, without notice to the User.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-4">Severability</h3>
+                      <p class="text-sm text-zinc-300 leading-relaxed">
+                          If any provision of this Agreement is found to be invalid or unenforceable, the remaining provisions shall be enforced to the fullest extent possible, and the remaining provisions of the Agreement shall remain in full force and effect.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-4">Contact Information</h3>
+                      <p class="text-sm text-zinc-300 leading-relaxed mb-4">
+                          If the User has any questions or concerns about this Agreement or the VYBZ App, they may contact VYBZ at <a href="mailto:support@vybzapp.com?subject=EULA%20Question%20%5Bvybzapp.com%5D" class="text-main-purple hover:text-sunset-orange transition-colors underline">support@vybzapp.com</a>.
+                      </p>
+                      <p class="text-sm text-zinc-300 leading-relaxed">
+                          By accepting this Agreement, the User represents that they have read and understood the terms and conditions of this Agreement and that they agree to be bound by them.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8 bg-gradient-to-br from-main-purple/5 to-transparent border-main-purple/20">
+                      <p class="text-sm font-semibold text-white">
+                          Latest update: March 13, 2025
+                      </p>
+                  </div>
+              </div>
+          `,
+          'Cookie Policy': `
+              <div class="space-y-8">
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <p class="text-base leading-relaxed text-zinc-300">
+                          This document informs Users about the technologies that help VYBZ to achieve the purposes described below. Such technologies allow the Owner to access and store information (for example by using a Cookie) or use resources (for example by running a script) on a User's device as they interact with VYBZ.
+                      </p>
+                      <p class="text-base leading-relaxed text-zinc-300 mt-4">
+                          For simplicity, all such technologies are defined as "Trackers" within this document – unless there is a reason to differentiate. For example, while Cookies can be used on both web and mobile browsers, it would be inaccurate to talk about Cookies in the context of mobile apps as they are a browser-based Tracker. For this reason, within this document, the term Cookies is only used where it is specifically meant to indicate that particular type of Tracker.
+                      </p>
+                      <p class="text-base leading-relaxed text-zinc-300 mt-4">
+                          Some of the purposes for which Trackers are used may also require the User's consent, depending on the applicable law. Whenever consent is given, it can be freely withdrawn at any time following the instructions provided in this document.
+                      </p>
+                      <p class="text-base leading-relaxed text-zinc-300 mt-4">
+                          VYBZ uses Trackers managed directly by the Owner (so-called "first-party" Trackers) and Trackers that enable services provided by a third-party (so-called "third-party" Trackers). Unless otherwise specified within this document, third-party providers may access the Trackers managed by them. The validity and expiration periods of Cookies and other similar Trackers may vary depending on the lifetime set by the Owner or the relevant provider. Some of them expire upon termination of the User's browsing session.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-6">How VYBZ uses Trackers</h3>
+
+                      <div class="space-y-6">
+                          <div>
+                              <h3 class="text-lg font-bold text-white mb-4">Necessary</h3>
+                              <p class="text-sm text-zinc-300 mb-4">
+                                  VYBZ uses so-called "technical" Cookies and other similar Trackers to carry out activities that are strictly necessary for the operation or delivery of the Service.
+                              </p>
+
+                              <h4 class="text-base font-semibold text-white mt-6 mb-3">Trackers managed directly by the Owner</h4>
+                              <ul class="space-y-2 text-zinc-300 text-sm">
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Preference Cookies (VYBZ)</strong> — Preference Cookies store the User preferences detected on VYBZ in the local domain such as, for example, their timezone and region.</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">sessionStorage (VYBZ)</strong> — sessionStorage allows VYBZ to store and access data right in the User's browser. Data in sessionStorage is deleted automatically when the session ends (in other words, when the browser tab is closed).</span>
+                                  </li>
+                              </ul>
+
+                              <h4 class="text-base font-semibold text-white mt-6 mb-3">Trackers managed by third parties</h4>
+                              <ul class="space-y-2 text-zinc-300 text-sm">
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Instabug (Instabug, Inc.)</strong> — A monitoring service. Place of processing: United States</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Unbounce (Unbounce Marketing Solutions Inc.)</strong> — A landing page management service. Place of processing: Canada</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Google reCAPTCHA (Google LLC)</strong> — A SPAM protection service. Place of processing: United States / Ireland</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">hCaptcha (Intuition Machines, Inc)</strong> — A SPAM protection service. Place of processing: United States</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Cloudflare (Cloudflare Inc.)</strong> — A traffic optimization and distribution service. Duration: cf_clearance (30 minutes), _cfuvid (indefinite). Place of processing: United States</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">iubenda Cookie Solution</strong> — Various cookies managed by iubenda srl for storing User preferences related to Trackers. Place of processing: Italy</span>
+                                  </li>
+                              </ul>
+                          </div>
+
+                          <div>
+                              <h3 class="text-lg font-bold text-white mb-4">Functionality</h3>
+                              <p class="text-sm text-zinc-300 mb-4">
+                                  VYBZ uses Trackers to enable basic interactions and functionalities, allowing Users to access selected features of the Service and facilitating the User's communication with the Owner.
+                              </p>
+
+                              <h4 class="text-base font-semibold text-white mt-6 mb-3">Trackers managed directly by the Owner</h4>
+                              <ul class="space-y-2 text-zinc-300 text-sm">
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Mailing list or newsletter (VYBZ)</strong> — By registering on the mailing list or for the newsletter, the User's email address will be added to the contact list of those who may receive email messages containing information of commercial or promotional nature concerning VYBZ.</span>
+                                  </li>
+                              </ul>
+
+                              <h4 class="text-base font-semibold text-white mt-6 mb-3">Trackers managed by third parties</h4>
+                              <ul class="space-y-2 text-zinc-300 text-sm">
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Zendesk Chat (Zendesk, Inc.)</strong> — A service for interacting with the Zendesk live chat platform. Duration: __zlcmid (1 year), __zlcstore (indefinite). Place of processing: United States</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Segment (Segment Inc.)</strong> — A tag management service. Duration: ajs_group_id (1 year), ajs_user_id (1 year), ajs_anonymous_id (1 year). Place of processing: United States</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">TagCommander (Fjord Technologies)</strong> — A tag management service. Duration: tc_sample_* (1 year), tc_cj_v2 (1 year). Place of processing: France / United Kingdom</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Tealium IQ tag Management (Tealium Inc.)</strong> — A tag management service. Duration: utag_main* (1 year). Place of processing: United States</span>
+                                  </li>
+                              </ul>
+                          </div>
+
+                          <div>
+                              <h3 class="text-lg font-bold text-white mb-4">Experience</h3>
+                              <p class="text-sm text-zinc-300 mb-4">
+                                  VYBZ uses Trackers to improve the quality of the user experience and enable interactions with external content, networks and platforms.
+                              </p>
+
+                              <h4 class="text-base font-semibold text-white mt-6 mb-3">Trackers managed directly by the Owner</h4>
+                              <ul class="space-y-2 text-zinc-300 text-sm">
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Comment system managed directly (VYBZ)</strong> — VYBZ has its own internal content comment system.</span>
+                                  </li>
+                              </ul>
+
+                              <h4 class="text-base font-semibold text-white mt-6 mb-3">Trackers managed by third parties</h4>
+                              <ul class="space-y-2 text-zinc-300 text-sm">
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">SurveyMonkey (SurveyMonkey Inc.)</strong> — A survey builder and data collection platform. Place of processing: United States / Brazil / European Union</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Typeform (TYPEFORM S.L)</strong> — A form builder and data collection platform. Place of processing: Spain</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Google Maps widget (Google LLC)</strong> — A maps visualization service. Place of processing: United States / Ireland</span>
+                                  </li>
+                              </ul>
+                          </div>
+
+                          <div>
+                              <h3 class="text-lg font-bold text-white mb-4">Measurement</h3>
+                              <p class="text-sm text-zinc-300 mb-4">
+                                  VYBZ uses Trackers to measure traffic and analyze User behavior to improve the Service.
+                              </p>
+
+                              <h4 class="text-base font-semibold text-white mt-6 mb-3">Trackers managed by third parties</h4>
+                              <ul class="space-y-2 text-zinc-300 text-sm">
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">MixPanel (MixPanel)</strong> — An analytics service. Place of processing: United States</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Google Analytics (Universal Analytics) (Google LLC)</strong> — A web analysis service. Duration: _ga (2 years), _gat (1 minute), _gac* (3 months), _gid (1 day). Place of processing: United States / Ireland</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Google Analytics Advertising Reporting Features (Google LLC)</strong> — Duration: test_cookie (15 minutes), IDE (2 years), _gcl_* (3 months). Place of processing: United States / Ireland</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Beta by Crashlytics (Google LLC)</strong> — A beta testing service. Place of processing: United States / Ireland</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Google Play Beta Testing (Google LLC)</strong> — A beta testing service. Place of processing: United States / Ireland</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">TestFlight (Apple Inc.)</strong> — A beta testing service. Place of processing: United States</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Google Optimize (Google LLC)</strong> — An A/B testing service. Duration: _gaexp (3 months), _opt_awcid (1 day), _opt_expid (10 seconds). Place of processing: United States / Ireland</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Optimizely (Optimizely, Inc.)</strong> — An A/B testing service. Place of processing: United States</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Hotjar Heat Maps & Recordings (Hotjar Ltd.)</strong> — A session recording and heat mapping service. Duration: _hjid (1 year), _hjSessionUser* (1 year), _hjSession* (30 minutes). Place of processing: Malta</span>
+                                  </li>
+                              </ul>
+                          </div>
+
+                          <div>
+                              <h3 class="text-lg font-bold text-white mb-4">Marketing</h3>
+                              <p class="text-sm text-zinc-300 mb-4">
+                                  VYBZ uses Trackers to deliver ads or marketing content, and to measure their performance.
+                              </p>
+
+                              <h4 class="text-base font-semibold text-white mt-6 mb-3">Trackers managed by third parties</h4>
+                              <ul class="space-y-2 text-zinc-300 text-sm">
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Sendgrid (Sendgrid)</strong> — An email address management and message sending service. Place of processing: United States</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Customer.io (Peaberry Software Inc.)</strong> — An email address management and message sending service. Place of processing: United States</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Facebook Custom Audience (Facebook, Inc.)</strong> — A remarketing and behavioral targeting service. Duration: _fbp (3 months). Place of processing: United States / Ireland</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Facebook Remarketing (Facebook, Inc.)</strong> — A remarketing and behavioral targeting service. Duration: _fbp (3 months), datr (2 years). Place of processing: United States / Ireland</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Google Ad Manager Audience Extension (Google LLC)</strong> — Duration: IDE (2 years), __gads (2 years), _gcl_au (3 months). Place of processing: United States / Ireland</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Google Ads Remarketing (Google LLC)</strong> — Duration: IDE (2 years), __gads (2 years), _gcl_aw (3 months). Place of processing: United States / Ireland</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Google Signals (Google LLC)</strong> — A feature of Google Analytics for ads personalization. Place of processing: United States / Ireland</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Twitter Remarketing & Tailored Audiences (X Corp.)</strong> — Duration: personalization_id (2 years), muc_ads (2 years). Place of processing: United States</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">LinkedIn Website Retargeting (LinkedIn Corporation)</strong> — Duration: bscookie (1 year), lissc (1 year), bcookie (1 year). Place of processing: United States</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">AdRoll (NextRoll, Inc.)</strong> — Duration: __adroll_fpc (2 years), __adroll_shared (2 years). Place of processing: United States / Ireland</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Intercom (Intercom Inc.)</strong> — A User database management and communication service. Duration: intercom-id-* (10 months), intercom-session-* (7 days). Place of processing: United States / Ireland / Australia / United Kingdom</span>
+                                  </li>
+                                  <li class="flex gap-3">
+                                      <span class="text-main-purple mt-1">•</span>
+                                      <span><strong class="text-white">Location Sciences (Location Sciences AI Ltd)</strong> — An advertising service. Place of processing: United Kingdom</span>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-4">How to manage preferences and provide or withdraw consent</h3>
+                      <p class="text-sm leading-relaxed text-zinc-300 mb-4">
+                          Whenever the use of Trackers is based on consent, users can provide or withdraw such consent by setting or updating their preferences via the relevant privacy choices panel available on VYBZ.
+                      </p>
+                      <p class="text-sm leading-relaxed text-zinc-300">
+                          With regard to any third-party Trackers, Users can manage their preferences via the related opt-out link (where provided), by using the means indicated in the third party's privacy policy, or by contacting the third party.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-4">How to control or delete Cookies via your device settings</h3>
+                      <p class="text-sm leading-relaxed text-zinc-300 mb-4">
+                          Users may use their own browser settings to:
+                      </p>
+                      <ul class="space-y-2 text-zinc-300 text-sm mb-4">
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>See what Cookies or other similar technologies have been set on the device</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>Block Cookies or similar technologies</span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span>Clear Cookies or similar technologies from the browser</span>
+                          </li>
+                      </ul>
+                      <p class="text-sm leading-relaxed text-zinc-300 mb-4">
+                          The browser settings, however, do not allow granular control of consent by category.
+                      </p>
+                      <p class="text-sm leading-relaxed text-zinc-300 mb-3">
+                          Users can find information about how to manage Cookies in the most commonly used browsers at the following addresses:
+                      </p>
+                      <ul class="space-y-2 text-zinc-300 text-sm">
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span><a href="https://support.google.com/chrome/answer/95647?hl=en&p=cpn_cookies" target="_blank" rel="noopener noreferrer" class="text-main-purple hover:text-white transition-colors">Google Chrome</a></span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span><a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" target="_blank" rel="noopener noreferrer" class="text-main-purple hover:text-white transition-colors">Mozilla Firefox</a></span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span><a href="https://support.apple.com/kb/PH21411" target="_blank" rel="noopener noreferrer" class="text-main-purple hover:text-white transition-colors">Apple Safari</a></span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span><a href="http://windows.microsoft.com/en-us/windows-vista/block-or-allow-cookies" target="_blank" rel="noopener noreferrer" class="text-main-purple hover:text-white transition-colors">Microsoft Internet Explorer</a></span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span><a href="https://support.microsoft.com/en-us/help/4027947/microsoft-edge-delete-cookies" target="_blank" rel="noopener noreferrer" class="text-main-purple hover:text-white transition-colors">Microsoft Edge</a></span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span><a href="https://support.brave.com/hc/en-us/articles/360017989132-How-do-I-change-Configuring-Shields-settings-" target="_blank" rel="noopener noreferrer" class="text-main-purple hover:text-white transition-colors">Brave</a></span>
+                          </li>
+                          <li class="flex gap-3">
+                              <span class="text-main-purple mt-1">•</span>
+                              <span><a href="http://www.opera.com/help/tutorials/security/cookies/" target="_blank" rel="noopener noreferrer" class="text-main-purple hover:text-white transition-colors">Opera</a></span>
+                          </li>
+                      </ul>
+                      <p class="text-sm leading-relaxed text-zinc-300 mt-4">
+                          Users may also manage certain categories of Trackers used on mobile apps by opting out through relevant device settings such as the device advertising settings for mobile devices, or tracking settings in general.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-4">How to opt out of interest-based advertising</h3>
+                      <p class="text-sm leading-relaxed text-zinc-300 mb-4">
+                          Notwithstanding the above, Users may follow the instructions provided by YourOnlineChoices (EU and UK), the Network Advertising Initiative (US) and the Digital Advertising Alliance (US), DAAC (Canada), DDAI (Japan) or other similar services. Such initiatives allow Users to select their tracking preferences for most of the advertising tools. The Owner thus recommends that Users make use of these resources in addition to the information provided in this document.
+                      </p>
+                      <p class="text-sm leading-relaxed text-zinc-300">
+                          The Digital Advertising Alliance offers an application called AppChoices that helps Users to control interest-based advertising on mobile apps.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-4">Consequences of denying the use of Trackers</h3>
+                      <p class="text-sm leading-relaxed text-zinc-300">
+                          Users are free to decide whether or not to allow the use of Trackers. However, please note that Trackers help VYBZ to provide a better experience and advanced functionalities to Users (in line with the purposes outlined in this document). Therefore, if the User chooses to block the use of Trackers, the Owner may be unable to provide related features.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-4">Owner and Data Controller</h3>
+                      <div class="text-sm leading-relaxed text-zinc-300 space-y-2">
+                          <p class="font-semibold text-white">VYBZ Inc.</p>
+                          <p>24 Dering Street</p>
+                          <p>London W1S 1BL</p>
+                          <p>United Kingdom</p>
+                          <p class="mt-4">
+                              <strong class="text-white">Owner contact email:</strong>
+                              <a href="mailto:support@vybzapp.com?subject=Inquiry%20%5Bvybzapp.com%5D" class="text-main-purple hover:text-white transition-colors">support@vybzapp.com</a>
+                          </p>
+                      </div>
+                      <p class="text-sm leading-relaxed text-zinc-300 mt-6">
+                          Since the use of third-party Trackers through VYBZ cannot be fully controlled by the Owner, any specific references to third-party Trackers are to be considered indicative. In order to obtain complete information, Users are kindly requested to consult the privacy policies of the respective third-party services listed in this document.
+                      </p>
+                      <p class="text-sm leading-relaxed text-zinc-300 mt-4">
+                          Given the objective complexity surrounding tracking technologies, Users are encouraged to contact the Owner should they wish to receive any further information on the use of such technologies by VYBZ.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <h3 class="text-xl font-bold text-white mb-4">Definitions and legal references</h3>
+                      <p class="text-sm leading-relaxed text-zinc-300">
+                          <strong class="text-white">Latest update:</strong> April 11, 2025
+                      </p>
+                      <p class="text-sm leading-relaxed text-zinc-300 mt-4">
+                          This document has been created with the iubenda Privacy and Cookie Policy Generator.
+                      </p>
+                  </div>
+
+                  <div class="bg-white/5 rounded-2xl border border-white/5 p-6 md:p-8">
+                      <details class="group cursor-pointer">
+                          <summary class="flex items-center justify-between text-lg font-bold text-white">
+                              <span>View Full Cookie Policy</span>
+                              <iconify-icon icon="lucide:chevron-down" class="text-xl group-open:rotate-180 transition-transform duration-300"></iconify-icon>
+                          </summary>
+                          <div class="mt-6 pt-6 border-t border-white/10">
+                              <a href="https://www.iubenda.com/privacy-policy/46973518/cookie-policy" class="iubenda-white no-brand iubenda-embed iub-body-embed" title="Cookie Policy">Cookie Policy</a>
+                          </div>
+                      </details>
+                  </div>
+              </div>
+          `,
+          'Broken Link': `
+              <div class="space-y-8">
+                  <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-sunset-orange/20 via-main-purple/10 to-electric-blue/20 border border-white/10 p-8 md:p-16 text-center">
+                      <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wMyI+PGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMiIvPjwvZz48L2c+PC9zdmc+')] opacity-50"></div>
+                      <div class="relative z-10">
+                          <div class="text-8xl mb-6">🧸</div>
+                          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
+                              Oops! Broken Link
+                          </h2>
+                          <p class="text-lg text-zinc-300 max-w-lg mx-auto mb-2">
+                              The link you requested is either broken or no longer exists.
+                          </p>
+                          <p class="text-zinc-400 max-w-lg mx-auto mb-8">
+                              Please bear with us while we fix this.
+                          </p>
+                          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+	                              <a href="/" onclick="goHome(); return false;" class="inline-flex items-center justify-center gap-2 bg-main-purple text-white px-8 py-4 rounded-full font-semibold hover:opacity-90 transition-opacity">
+	                                  <iconify-icon icon="lucide:home"></iconify-icon>
+	                                  Back to Home
+	                              </a>
+                              <a href="mailto:support@vybzapp.com?subject=Broken%20Link%20Report%20%5Bvybzapp.com%5D&body=Hi%20VYBZ%20Team%2C%0A%0AI%20found%20a%20broken%20link%20on%20your%20website.%0A%0ABroken%20URL%3A%20%0AExpected%20page%3A%20%0A%0AThank%20you!" class="inline-flex items-center justify-center gap-2 bg-white/10 text-white px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition-colors">
+                                  <iconify-icon icon="lucide:mail"></iconify-icon>
+                                  Report This Issue
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="glass-panel p-6 md:p-8 rounded-2xl text-center">
+                      <p class="text-zinc-400 text-sm">
+                          If you feel generous today, please let us know about this broken link so we can fix it for everyone.
+                      </p>
+                      <p class="text-zinc-500 text-xs mt-2">Thank you for helping us improve VYBZ</p>
+                  </div>
+              </div>
+          `,
+      };
+
+      
