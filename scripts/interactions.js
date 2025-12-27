@@ -1,45 +1,82 @@
-// Tab Navigation for Mockup
-      let mapInterval;
-      document.querySelectorAll('button[data-screen]').forEach(button => {
-        button.addEventListener('click', function() {
-          const screen = this.getAttribute('data-screen');
-          // Update button states
-          document.querySelectorAll('button[data-screen]').forEach(btn => {
-            btn.classList.remove('text-white', 'bg-white/10');
-            btn.classList.add('text-zinc-400');
-          });
-          this.classList.remove('text-zinc-400');
-          this.classList.add('text-white', 'bg-white/10');
-          
-          // Update screen images
-          document.querySelectorAll('.screen-image').forEach(img => {
-            if (img.getAttribute('data-screen') === screen) {
-              img.classList.add('active');
-              img.style.display = 'block';
-            } else {
-              img.classList.remove('active');
-              img.style.display = 'none';
-            }
-          });
-          
-          // Handle Map View cycling
-          clearInterval(mapInterval);
-          if (screen === 'map') {
-            const mapImages = document.querySelectorAll('.map-image');
-            let currentIndex = 0;
-            // Show first image immediately
-            mapImages.forEach((img, i) => {
-              img.classList.toggle('active', i === 0);
-            });
-            mapInterval = setInterval(() => {
-              currentIndex = (currentIndex + 1) % mapImages.length;
-              mapImages.forEach((img, i) => {
-                img.classList.toggle('active', i === currentIndex);
-              });
-            }, 4000); // 4 seconds per image
-          }
-        });
-      });
+// Tab Navigation for Mockup (robust + scoped)
+(function initMockupTabs() {
+  // Prevent double-init if scripts get injected/loaded twice
+  if (window.__vybzMockupTabsInitialized) return;
+  window.__vybzMockupTabsInitialized = true;
+
+  const tabsRoot = document.querySelector('[data-mockup-tabs]');
+  const phoneRoot = document.querySelector('[data-mockup-phone]');
+  if (!tabsRoot || !phoneRoot) return;
+
+  const buttons = Array.from(tabsRoot.querySelectorAll('button[data-screen]'));
+  const screenImages = Array.from(phoneRoot.querySelectorAll('.screen-image'));
+  const mapImages = Array.from(phoneRoot.querySelectorAll('.map-image'));
+
+  let mapInterval = null;
+
+  function stopMapCycle() {
+    if (!mapInterval) return;
+    clearInterval(mapInterval);
+    mapInterval = null;
+  }
+
+  function setActiveButton(activeBtn) {
+    buttons.forEach(btn => {
+      const isActive = btn === activeBtn;
+      btn.classList.toggle('text-white', isActive);
+      btn.classList.toggle('bg-white/10', isActive);
+      btn.classList.toggle('text-zinc-400', !isActive);
+    });
+  }
+
+  function setScreen(screen) {
+    stopMapCycle();
+
+    // Reset all images first
+    screenImages.forEach(img => img.classList.remove('active'));
+
+    // Special case: Map view has multiple images we want to cycle
+    if (screen === 'map') {
+      if (!mapImages.length) return;
+
+      mapImages.forEach((img, i) => img.classList.toggle('active', i === 0));
+
+      if (mapImages.length > 1) {
+        let currentIndex = 0;
+        mapInterval = setInterval(() => {
+          currentIndex = (currentIndex + 1) % mapImages.length;
+          mapImages.forEach((img, i) => img.classList.toggle('active', i === currentIndex));
+        }, 4000); // 4 seconds per image
+      }
+      return;
+    }
+
+    // All other views: activate the first matching image
+    const target = screenImages.find(img => img.getAttribute('data-screen') === screen);
+    if (target) target.classList.add('active');
+  }
+
+  // Capture the click early so no other handler can interfere
+  document.addEventListener('click', function(e) {
+    if (!(e.target instanceof Element)) return;
+    const btn = e.target.closest('button[data-screen]');
+    if (!btn || !tabsRoot.contains(btn)) return;
+
+    e.preventDefault();
+    e.stopPropagation();
+    e.stopImmediatePropagation();
+
+    setActiveButton(btn);
+    setScreen(btn.getAttribute('data-screen'));
+  }, true);
+
+  // Initial state (Home View is marked with data-active in the HTML)
+  const defaultBtn = tabsRoot.querySelector('button[data-screen][data-active]') || buttons[0];
+  if (!defaultBtn) return;
+
+  setActiveButton(defaultBtn);
+  setScreen(defaultBtn.getAttribute('data-screen'));
+})();
 
       // Tab Filtering for Vibes
       document.querySelectorAll('[data-filter]').forEach(button => {

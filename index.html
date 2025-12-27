@@ -441,7 +441,7 @@
                <!-- RIGHT COLUMN: INTERACTIVE APP MOCKUP -->
                <div class="order-1 lg:order-2 flex flex-col items-center relative">
                  <!-- Tab Navigation -->
-                  <div class="flex gap-1 bg-white/5 backdrop-blur-md p-1 rounded-full border border-white/5 mb-8">
+                 <div class="flex gap-1 bg-white/5 backdrop-blur-md p-1 rounded-full border border-white/5 mb-8" data-mockup-tabs>
                    <button class="px-4 py-1.5 text-xs font-medium text-white bg-white/10 rounded-full transition-all" data-screen="home" data-active>
                      Home View
                    </button>
@@ -483,13 +483,13 @@
                  </div>
 
                  <!-- Main Image Container -->
-                 <div class="relative w-[280px] sm:w-[320px] rounded-[3rem] border-[8px] border-black shadow-2xl overflow-hidden bg-zinc-900 z-10 transition-all duration-500">
+                 <div class="relative phone-mockup w-[280px] sm:w-[320px] rounded-[3rem] border-[8px] border-black shadow-2xl overflow-hidden bg-zinc-900 z-10 transition-all duration-500" data-mockup-phone>
                     <!-- Screen Images -->
-                   <img src="./images/screens/VYBZ_Home_resized.jpg" alt="VYBZ app Home View showing main interface" class="w-full h-auto object-cover screen-image active" data-screen="home" loading="lazy">
-                   <img src="./images/screens/map_new.png" alt="VYBZ app Map View showing new map interface" class="w-full h-auto object-cover screen-image map-image active" data-screen="map" loading="lazy" style="display: none;">
-                   <img src="./images/screens/business_card.png" alt="VYBZ app Map View showing business card feature" class="w-full h-auto object-cover screen-image map-image" data-screen="map" loading="lazy" style="display: none;">
-                   <img src="./images/screens/VYBZ_Home_resized.jpg" alt="VYBZ app Chat View showing conversations" class="w-full h-auto object-cover screen-image" data-screen="chat" loading="lazy" style="display: none;">
-                   <img src="./images/screens/VYBZ_Home_resized.jpg" alt="VYBZ app Profile View showing user settings" class="w-full h-auto object-cover screen-image" data-screen="profile" loading="lazy" style="display: none;">
+                   <img src="./images/screens/VYBZ_Home_resized.jpg" alt="VYBZ app Home View showing main interface" class="inset-0 absolute w-full h-full object-cover screen-image active" data-screen="home" loading="lazy">
+                   <img src="./images/screens/map_new.png" alt="VYBZ app Map View showing new map interface" class="inset-0 absolute w-full h-full object-cover screen-image map-image" data-screen="map" loading="lazy">
+                   <img src="./images/screens/business_card.png" alt="VYBZ app Map View showing business card feature" class="inset-0 absolute w-full h-full object-cover screen-image map-image" data-screen="map" loading="lazy">
+                   <img src="./images/screens/VYBZ_Home_resized.jpg" alt="VYBZ app Chat View showing conversations" class="inset-0 absolute w-full h-full object-cover screen-image" data-screen="chat" loading="lazy">
+                   <img src="./images/screens/VYBZ_Home_resized.jpg" alt="VYBZ app Profile View showing user settings" class="inset-0 absolute w-full h-full object-cover screen-image" data-screen="profile" loading="lazy">
 
                    <!-- Glossy Reflection Overlay -->
                    <div class="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent pointer-events-none rounded-[2.5rem]"></div>

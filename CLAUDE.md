@@ -130,3 +130,7 @@ images/
 - `[-webkit-mask-image:-webkit-radial-gradient(white,black)]` - Forces WebKit browsers (Safari/Chrome) to properly clip the border-radius during nested transform animations
 
 **When to use:** Any time you have a rounded image container with hover scale effects inside a parent that also has transforms (rotation, scale, etc.).
+
+### Phone Mockup Tab Switching (See who’s nearby)
+
+If you’re adding/editing the **Home/Map/Chat/Profile** tabs in the “See who’s nearby” phone mockup, or debugging “button highlights but screenshot doesn’t switch/cycle”, read `MOCKUP_TAB_SWITCHING_PITFALLS.md`.
