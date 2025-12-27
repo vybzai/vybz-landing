@@ -483,16 +483,19 @@
                  </div>
 
                  <!-- Main Image Container -->
-                 <div class="relative phone-mockup w-[280px] sm:w-[320px] shadow-2xl overflow-hidden z-10 transition-all duration-500" data-mockup-phone>
+                 <div class="relative phone-mockup w-[280px] sm:w-[320px] rounded-[3rem] bg-main-black shadow-2xl overflow-hidden z-10 transition-all duration-500" data-mockup-phone>
                     <!-- Screen Images -->
-                   <img src="./images/screens/VYBZ_Home_resized.jpg" alt="VYBZ app Home View showing main interface" class="inset-0 absolute w-full h-full object-contain screen-image active" data-screen="home" loading="lazy">
+                   <!-- Home View - 2 cycling images -->
+                  <img src="./images/screens/VYBZ_Home_resized.jpg" alt="VYBZ app Home View showing main interface" class="inset-0 absolute w-full h-full object-contain screen-image home-image active" data-screen="home" loading="lazy">
+                  <img src="./images/screens/home_view_2.png" alt="VYBZ app Home View showing City Feed" class="inset-0 absolute w-full h-full object-contain screen-image home-image" data-screen="home" loading="lazy">
                    <img src="./images/screens/map_new.png" alt="VYBZ app Map View showing new map interface" class="inset-0 absolute w-full h-full object-contain screen-image map-image" data-screen="map" loading="lazy">
                    <img src="./images/screens/business_card.png" alt="VYBZ app Map View showing business card feature" class="inset-0 absolute w-full h-full object-contain screen-image map-image" data-screen="map" loading="lazy">
-                   <img src="./images/screens/VYBZ_Home_resized.jpg" alt="VYBZ app Chat View showing conversations" class="inset-0 absolute w-full h-full object-contain screen-image" data-screen="chat" loading="lazy">
-                   <img src="./images/screens/VYBZ_Home_resized.jpg" alt="VYBZ app Profile View showing user settings" class="inset-0 absolute w-full h-full object-contain screen-image" data-screen="profile" loading="lazy">
+                   <!-- Chat View -->
+                  <img src="./images/screens/chat_view.png" alt="VYBZ app Chat View showing conversations" class="inset-0 absolute w-full h-full object-contain screen-image" data-screen="chat" loading="lazy">
+                   <!-- Profile View -->
+                  <img src="./images/screens/profile_view.png" alt="VYBZ app Profile View showing user settings" class="inset-0 absolute w-full h-full object-contain screen-image" data-screen="profile" loading="lazy">
 
-                   <!-- Glossy Reflection Overlay -->
-                   <div class="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent pointer-events-none"></div>
+                   <!-- Glossy overlay disabled - was causing grey corner artifacts -->
                  </div>
 
                  <!-- Glow behind phone -->

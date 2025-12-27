@@ -11,13 +11,21 @@
   const buttons = Array.from(tabsRoot.querySelectorAll('button[data-screen]'));
   const screenImages = Array.from(phoneRoot.querySelectorAll('.screen-image'));
   const mapImages = Array.from(phoneRoot.querySelectorAll('.map-image'));
+  const homeImages = Array.from(phoneRoot.querySelectorAll('.home-image'));
 
   let mapInterval = null;
+  let homeInterval = null;
 
   function stopMapCycle() {
     if (!mapInterval) return;
     clearInterval(mapInterval);
     mapInterval = null;
+  }
+
+  function stopHomeCycle() {
+    if (!homeInterval) return;
+    clearInterval(homeInterval);
+    homeInterval = null;
   }
 
   function setActiveButton(activeBtn) {
@@ -31,9 +39,26 @@
 
   function setScreen(screen) {
     stopMapCycle();
+    stopHomeCycle();
 
     // Reset all images first
     screenImages.forEach(img => img.classList.remove('active'));
+
+    // Special case: Home view has multiple images we want to cycle
+    if (screen === 'home') {
+      if (!homeImages.length) return;
+
+      homeImages.forEach((img, i) => img.classList.toggle('active', i === 0));
+
+      if (homeImages.length > 1) {
+        let currentIndex = 0;
+        homeInterval = setInterval(() => {
+          currentIndex = (currentIndex + 1) % homeImages.length;
+          homeImages.forEach((img, i) => img.classList.toggle('active', i === currentIndex));
+        }, 4000); // 4 seconds per image
+      }
+      return;
+    }
 
     // Special case: Map view has multiple images we want to cycle
     if (screen === 'map') {

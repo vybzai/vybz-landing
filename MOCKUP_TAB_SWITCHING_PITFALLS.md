@@ -119,6 +119,22 @@ Since our phone mockup images **include the phone frame/bezel**:
 
 Check your source images first! View them directly to see if they include the phone frame or just screen content.
 
+### Grey Corner Artifacts from Overlays
+
+**Problem:** When using `object-contain`, if the image doesn't perfectly fill the container, small gaps appear at the corners. Any overlay (like a glossy reflection) with opacity/color will tint these gaps, making them visible as grey artifacts.
+
+**Cause:** A glossy overlay like this was causing grey corners:
+```html
+<!-- This caused grey corner artifacts -->
+<div class="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent"></div>
+```
+
+The `from-white/10` added a 10% white tint to the entire container, including gap areas where the image didn't cover.
+
+**Solution:** Either:
+1. Remove glossy overlays when using `object-contain` with framed phone images
+2. Or ensure the container background matches the page background (`bg-main-black`) AND no overlays add color to the gaps
+
 ---
 
 ## When to read this doc
