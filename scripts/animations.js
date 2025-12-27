@@ -23,11 +23,7 @@
           });
         }
 
-        // Vibe Cards Stagger Animation
-        gsap.from(".vibe-card", {
-          scrollTrigger: { trigger: "#trending-vibes", start: "top 80%" },
-          y: 50, opacity: 0, duration: 0.8, stagger: 0.1, ease: "power2.out"
-        });
+
 
         // Product Explainer Animations
         gsap.from(".feature-card", {

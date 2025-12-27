@@ -539,20 +539,16 @@
           </div>
 
            <!-- Horizontal Scroll -->
-           <div class="px-4 sm:px-6 pb-12 sm:pb-14 md:pb-16">
-             <div class="snap-x snap-mandatory flex gap-6 sm:gap-8 overflow-x-auto no-scrollbar pr-4 sm:pr-6">
+           <div class="px-4 sm:px-6 py-4 pb-12 sm:pb-14 md:pb-16">
+              <div class="snap-x snap-mandatory flex gap-6 sm:gap-8 overflow-x-auto no-scrollbar pr-4 sm:pr-6 py-4">
              <!-- Card 1: Coffee -->
              <div class="vibe-card bg-polaroid-white p-3 pb-6 rounded-2xl shadow-xl transform -rotate-1 hover:rotate-0 transition-all duration-500 group cursor-pointer snap-center shrink-0 w-[240px] sm:w-[260px] md:w-[280px] lg:w-[300px]" data-category="coffee">
                <!-- Image Container -->
-               <div class="aspect-[4/5] w-full overflow-hidden relative transform-gpu isolate [-webkit-mask-image:-webkit-radial-gradient(white,black)] rounded-lg">
-                 <img src="./images/cards/coffee.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Friends meeting for coffee at a local Riyadh cafe on VYBZ" loading="lazy" width="320" height="400">
-                 <!-- Particle Animation -->
-                 <div class="absolute top-4 right-4 flex gap-1">
-                   <div class="w-1 h-1 bg-green-400 rounded-full animate-ping"></div>
-                   <div class="w-1 h-1 bg-green-400 rounded-full animate-ping animation-delay-200"></div>
-                   <div class="w-1 h-1 bg-green-400 rounded-full animate-ping animation-delay-400"></div>
-                 </div>
-                 <!-- Category Badge -->
+                <div class="aspect-[4/5] w-full overflow-hidden relative transform-gpu isolate [-webkit-mask-image:-webkit-radial-gradient(white,black)] rounded-lg">
+                  <img src="./images/cards/coffee.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Friends meeting for coffee at a local Riyadh cafe on VYBZ" loading="lazy" width="320" height="400">
+                  <!-- Top gradient for pill readability -->
+                  <div class="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/40 to-transparent pointer-events-none"></div>
+                  <!-- Category Badge -->
                  <div class="absolute top-4 left-4">
                    <div class="px-3 py-1.5 bg-main-purple/20 backdrop-blur-md rounded-full border border-main-purple/30 flex items-center gap-2">
                      <span class="text-sm">☕</span>
@@ -562,25 +558,25 @@
                    </div>
                  </div>
                  <!-- Live Indicator -->
-                 <div class="absolute top-4 right-4 mt-6">
-                   <div class="px-2.5 py-1 bg-green-500/20 backdrop-blur-md rounded-full border border-green-500/30 flex items-center gap-1.5">
-                     <span class="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></span>
-                     <span class="text-[9px] font-bold text-green-400 uppercase tracking-wide">Live</span>
-                   </div>
-                 </div>
-               </div>
-               <!-- Card Content -->
-               <div class="px-2 mt-4">
-                 <div class="flex items-center gap-2 mb-2">
-                   <div class="flex -space-x-1">
-                     <img src="./images/avatars/user-1.jpg" class="w-6 h-6 rounded-full border-2 border-white" alt="User avatar">
-                     <img src="./images/avatars/user-2.jpg" class="w-6 h-6 rounded-full border-2 border-white" alt="User avatar">
-                     <img src="./images/avatars/user-3.jpg" class="w-6 h-6 rounded-full border-2 border-white" alt="User avatar">
-                   </div>
-                   <span class="text-xs text-zinc-500">23 people here</span>
-                 </div>
-                 <h3 class="font-bold text-black text-lg leading-tight mb-1 group-hover:text-main-purple transition-colors">
-                   Elixir Bunn
+                  <div class="absolute top-4 right-4">
+                    <div class="px-2.5 py-1 bg-green-500/20 backdrop-blur-md rounded-full border border-green-500/30 flex items-center gap-1.5">
+                      <span class="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></span>
+                      <span class="text-[9px] font-bold text-green-400 uppercase tracking-wide">Live</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card Content -->
+                <div class="px-2 mt-4">
+                  <div class="flex items-center gap-2 mb-2">
+                    <div class="flex -space-x-1">
+                      <img src="./images/avatars/user-1.jpg" class="w-6 h-6 rounded-full border-2 border-white" alt="User avatar">
+                      <img src="./images/avatars/user-2.jpg" class="w-6 h-6 rounded-full border-2 border-white" alt="User avatar">
+                      <img src="./images/avatars/user-3.jpg" class="w-6 h-6 rounded-full border-2 border-white" alt="User avatar">
+                    </div>
+                    <span class="text-xs text-zinc-500">23 people here</span>
+                  </div>
+                  <h3 class="font-bold text-black text-lg leading-tight mb-1 group-hover:text-main-purple transition-colors">
+                    Elixir Bunn
                  </h3>
                  <div class="flex items-center gap-2 text-zinc-500 text-xs">
                    <iconify-icon icon="lucide:map-pin" class="text-main-purple"></iconify-icon>
@@ -594,15 +590,11 @@
              <!-- Card 2: Desert -->
              <div class="vibe-card bg-polaroid-white p-3 pb-6 rounded-2xl shadow-xl transform rotate-1 hover:rotate-0 transition-all duration-500 group cursor-pointer snap-center shrink-0 w-[240px] sm:w-[260px] md:w-[280px] lg:w-[300px]" data-category="adventure">
                <!-- Image Container -->
-               <div class="aspect-[4/5] w-full overflow-hidden relative transform-gpu isolate [-webkit-mask-image:-webkit-radial-gradient(white,black)] rounded-lg">
-                 <img src="./images/cards/desert.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Adventure seekers exploring desert activities near Dubai" loading="lazy" width="320" height="400">
-                 <!-- Particle Animation -->
-                 <div class="absolute top-4 right-4 flex gap-1">
-                   <div class="w-1 h-1 bg-sunset-orange rounded-full animate-ping"></div>
-                   <div class="w-1 h-1 bg-sunset-orange rounded-full animate-ping animation-delay-200"></div>
-                   <div class="w-1 h-1 bg-sunset-orange rounded-full animate-ping animation-delay-400"></div>
-                 </div>
-                 <!-- Category Badge -->
+                <div class="aspect-[4/5] w-full overflow-hidden relative transform-gpu isolate [-webkit-mask-image:-webkit-radial-gradient(white,black)] rounded-lg">
+                  <img src="./images/cards/desert.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Adventure seekers exploring desert activities near Dubai" loading="lazy" width="320" height="400">
+                  <!-- Top gradient for pill readability -->
+                  <div class="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/40 to-transparent pointer-events-none"></div>
+                  <!-- Category Badge -->
                  <div class="absolute top-4 left-4">
                    <div class="px-3 py-1.5 bg-sunset-orange/20 backdrop-blur-md rounded-full border border-sunset-orange/30 flex items-center gap-2">
                      <span class="text-sm">⛺</span>
@@ -612,12 +604,12 @@
                    </div>
                  </div>
                  <!-- Trending Badge -->
-                 <div class="absolute top-4 right-4 mt-6">
-                   <div class="px-2.5 py-1 bg-sunset-orange/20 backdrop-blur-md rounded-full border border-sunset-orange/30 flex items-center gap-1.5">
-                     <iconify-icon icon="lucide:trending-up" class="text-sunset-orange text-xs"></iconify-icon>
-                     <span class="text-[9px] font-bold text-sunset-orange uppercase tracking-wide">Hot</span>
-                   </div>
-                 </div>
+                  <div class="absolute top-4 right-4">
+                    <div class="px-2.5 py-1 bg-sunset-orange/20 backdrop-blur-md rounded-full border border-sunset-orange/30 flex items-center gap-1.5">
+                      <iconify-icon icon="lucide:trending-up" class="text-sunset-orange text-xs"></iconify-icon>
+                      <span class="text-[9px] font-bold text-sunset-orange uppercase tracking-wide">Hot</span>
+                    </div>
+                  </div>
                </div>
                <!-- Card Content -->
                <div class="px-2 mt-4">
@@ -644,15 +636,11 @@
              <!-- Card 3: Gaming -->
              <div class="vibe-card bg-polaroid-white p-3 pb-6 rounded-2xl shadow-xl transform -rotate-2 hover:rotate-0 transition-all duration-500 group cursor-pointer snap-center shrink-0 w-[240px] sm:w-[260px] md:w-[280px] lg:w-[300px]" data-category="gaming">
                <!-- Image Container -->
-               <div class="aspect-[4/5] w-full overflow-hidden relative transform-gpu isolate [-webkit-mask-image:-webkit-radial-gradient(white,black)] rounded-lg">
-                 <img src="./images/cards/gaming.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Gamers connecting at local gaming lounges in Kuwait" loading="lazy" width="320" height="400">
-                 <!-- Particle Animation -->
-                 <div class="absolute top-4 right-4 flex gap-1">
-                   <div class="w-1 h-1 bg-electric-blue rounded-full animate-ping"></div>
-                   <div class="w-1 h-1 bg-electric-blue rounded-full animate-ping animation-delay-200"></div>
-                   <div class="w-1 h-1 bg-electric-blue rounded-full animate-ping animation-delay-400"></div>
-                 </div>
-                 <!-- Category Badge -->
+                <div class="aspect-[4/5] w-full overflow-hidden relative transform-gpu isolate [-webkit-mask-image:-webkit-radial-gradient(white,black)] rounded-lg">
+                  <img src="./images/cards/gaming.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Gamers connecting at local gaming lounges in Kuwait" loading="lazy" width="320" height="400">
+                  <!-- Top gradient for pill readability -->
+                  <div class="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/40 to-transparent pointer-events-none"></div>
+                  <!-- Category Badge -->
                  <div class="absolute top-4 left-4">
                    <div class="px-3 py-1.5 bg-electric-blue/20 backdrop-blur-md rounded-full border border-electric-blue/30 flex items-center gap-2">
                      <span class="text-sm">🎮</span>
@@ -662,25 +650,25 @@
                    </div>
                  </div>
                  <!-- Live Indicator -->
-                 <div class="absolute top-4 right-4 mt-6">
-                   <div class="px-2.5 py-1 bg-green-500/20 backdrop-blur-md rounded-full border border-green-500/30 flex items-center gap-1.5">
-                     <span class="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></span>
-                     <span class="text-[9px] font-bold text-green-400 uppercase tracking-wide">Live</span>
-                   </div>
-                 </div>
-               </div>
-               <!-- Card Content -->
-               <div class="px-2 mt-4">
-                 <div class="flex items-center gap-2 mb-2">
-                   <div class="flex -space-x-1">
-                     <img src="./images/avatars/user-3.jpg" class="w-6 h-6 rounded-full border-2 border-white" alt="User avatar">
-                     <img src="./images/avatars/user-4.jpg" class="w-6 h-6 rounded-full border-2 border-white" alt="User avatar">
-                     <img src="./images/avatars/user-1.jpg" class="w-6 h-6 rounded-full border-2 border-white" alt="User avatar">
-                   </div>
-                   <span class="text-xs text-zinc-500">67 people here</span>
-                 </div>
-                 <h3 class="font-bold text-black text-lg leading-tight mb-1 group-hover:text-electric-blue transition-colors">
-                   Glitch Arena
+                  <div class="absolute top-4 right-4">
+                    <div class="px-2.5 py-1 bg-green-500/20 backdrop-blur-md rounded-full border border-green-500/30 flex items-center gap-1.5">
+                      <span class="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse"></span>
+                      <span class="text-[9px] font-bold text-green-400 uppercase tracking-wide">Live</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card Content -->
+                <div class="px-2 mt-4">
+                  <div class="flex items-center gap-2 mb-2">
+                    <div class="flex -space-x-1">
+                      <img src="./images/avatars/user-3.jpg" class="w-6 h-6 rounded-full border-2 border-white" alt="User avatar">
+                      <img src="./images/avatars/user-4.jpg" class="w-6 h-6 rounded-full border-2 border-white" alt="User avatar">
+                      <img src="./images/avatars/user-1.jpg" class="w-6 h-6 rounded-full border-2 border-white" alt="User avatar">
+                    </div>
+                    <span class="text-xs text-zinc-500">67 people here</span>
+                  </div>
+                  <h3 class="font-bold text-black text-lg leading-tight mb-1 group-hover:text-electric-blue transition-colors">
+                    Glitch Arena
                  </h3>
                  <div class="flex items-center gap-2 text-zinc-500 text-xs">
                    <iconify-icon icon="lucide:map-pin" class="text-electric-blue"></iconify-icon>
@@ -694,15 +682,11 @@
              <!-- Card 4: Study -->
              <div class="vibe-card bg-polaroid-white p-3 pb-6 rounded-2xl shadow-xl transform rotate-2 hover:rotate-0 transition-all duration-500 group cursor-pointer snap-center shrink-0 w-[240px] sm:w-[260px] md:w-[280px] lg:w-[300px]" data-category="study">
                <!-- Image Container -->
-               <div class="aspect-[4/5] w-full overflow-hidden relative transform-gpu isolate [-webkit-mask-image:-webkit-radial-gradient(white,black)] rounded-lg">
-                 <img src="./images/cards/study.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Students meeting at university study groups" loading="lazy" width="320" height="400">
-                 <!-- Particle Animation -->
-                 <div class="absolute top-4 right-4 flex gap-1">
-                   <div class="w-1 h-1 bg-main-purple rounded-full animate-ping"></div>
-                   <div class="w-1 h-1 bg-main-purple rounded-full animate-ping animation-delay-200"></div>
-                   <div class="w-1 h-1 bg-main-purple rounded-full animate-ping animation-delay-400"></div>
-                 </div>
-                 <!-- Category Badge -->
+                <div class="aspect-[4/5] w-full overflow-hidden relative transform-gpu isolate [-webkit-mask-image:-webkit-radial-gradient(white,black)] rounded-lg">
+                  <img src="./images/cards/study.jpg" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Students meeting at university study groups" loading="lazy" width="320" height="400">
+                  <!-- Top gradient for pill readability -->
+                  <div class="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-black/40 to-transparent pointer-events-none"></div>
+                  <!-- Category Badge -->
                  <div class="absolute top-4 left-4">
                    <div class="px-3 py-1.5 bg-main-purple/20 backdrop-blur-md rounded-full border border-main-purple/30 flex items-center gap-2">
                      <span class="text-sm">📚</span>
@@ -712,12 +696,12 @@
                    </div>
                  </div>
                  <!-- Quiet Badge -->
-                 <div class="absolute top-4 right-4 mt-6">
-                   <div class="px-2.5 py-1 bg-main-purple/20 backdrop-blur-md rounded-full border border-main-purple/30 flex items-center gap-1.5">
-                     <iconify-icon icon="lucide:volume-x" class="text-main-purple text-xs"></iconify-icon>
-                     <span class="text-[9px] font-bold text-main-purple uppercase tracking-wide">Quiet</span>
-                   </div>
-                 </div>
+                  <div class="absolute top-4 right-4">
+                    <div class="px-2.5 py-1 bg-main-purple/20 backdrop-blur-md rounded-full border border-main-purple/30 flex items-center gap-1.5">
+                      <iconify-icon icon="lucide:volume-x" class="text-main-purple text-xs"></iconify-icon>
+                      <span class="text-[9px] font-bold text-main-purple uppercase tracking-wide">Quiet</span>
+                    </div>
+                  </div>
                </div>
                <!-- Card Content -->
                <div class="px-2 mt-4">
