@@ -28,6 +28,37 @@
     homeInterval = null;
   }
 
+  // Check if all images in array are fully loaded
+  function allImagesLoaded(images) {
+    return images.every(img => img.complete && img.naturalHeight !== 0);
+  }
+
+  // Wait for all images to load, then execute callback
+  function waitForImages(images, callback) {
+    if (allImagesLoaded(images)) {
+      callback(); // Already loaded (cached), start immediately
+      return;
+    }
+    // Wait for all images to finish loading
+    let loadedCount = 0;
+    const total = images.length;
+    images.forEach(img => {
+      if (img.complete && img.naturalHeight !== 0) {
+        loadedCount++;
+        if (loadedCount === total) callback();
+      } else {
+        img.addEventListener('load', () => {
+          loadedCount++;
+          if (loadedCount === total) callback();
+        }, { once: true });
+        img.addEventListener('error', () => {
+          loadedCount++; // Count errors too to avoid stuck state
+          if (loadedCount === total) callback();
+        }, { once: true });
+      }
+    });
+  }
+
   function setActiveButton(activeBtn) {
     buttons.forEach(btn => {
       const isActive = btn === activeBtn;
@@ -54,14 +85,20 @@
     if (screen === 'home') {
       if (!homeImages.length) return;
 
+      // Show first image immediately
       homeImages.forEach((img, i) => img.classList.toggle('active', i === 0));
 
+      // Only start cycling after ALL images are loaded (prevents endless loading loop)
       if (homeImages.length > 1) {
-        let currentIndex = 0;
-        homeInterval = setInterval(() => {
-          currentIndex = (currentIndex + 1) % homeImages.length;
-          homeImages.forEach((img, i) => img.classList.toggle('active', i === currentIndex));
-        }, 4000); // 4 seconds per image
+        waitForImages(homeImages, () => {
+          // Double-check we're still on home screen before starting interval
+          if (homeInterval !== null) return; // Already running or switched away
+          let currentIndex = 0;
+          homeInterval = setInterval(() => {
+            currentIndex = (currentIndex + 1) % homeImages.length;
+            homeImages.forEach((img, i) => img.classList.toggle('active', i === currentIndex));
+          }, 4000); // 4 seconds per image
+        });
       }
       return;
     }
@@ -70,14 +107,20 @@
     if (screen === 'map') {
       if (!mapImages.length) return;
 
+      // Show first image immediately
       mapImages.forEach((img, i) => img.classList.toggle('active', i === 0));
 
+      // Only start cycling after ALL images are loaded (prevents endless loading loop)
       if (mapImages.length > 1) {
-        let currentIndex = 0;
-        mapInterval = setInterval(() => {
-          currentIndex = (currentIndex + 1) % mapImages.length;
-          mapImages.forEach((img, i) => img.classList.toggle('active', i === currentIndex));
-        }, 4000); // 4 seconds per image
+        waitForImages(mapImages, () => {
+          // Double-check we're still on map screen before starting interval
+          if (mapInterval !== null) return; // Already running or switched away
+          let currentIndex = 0;
+          mapInterval = setInterval(() => {
+            currentIndex = (currentIndex + 1) % mapImages.length;
+            mapImages.forEach((img, i) => img.classList.toggle('active', i === currentIndex));
+          }, 4000); // 4 seconds per image
+        });
       }
       return;
     }
