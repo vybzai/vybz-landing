@@ -44,6 +44,12 @@
     // Reset all images first
     screenImages.forEach(img => img.classList.remove('active'));
 
+    // Show/hide floating pills based on screen (only visible on Home view)
+    const pills = document.querySelectorAll('.dynamic-chip');
+    pills.forEach(pill => {
+      pill.classList.toggle('hidden-pill', screen !== 'home');
+    });
+
     // Special case: Home view has multiple images we want to cycle
     if (screen === 'home') {
       if (!homeImages.length) return;
