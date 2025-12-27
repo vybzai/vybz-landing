@@ -62,9 +62,9 @@ html.legal-route #home { display: none !important; }
   0%, 100% { transform: translateY(0px) scale(1); opacity: 0.6; }
   50% { transform: translateY(-20px) scale(1.2); opacity: 1; }
 }
-/* Phone Mockup Sizing */
+/* Phone Mockup Sizing - matches actual phone mockup images (1339x2716 ≈ 1:2.03) */
 .phone-mockup {
-  aspect-ratio: 9 / 19.5;
+  aspect-ratio: 9 / 18.3;
 }
 /* Screen Transition */
 .screen-image {
